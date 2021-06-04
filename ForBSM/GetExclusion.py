@@ -3,162 +3,170 @@ import ROOT
 import os
 from array import array
 from copy import deepcopy
-from math import log
+from math import log,sqrt
 import json
-def GetIntersectionTGraphs(xmin,xmax,n,tg1,tg2):
-    xlist=[]
-    for i in range(n):
+import sys
+sys.path.insert(0,"../")
+sys.path.insert(0, "../python_tool/")
+from ExportShellCondorSetup import Export
 
-        _x1=xmin+(xmax-xmin)/n*i
-        _x2=xmin+(xmax-xmin)/n*(i+1)
-        #print _x1
-        
-        _tg1_y1=tg1.Eval(_x1)
-        _tg1_y2=tg1.Eval(_x2)
-
-        _tg2_y1=tg2.Eval(_x1)
-        _tg2_y2=tg2.Eval(_x2)
-
-        _dy1=(_tg1_y1-_tg2_y1)
-        _dy2=(_tg1_y2-_tg2_y2)
-
-        _ry1=(_tg1_y1/_tg2_y1)
-        _ry2=(_tg1_y2/_tg2_y2)
-        if _ry1<=0 or _ry2<=0:
-            continue
-        if log(_ry1)*log(_ry2)<=0:
-            #print "Find!"
-            x=(_x1+_x2)/2
-            xlist.append(x)
-    return xlist
-
-def GetTGraph_xsec_mA_for_fixed_tanb(input_file,tanb):
+def mH_xsec_for_mA_tanb(input_file,mA,tanb):
     #input_file="mh125_13_withVBF.root"
     tfile=ROOT.TFile.Open(input_file)
     
     ##---list of histo object names
     #xs_gg_H,br_H_WW,m_H
+    ##--sys
+    ##---xs_gg_H_scaleup/xs_gg_H_scaledown/xs_gg_H_pdfasup/xs_gg_H_pdfasdown
     h_xs_gg_H=tfile.Get("xs_gg_H")
+    ##--Theoretical systematic
+    h_xs_gg_H_scaleup=tfile.Get("xs_gg_H_scaleup")
+    h_xs_gg_H_scaledown=tfile.Get("xs_gg_H_scaledown")
+
+    h_xs_gg_H_pdfasup=tfile.Get("xs_gg_H_pdfasup")
+    h_xs_gg_H_pdfasdown=tfile.Get("xs_gg_H_pdfasdown")
+
+
     h_br_H_WW=tfile.Get("br_H_WW")
     h_m_H=tfile.Get("m_H")
     
+    _brlnuqq=0.1086*3*0.6741
+    _mH=h_m_H.GetBinContent(h_m_H.FindBin(mA,tanb))
+    _br_H_WW=h_br_H_WW.GetBinContent(h_br_H_WW.FindBin(mA,tanb))
+    _xs_gg_H=h_xs_gg_H.GetBinContent(h_xs_gg_H.FindBin(mA,tanb))
+    _xs_gg_H_scaleup=h_xs_gg_H_scaleup.GetBinContent(h_xs_gg_H.FindBin(mA,tanb))
+    _xs_gg_H_scaledown=h_xs_gg_H_scaledown.GetBinContent(h_xs_gg_H.FindBin(mA,tanb))
+    _xs_gg_H_pdfasup=h_xs_gg_H_pdfasup.GetBinContent(h_xs_gg_H.FindBin(mA,tanb))
+    _xs_gg_H_pdfasdown=h_xs_gg_H_pdfasdown.GetBinContent(h_xs_gg_H.FindBin(mA,tanb))
 
-    ##--first, let's draw x=mH y=xsec for given tanb (y value)
-    mA_list=[]
-    #tanb=1.0
 
-    ##--make grid
-    N_mA=100
-    max_mA=3000.
-    #min_mA= h_m_H.GetXaxis().GetBinCenter(1)+h_m_H.GetXaxis().GetBinWidth(0)
-    min_mA=0.
-    #print min_mA
-    for i in range(N_mA+1):
-        _mA=min_mA+(max_mA-min_mA)/N_mA*i
-        mA_list.append(_mA)
-        #print _mA
-    array_mH=array('d')
-    array_xsec=array('d')
-    array_mA=array('d')
-    for mA in mA_list:
-        #h->GetBinContent(h->FindBin(mphi,tanb));
+    _xsec_gghwwlnuqq=_xs_gg_H*_br_H_WW*0.1086*3*0.6741*2
+
+    _xsec_gghwwlnuqq=_xs_gg_H*_br_H_WW*_brlnuqq
+    _xsec_gghwwlnuqq_scaleup=_xs_gg_H_scaleup*_br_H_WW*_brlnuqq
+    _xsec_gghwwlnuqq_scaledown=_xs_gg_H_scaledown*_br_H_WW*_brlnuqq
+    _xsec_gghwwlnuqq_pdfasup=_xs_gg_H_pdfasup*_br_H_WW*_brlnuqq
+    _xsec_gghwwlnuqq_pdfasdown=_xs_gg_H_pdfasdown*_br_H_WW*_brlnuqq
     
-        _mH=h_m_H.GetBinContent(h_m_H.FindBin(mA,tanb))
-        if _mH<150:continue
-        _br_H_WW=h_br_H_WW.GetBinContent(h_br_H_WW.FindBin(mA,tanb))
-        _xs_gg_H=h_xs_gg_H.GetBinContent(h_xs_gg_H.FindBin(mA,tanb))
-        array_mH.append(_mH)
-        #print _mH
-        _xsec_gghwwlnuqq=_xs_gg_H*_br_H_WW*0.1086*3*0.6741*2
-        #print _xsec_gghww
-        array_xsec.append(_xsec_gghwwlnuqq)
-
-        array_mA.append(mA)
-    if len(array_xsec)==0:
-        return False
-    ##---TGraph
-
-    tg_xsec=ROOT.TGraph(len(array_mH),array_mH,array_xsec)
-    tg_mA=ROOT.TGraph(len(array_mA),array_mH,array_mA)
-    tfile.Close()
-    return tg_xsec, tg_mA, array_mA[0]
-
-def GetExclusion_mA_fixed_tanb(rf_model,tanb,rf_limit,alias):
-
-    #tg_xsec, tg_mA, min_mA=GetTGraph_xsec_mA_for_fixed_tanb("mh125_13_withVBF.root",1.0)
-    if False==GetTGraph_xsec_mA_for_fixed_tanb(rf_model,tanb):return False
-    tg_xsec, tg_mA, min_mA=GetTGraph_xsec_mA_for_fixed_tanb(rf_model,tanb)
-
-    ##---Measured limit
-    #rf_limit="../AsymptoticLimits/2016/all/ggfonly/indep.root"
-    tfilelimit=ROOT.TFile.Open(rf_limit)
-    tg_exp0=tfilelimit.Get("TGraph_exp0")
-    tg_exp_p1=tfilelimit.Get("TGraph_exp_p1")
-    tg_exp_p2=tfilelimit.Get("TGraph_exp_p2")
-    tg_exp_m1=tfilelimit.Get("TGraph_exp_m1")
-    tg_exp_m2=tfilelimit.Get("TGraph_exp_m2")
     
-    ##--1) Get intersection between exp and theory xsec
-    mHinter_list=deepcopy(GetIntersectionTGraphs(min_mA,2000,2000,tg_exp0,tg_xsec))
-    #print mHinter_list
+    return _mH,_xsec_gghwwlnuqq,_xsec_gghwwlnuqq_scaleup,_xsec_gghwwlnuqq_scaledown,_xsec_gghwwlnuqq_pdfasup,_xsec_gghwwlnuqq_pdfasdown
+
+def GetNearest_mH(mH,list_mH):
+    mH_low=-9999
+    mH_high=-9999
+    for i in range(len(list_mH)-1):
+        mH_i = list_mH[i]
+        mH_i_1 = list_mH[i+1]
+        if mH >=mH_i and mH < mH_i_1:
+            mH_low=mH_i
+            mH_high=mH_i_1
+
+    return mH_low, mH_high
+            
+#def MakeWorkspaceCommand(mH,xsec_gghwwlnuqq,PO,year):
+#    #os.chdir("../")
+#    #os.system("python CondorSubmit_MakeWorkSpace.py -y "+str(year)+" -m "+str(mH)+" -b all --PO input_ggH_xsec:"+str(xsec_gghwwlnuqq)+",input_qqH_xsec:0")
+
+
+def AsymptoticLimitCommand(year,mH,suffix):
+    #
+    ##---WS path = Workspaces_2016/hwwlnuqq_all_270_2016_mA_100_tanb_0.5.root                                                                     
+    #combine -M AsymptoticLimits -d combine_hwwlnuqq_all_200_2016_test.root -t -1 --run expected -m 200 --trackParameters deltaTheory_ggH_hww_xsec,deltaTheory_qqH_hww_xsec -n nom --verbose 2 &> Asymptotic_combine_hwwlnuqq_all_200_2016_test.log&
+
+
+    year=str(year)
+    mH=str(mH)
+    WSpath=os.getcwd()+"/Workspaces_"+year+"/"+suffix+"/hwwlnuqq_all_"+mH+"_"+year+".root"
+    LimitDIR="AsymptoticLimits/"+year+"/"+suffix
+    command_list=["cd "+os.getcwd(),"mkdir -p "+LimitDIR,"cd "+LimitDIR]
+    LimitOptions=" -t -1 --run expected -m "+mH
+    Asymptotic="combine -M AsymptoticLimits -d "+WSpath+" "+LimitOptions+" "
+    command_list.append(Asymptotic)
+    return ";".join(command_list)
+
+if __name__ == '__main__':
+    ##---
+    rf_model="mh125_13_withVBF.root"
+    suffix_model=rf_model.rstrip('.root')
+    year=2016
+
+    list_mA=[]
+    list_tanb=[]
+    list_mH=[]
+    ##--read grid
+    with open("config/mA_grid.json","r") as handle:
+        list_mA=json.load(handle)
+    ##--read grid
+    with open("config/tanb_grid.json","r") as handle:
+        list_tanb=json.load(handle)
+    ##--read grid
+    with open("config/mH_grid.json","r") as handle:
+        list_mH=json.load(handle)
+
     
-    ##--2)Convert to mA
-    mAinter_list=[]
-    for _mH in mHinter_list:
-        _mA=tg_mA.Eval(_mH)
-        mAinter_list.append(_mA)
+    from CondorSubmit_MakeWorkSpace import MakeWorkSpaceCommand
+    #def MakeWorkSpaceCommand(year,mass,bst,interference,POlist):
+    curdir=os.getcwd()
+    #list_mA=[200]
+    #list_tanb=[1.0]
+    for mA in list_mA:
+        for tanb in list_tanb:
+            #continue
+            DoneWS_low=False
+            DoneWS_high=False
+            os.chdir(curdir)
+            print "<mA=",mA,"tanb=",tanb,'>'
+            mH,xsec_gghwwlnuqq,xsec_gghwwlnuqq_scaleup,xsec_gghwwlnuqq_scaledown,xsec_gghwwlnuqq_pdfasup,xsec_gghwwlnuqq_pdfasdown=mH_xsec_for_mA_tanb(rf_model,mA,tanb)
+            mH_low, mH_high=GetNearest_mH(mH,list_mH)
+            print mH_low,mH,mH_high
+            os.chdir(curdir+"/../")
+            ##---syst in ratio
+            ratio_scaleup=xsec_gghwwlnuqq_scaleup/xsec_gghwwlnuqq
+            ratio_scaledown=xsec_gghwwlnuqq_scaledown/xsec_gghwwlnuqq
 
-    #print mAinter_list
+            ratio_pdfasup=xsec_gghwwlnuqq_pdfasup/xsec_gghwwlnuqq
+            ratio_pdfasdown=xsec_gghwwlnuqq_pdfasdown/xsec_gghwwlnuqq
 
-    c1=ROOT.TCanvas()
-    c1.SetLogy()
-    c1.SetLogx()
-    tg_exp0.Draw("AL")
-    tg_xsec.Draw("L")
-    tg_xsec.SetLineColor(2)
-    os.system("mkdir -p plots/")
-    c1.SaveAs("plots/"+alias+".pdf")
+            ratio_totalup=sqrt(ratio_scaleup**2+ratio_pdfasup**2)
+            ratio_totaldown=sqrt(ratio_scaledown**2+ratio_pdfasdown**2)
 
+            
+            print "sysup=",ratio_totalup
+            print "sysdown=",ratio_totaldown
 
-    tfilelimit.Close()
+            POlist=["input_ggH_xsec:"+str(xsec_gghwwlnuqq),
+                    "input_qqH_xsec:0",
+                    "delta_ggH_xsec:"+str(ratio_totalup)+","+str(ratio_totaldown)]
+            workdir,command,jobname,submit,ncpu = MakeWorkSpaceCommand(year,mH_low,"all",True,POlist,suffix_model+"/"+"mA_"+str(mA)+"_tanb_"+str(tanb))
+            if not os.path.isfile(workdir+"/run.done"):
+                print "---Submit---",command
+                Export(workdir,command,jobname,submit,ncpu)
+            else:
+                DoneWS_low=True
+            workdir,command,jobname,submit,ncpu = MakeWorkSpaceCommand(year,mH_high,"all",True,POlist,suffix_model+"/"+"mA_"+str(mA)+"_tanb_"+str(tanb))
+            if not os.path.isfile(workdir+"/run.done"):
+                print "---Submit---",command
+                Export(workdir,command,jobname,submit,ncpu) 
+            else:
+                DoneWS_high=True
 
-    return deepcopy(mAinter_list),deepcopy(mHinter_list)
-
-rf_model="mh125_13_withVBF.root"
-#tanb=1.0
-year=2016
-rf_limit="../AsymptoticLimits/"+str(year)+"/all/ggfonly/indep.root"
-
-
-
-tanb_list=[]
-#for i in range(10):
-#    tanb_list.append(0.4+i*0.1)
-#for i in range(1,10):
-#    tanb_list.append(i+1)
-
-for i in range(200):
-    if i<100:
-        tanb_list.append(0.4+i*0.01)
-    else:
-        tanb_list.append(1.4+(i-100)*0.1)
-
-exclusion_region={}
-
-for tanb in tanb_list:
-    alias="mh125_13_withVBF__tanb_"+str(tanb)+"__"+str(year)
-    if False == GetExclusion_mA_fixed_tanb(rf_model,tanb,rf_limit,alias): continue
-    mAinter_list,mHinter_list=GetExclusion_mA_fixed_tanb(rf_model,tanb,rf_limit,alias)
-    print "<<<   tanb=",tanb,"   >>>>"
-    if len(mAinter_list)!=2 or len(mHinter_list)!=2:
-        print "[Warning]# of Intersections is not 2!!!"
-    
-    print mAinter_list
-    print mHinter_list
-
-    if len(mAinter_list)==2:
-        exclusion_region[tanb]=mAinter_list
-
-os.system("mkdir -p exregion_json/")
-with open("exregion_json/"+alias+".json","w") as make_file:
-    json.dump(exclusion_region,make_file,)
+            if DoneWS_high and DoneWS_low:
+                ##--go to Asymptotic limit
+                ##---WS path = Workspaces_2016/hwwlnuqq_all_270_2016_mA_100_tanb_0.5.root
+                #combine -M AsymptoticLimits -d combine_hwwlnuqq_all_200_2016_test.root -t -1 --run expected -m 200 --trackParameters deltaTheory_ggH_hww_xsec,deltaTheory_qqH_hww_xsec -n nom --verbose 2 &> Asymptotic_combine_hwwlnuqq_all_200_2016_test.log&
+                print "--Submit AsymptoticLimit for mH_low"
+                command=AsymptoticLimitCommand(year,mH_low,suffix_model+"/"+"mA_"+str(mA)+"_tanb_"+str(tanb))
+                suffix=suffix_model+"/mA_"+str(mA)+"_tanb_"+str(tanb)
+                workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+str(mH_low)
+                jobname=workdir
+                submit=True
+                ncpu=1
+                Export(workdir,command,jobname,submit,ncpu)
+                print "--Submit AsymptoticLimit for mH_high"
+                command=AsymptoticLimitCommand(year,mH_high,suffix_model+"/"+"mA_"+str(mA)+"_tanb_"+str(tanb))
+                workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+str(mH_high)
+                jobname=workdir
+                submit=True
+                ncpu=1
+                Export(workdir,command,jobname,submit,ncpu)
+                
