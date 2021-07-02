@@ -1,6 +1,6 @@
 import os
 
-
+##---------------------------------Card Config----------------------##
 def GetCardPath(mass,year):
     cats={}
     mass=str(mass)
@@ -19,17 +19,17 @@ def GetCardPath(mass,year):
     cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_UNTAGGED_M1500_C0.01/WW_mass/datacard.txt"
 
     ##--Resolved
-    cats["hww_lqq_ggf_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_MEKDTAG_M400_C0.01/Event/datacard.txt"
-    cats["hww_lqq_ggf_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_MEKDTAG_M400_C0.01/Event/datacard.txt"
-    cats["hww_lqq_ggf_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_MEKDTAG_M400_C0.01/WW_mass/datacard.txt"
+    cats["hww_lqq_ggf_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_MEKDTAG_M400_C0.0025/Event/datacard.txt"
+    cats["hww_lqq_ggf_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_MEKDTAG_M400_C0.0025/Event/datacard.txt"
+    cats["hww_lqq_ggf_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_MEKDTAG_M400_C0.0025/WW_mass/datacard.txt"
     
     cats["hww_lqq_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__SB_NoMEKDCut/Event/datacard.txt"
     cats["hww_lqq_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__SB_NoMEKDCut/Event/datacard.txt"
     cats["hww_lqq_vbf_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__SB_NoMEKDCut/WW_mass/datacard.txt"
     
-    cats["hww_lqq_untag_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_UNTAGGED_M400_C0.01/Event/datacard.txt"
-    cats["hww_lqq_untag_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_UNTAGGED_M400_C0.01/Event/datacard.txt"
-    cats["hww_lqq_untag_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_UNTAGGED_M400_C0.01/WW_mass/datacard.txt"
+    cats["hww_lqq_untag_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_UNTAGGED_M400_C0.0025/Event/datacard.txt"
+    cats["hww_lqq_untag_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_UNTAGGED_M400_C0.0025/Event/datacard.txt"
+    cats["hww_lqq_untag_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_UNTAGGED_M400_C0.0025/WW_mass/datacard.txt"
 
     return cats
 

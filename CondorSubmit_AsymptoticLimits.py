@@ -14,7 +14,7 @@ def AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,suffix=""):
 
     #suffix="_".join(POlist)
     if not interference: suffix+="_NoI"
-    WSpath=WSDIRpath+"/"+suffix+"/hwwlnuqq_"+("_".join([bst,mass,year,suffix]))+".root"
+    WSpath=WSDIRpath+"/"+suffix+"/hwwlnuqq_"+("_".join([bst,mass,year]))+".root"
     #WSpath=WSDIRpath+"/hwwlnuqq_"+bst+"_"+mass+"_"+year+".root"
     ##--3)fvbf options
     opt_fvbf="-------"
