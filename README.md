@@ -1,3 +1,5 @@
+##--setup
+git clone git@github.com:soarnsoar/python_tool.git
 ##--Procedure
 1) Copy raw datacards
 ->Datacards_2016 Datacards_2017 Datacards_2018
