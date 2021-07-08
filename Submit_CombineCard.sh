@@ -5,7 +5,7 @@ ARR_YEAR=(2016 2017 2018)
 for MASS in ${ARR_MASS[@]};do
     for BST in ${ARR_BST[@]};do
 	for YEAR in ${ARR_YEAR[@]};do
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST}
+	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} #--dnn
 	done
     done
 done

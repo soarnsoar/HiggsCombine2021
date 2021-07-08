@@ -8,11 +8,14 @@ for MASS in ${ARR_MASS[@]};do
     for BST in ${ARR_BST[@]};do
 	for YEAR in ${ARR_YEAR[@]};do
 	    ##--interference
-	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i False -f floating
-	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i False -f ggfonly
-	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i False -f vbfonly
+	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f floating
+	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f ggfonly
+	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f vbfonly
 	    ##--no interference
-	    #python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -i False
+	    #python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f floating
+	    #python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f ggfonly
+	    #python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f vbfonly
+
 	done
     done
 done

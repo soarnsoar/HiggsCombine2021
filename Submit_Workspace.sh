@@ -6,9 +6,9 @@ for MASS in ${ARR_MASS[@]};do
     for BST in ${ARR_BST[@]};do
 	for YEAR in ${ARR_YEAR[@]};do
 	    ##--interference
-	    python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -i True
+	    python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -i
 	    ##--no interference
-	    #python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -i False
+	    #python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST}
 	done
     done
 done
