@@ -1,3 +1,5 @@
+##--setup
+git clone git@github.com:soarnsoar/python_tool.git
 ##--Procedure
 1) Copy raw datacards
 2) Submit_CombineCard.sh
