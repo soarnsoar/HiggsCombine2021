@@ -149,8 +149,14 @@ if __name__ == '__main__':
     import sys
     rf_model=sys.argv[1]
     year=sys.argv[2]
+    noInterference=False
+    if len(sys.argv)>3:
+        if bool(sys.argv[3])==True:
+            noInterference=True
     #rf_model="mh125_13_withVBF.root"
     suffix_model=rf_model.rstrip('.root')
+    if noInterference:
+        suffix_model+="_NoI"
     #year=2016
 
     list_mA=[]
@@ -214,7 +220,10 @@ if __name__ == '__main__':
             POlist=["input_ggH_xsec:"+str(xsec_gghwwlnuqq),
                     "input_qqH_xsec:0",
                     "delta_ggH_xsec:"+str(ratio_totalup)+","+str(ratio_totaldown)]
+            
             workdir,command,jobname,submit,ncpu = MakeWorkSpaceCommand(year,mH_low,"all",True,POlist,suffix_model+"/"+"mA_"+str(mA)+"_tanb_"+str(tanb))
+            if noInterference:
+                workdir,command,jobname,submit,ncpu = MakeWorkSpaceCommand(year,mH_low,"all",False,POlist,suffix_model+"/"+"mA_"+str(mA)+"_tanb_"+str(tanb))
             if not os.path.isfile(workdir+"/run.done"):
                 if os.path.isfile(workdir+"/run.sh") : 
                     print "Not Finished Job->",workdir
@@ -224,6 +233,8 @@ if __name__ == '__main__':
             else:
                 DoneWS_low=True
             workdir,command,jobname,submit,ncpu = MakeWorkSpaceCommand(year,mH_high,"all",True,POlist,suffix_model+"/"+"mA_"+str(mA)+"_tanb_"+str(tanb))
+            if noInterference:
+                workdir,command,jobname,submit,ncpu = MakeWorkSpaceCommand(year,mH_high,"all",False,POlist,suffix_model+"/"+"mA_"+str(mA)+"_tanb_"+str(tanb))
             if not os.path.isfile(workdir+"/run.done"):
                 if os.path.isfile(workdir+"/run.sh") : 
                     print "Not Finished Job->",workdir

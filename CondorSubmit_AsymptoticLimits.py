@@ -5,15 +5,16 @@ from ExportShellCondorSetup import Export
 
 def AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,suffix=""):
 
+    if not interference: suffix+="_NoI"
     ##---1)WORKDIR
     workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+mass+"__"+bst+"__"+year+"/"+fvbf+'/'
     ##---2)input WS
     WSDIRpath=os.getcwd()+"/"+'Workspaces_'+year
-    if not interference: WSDIRpath+="_NoI"
+    #if not interference: WSDIRpath+="_NoI"
 
 
     #suffix="_".join(POlist)
-    if not interference: suffix+="_NoI"
+
     WSpath=WSDIRpath+"/"+suffix+"/hwwlnuqq_"+("_".join([bst,mass,year]))+".root"
     #WSpath=WSDIRpath+"/hwwlnuqq_"+bst+"_"+mass+"_"+year+".root"
     ##--3)fvbf options
@@ -50,7 +51,7 @@ if __name__ == '__main__':
     parser.add_option("-y", "--year", dest="year" , help="year")
     parser.add_option("-m", "--mass", dest="mass" , help="mass")
     parser.add_option("-b", "--bst", dest="bst" , help="bst")
-    parser.add_option("-i", "--interference", dest="interference" ,default=True  , action="store_true")
+    parser.add_option("-i", "--interference", dest="interference" ,default=False  , action="store_true")
     parser.add_option("-f", "--fvbf", default=False,dest="fvbf")
     parser.add_option("-p", "--PO", default=False,dest="PO")
     
@@ -59,7 +60,8 @@ if __name__ == '__main__':
     year=options.year
     mass=options.mass
     bst=options.bst
-    interference=options.interference
+    interference=bool(options.interference)
+    print 'interference',interference
     if options.fvbf:
         fvbf=options.fvbf
     else:

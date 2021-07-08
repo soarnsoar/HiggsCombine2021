@@ -26,7 +26,7 @@ def MakeWorkSpaceCommand(year,mass,bst,interference,POlist,model_alias=""):
         PO+=" --PO "+_PO
     ##---5)WS output paths
     WSDIRpath='Workspaces_'+year+"/"+model_alias
-    if not interference: WSDIRpath+="_NoI"
+
     
     WSpath=WSDIRpath+"/hwwlnuqq_"+("_".join([bst,mass,year]))+".root"
     ##---6)WS command
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     parser.add_option("-y", "--year", dest="year" , help="year")
     parser.add_option("-m", "--mass", dest="mass" , help="mass")
     parser.add_option("-b", "--bst", dest="bst" , help="bst")
-    parser.add_option("-i", "--interference", dest="interference" ,default=True  , action="store_true")
+    parser.add_option("-i", "--interference", dest="interference" ,default=False  , action="store_true")
     parser.add_option("-p", "--PO", dest="PO" ,default=False)
     
     (options, args) = parser.parse_args()
