@@ -1,4 +1,4 @@
-ARR_DIR=($(ls -d AsymptoticLimits/201*/*/*/))
+ARR_DIR=($(ls -d AsymptoticLimits/201*/*/*/*/*/))
 for DIR in ${ARR_DIR[@]};do
     echo ${DIR}
     cd ${DIR}
