@@ -10,6 +10,6 @@ git clone git@github.com:soarnsoar/python_tool.git
 
 
 5)collect limits
-combineTool.py -M CollectLimits -i higgsCombine*.root -o indep.json
+CollectLimits.sh
 
 6)RunJsonToTF1.sh
