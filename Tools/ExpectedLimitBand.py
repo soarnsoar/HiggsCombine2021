@@ -43,7 +43,9 @@ class ExpectedLimitBand():
         self.tgr_pm2.SetFillColor(ROOT.kYellow)
 
     def GenerateTGraphs(self):
+        
         for i in range(self.N):
+
             self.tgr_center.SetPoint(i,self.x_list[i], self.center_list[i])
             self.tgr_pm1.SetPoint(i,self.x_list[i], self.center_list[i])
             self.tgr_pm2.SetPoint(i,self.x_list[i], self.center_list[i])
@@ -103,7 +105,7 @@ class ExpectedLimitBand():
         self.leg.AddEntry(self.tgr_pm2, "Expected #pm 2#sigma","f");
         
         self.leg.Draw('same')
-        self.drawmodeltag= ROOT.TLatex(300,50, self.modeltag)#DrawLatex (Double_t x, Double_t y, const char *text)
+        self.drawmodeltag= ROOT.TLatex(600,10, self.modeltag)#DrawLatex (Double_t x, Double_t y, const char *text)
         self.drawmodeltag.Draw("same")
 
 
