@@ -65,17 +65,19 @@ def Run(masslist,year,interference,fvbf,region):
     band.GenerateTGraphs()
     
     band.lumi=str(getlumi(year))
-    band.modeltag="ggfonly"
+    band.modeltag=fvbf
     band.Draw()
-    band.tcanvas.SaveAs("test.pdf")
+    band.tcanvas.SaveAs("_".join([str(year),fvbf,region])+".pdf")
 
 
 if __name__ == '__main__':
     masslist=[400,500,600,700,800,900,1000,1200,1500,2000,2500,3000,4000,5000]
-    year=2016
-    interference=True
-    fvbf='ggfonly'
-    region="Boosted"
-    
 
-    Run(masslist,year,interference,fvbf,region)
+    for year in [2016,2017,2018]:
+        #year=2016
+        interference=False
+        fvbf='floating'
+        region="Boosted"
+        
+        
+        Run(masslist,year,interference,fvbf,region)

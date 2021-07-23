@@ -126,7 +126,8 @@ class CompareLimit():
 
         self.tcanvas.SaveAs("_".join(self.list_name+[self.modeltag,str(self.year)])+".pdf")
     
-if __name__ == '__main__':
+
+def Compare_DNN_CB():
     ##
     masslist=[400,500,600,700,800,900,1000,1200,1500,2000,2500,3000,4000,5000]
     dict_lumi={
@@ -153,3 +154,32 @@ if __name__ == '__main__':
         myCompare.modeltag=fvbf
         myCompare.Run()
         del myCompare
+def Compare_I_NoI(dnn=True):
+    masslist=[400,500,600,700,800,900,1000,1200,1500,2000,2500,3000,4000,5000]
+    dict_lumi={
+        2016:'35.9',
+        2017:'41.5',
+        2018:'59.7'
+    }
+    interference=False
+    fvbf='vbfonly'
+    region="Boosted"
+
+    for year in dict_lumi:
+        list_exp0_I,list_exp_p1,list_exp_p2,list_exp_m1,list_exp_m2=GetLimitList(masslist,year,True,fvbf,region,dnn)
+        list_exp0_NoI,list_exp_p1,list_exp_p2,list_exp_m1,list_exp_m2=GetLimitList(masslist,year,False,fvbf,region,dnn)
+        
+        print list_exp0_I
+        print list_exp0_NoI
+        list_ylist=[list_exp0_I,list_exp0_NoI]
+        list_name=["with_I","NoI"]
+        myCompare=CompareLimit(masslist,list_ylist,list_name) #(self,x_list,list_ylist,list_name)
+        myCompare.lumi=dict_lumi[year]
+        myCompare.sqrtS="13"
+        myCompare.year=str(year)
+        myCompare.modeltag=fvbf
+
+        myCompare.Run()
+        del myCompare
+if __name__ == '__main__':
+    Compare_I_NoI(False)
