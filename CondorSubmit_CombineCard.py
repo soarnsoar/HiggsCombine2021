@@ -62,7 +62,7 @@ def GetCardPath(mass,year,isDNN=True):
 
 def GetCombineCardCommands(mass,year,bst,isDNN=True):
     cats={}
-    if year=="all":
+    if year=="3yrs":
         cats2016=GetCardPath(mass,2016,isDNN)
         cats2017=GetCardPath(mass,2016,isDNN)
         cats2018=GetCardPath(mass,2016,isDNN)
