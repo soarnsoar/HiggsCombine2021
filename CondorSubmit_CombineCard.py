@@ -61,8 +61,19 @@ def GetCardPath(mass,year,isDNN=True):
     return cats
 
 def GetCombineCardCommands(mass,year,bst,isDNN=True):
+    cats={}
+    if year=="all":
+        cats2016=GetCardPath(mass,2016,isDNN)
+        cats2017=GetCardPath(mass,2016,isDNN)
+        cats2018=GetCardPath(mass,2016,isDNN)
+        cats.update(cats2016)
+        cats.update(cats2017)
+        cats.update(cats2018)
 
-    cats=GetCardPath(mass,year,isDNN)
+    else:
+        cats=GetCardPath(mass,year,isDNN)
+    
+
     command="combineCards.py -S "
     for cat in cats:
         if bst!="all":
