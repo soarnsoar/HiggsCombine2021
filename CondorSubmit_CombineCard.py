@@ -64,12 +64,20 @@ def GetCombineCardCommands(mass,year,bst,isDNN=True):
     cats={}
     if year=="3yrs":
         cats2016=GetCardPath(mass,2016,isDNN)
-        cats2017=GetCardPath(mass,2016,isDNN)
-        cats2018=GetCardPath(mass,2016,isDNN)
+        cats2017=GetCardPath(mass,2017,isDNN)
+        cats2018=GetCardPath(mass,2018,isDNN)
+        
+
+        for cat in cats2016:
+            cats2016[cat]="../Datacards_2016/"+cats2016[cat]
+        for cat in cats2017:
+            cats2017[cat]="../Datacards_2017/"+cats2017[cat]
+        for cat in cats2018:
+            cats2018[cat]="../Datacards_2018/"+cats2018[cat]
+
         cats.update(cats2016)
         cats.update(cats2017)
         cats.update(cats2018)
-
     else:
         cats=GetCardPath(mass,year,isDNN)
     
@@ -111,7 +119,7 @@ if __name__ == '__main__':
     sys.path.insert(0, "python_tool/")
     from ExportShellCondorSetup import Export
     workdir="WORKDIR/CombineCard/"+mass+"__"+bst+"__"+year
-    
+    os.system('mkdir -p Datacards_'+year)
     commands=["cd "+os.getcwd()+'/Datacards_'+year,cc_command]
     command=';'.join(commands)
     
