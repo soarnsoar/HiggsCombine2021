@@ -30,9 +30,9 @@ def GetSMXsec(mH):
     qqh_scaleUp=xsec_smlike['VBF'][mH]['scaleUp']
     qqh_scaleDown=xsec_smlike['VBF'][mH]['scaleUp']
 
-    qqhUp=sqrt((qqh_pdfUp-1)**2+(qqh_scaleUp)**2)
-    qqhDown=sqrt((qqh_pdfDown-1)**2+(qqh_scaleDown)**2)
-
+    qqhUp=sqrt((qqh_pdfUp-1)**2+(qqh_scaleUp-1)**2)
+    qqhDown=sqrt((qqh_pdfDown-1)**2+(qqh_scaleDown-1)**2)
+    print ggh,gghUp,gghDown,qqh,qqhUp,qqhDown
     return ggh,gghUp,gghDown,qqh,qqhUp,qqhDown
 
 def WorkSpaceCommand(year,mH,bst,interference):
