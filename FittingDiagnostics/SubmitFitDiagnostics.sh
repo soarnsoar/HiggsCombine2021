@@ -21,7 +21,7 @@ for Year in ${ARR_Year[@]};do
 	    mkdir -p ${WORKDIR}
 	    cd ${WORKDIR}
 	    Workspace=../../../Workspaces_${Year}/${model}/hwwlnuqq_${Region}_${Mass}_${Year}.root
-	    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics -m ${Mass} -t -1 --expectSignal=1 --setParameterRanges r=0,10" -d WORDIR_CONDOR_TEST2 -n ${WORKDIR} -m 1 -s 
+	    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics -m ${Mass} -t -1 --expectSignal=1 --setParameterRanges r=0,10&&python ../../diffNuisances.py fitDiagnostics.Test.root" -d WORDIR_CONDOR_TEST2 -n ${WORKDIR} -m 1 -s 
 	    cd -
 
 
@@ -29,7 +29,7 @@ for Year in ${ARR_Year[@]};do
 	    mkdir -p ${WORKDIR}
 	    cd ${WORKDIR}
 	    Workspace=../../../Workspaces_${Year}/${model}/hwwlnuqq_${Region}_${Mass}_${Year}.root
-	    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics -m ${Mass} -t -1 --expectSignal=0 --setParameterRanges r=0,10" -d WORDIR_CONDOR_TEST2 -n ${WORKDIR} -m 1 -s 
+	    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics -m ${Mass} -t -1 --expectSignal=0 --setParameterRanges r=0,10&&python ../../diffNuisances.py fitDiagnostics.Test.root" -d WORDIR_CONDOR_TEST2 -n ${WORKDIR} -m 1 -s 
 	    cd -
 	done
     done	
