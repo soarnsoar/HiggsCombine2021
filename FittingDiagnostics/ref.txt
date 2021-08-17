@@ -1,2 +1,4 @@
 ##
 http://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/part3/nonstandard/
+## diffNuisances.py
+https://raw.githubusercontent.com/cms-analysis/HiggsAnalysis-CombinedLimit/81x-root606/test/diffNuisances.py
