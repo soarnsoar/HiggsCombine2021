@@ -19,7 +19,7 @@ def AsymptoticLimitCommand(year,mass,bst,interference,POlist,suffix=""):
     #WSpath=WSDIRpath+"/hwwlnuqq_"+bst+"_"+mass+"_"+year+".root"
     ##--3)options
     
-    opt=""
+    opt="--freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*}"
     
     ##---4)limit command
     asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -m "+mass+" "+opt

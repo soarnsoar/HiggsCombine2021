@@ -29,7 +29,7 @@ for Year in ${ARR_Year[@]};do
 	    #parser.add_option("-s","--submit",   dest="submit",action="store_true", help="submit",default=False)
 	    
 	    #python ../python_tool/ExportShellCondorSetup.py
-	    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M Impacts -m ${Mass} --doInitialFit --robustFit 1 -t -1 --expectSignal=1 --setParameterRanges r=0,10&&combineTool.py -d ${Workspace} -M Impacts -m ${Mass} --doFits --robustFit 1 -t -1 --expectSignal=1 --setParameterRanges r=0,10 --job-mode condor --dry-run --sub-opts \"accounting_group=group_cms\"" -d WORDIR_CONDOR_TEST2 -n ${WORKDIR} -m 1 -s 
+	    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M Impacts -m ${Mass} --doInitialFit --robustFit 1 -t -1 --expectSignal=1 --setParameterRanges r=0,10  --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} &&combineTool.py -d ${Workspace} -M Impacts -m ${Mass} --doFits --robustFit 1 -t -1 --expectSignal=1 --setParameterRanges r=0,10  --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} --job-mode condor --dry-run --sub-opts \"accounting_group=group_cms\"" -d WORDIR_CONDOR_TEST2 -n ${WORKDIR} -m 1 -s 
 	    cd -
 	done
     done	
