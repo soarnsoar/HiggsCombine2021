@@ -25,7 +25,7 @@ for Year in ${ARR_Year[@]};do
 		    mkdir -p ${WORKDIR}
 		    cd ${WORKDIR}
 		    Workspace=../../../Workspaces_${Year}/${model}/hwwlnuqq_${Region}_${Mass}_${Year}.root
-		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*},rgx{prop_.*},rgx{deltaTheory.*xsec},rgx{.*_stat} --setParameterRanges r=0,10 --verbose 3&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
+		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*},rgx{prop_.*},rgx{deltaTheory.*xsec},rgx{.*_stat} --setParameterRanges r=0,10&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
 		    cd -
 
 
@@ -34,7 +34,7 @@ for Year in ${ARR_Year[@]};do
 		    mkdir -p ${WORKDIR}
 		    cd ${WORKDIR}
 		    Workspace=../../../Workspaces_${Year}/${model}/hwwlnuqq_${Region}_${Mass}_${Year}.root
-		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*},rgx{deltaTheory.*xsec},rgx{.*_stat} --setParameterRanges r=0,10 --verbose 3&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
+		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*},rgx{deltaTheory.*xsec},rgx{.*_stat} --setParameterRanges r=0,10&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
 		    cd -
 		done
 	    done
