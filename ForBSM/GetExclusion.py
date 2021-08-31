@@ -80,7 +80,7 @@ def AsymptoticLimitCommand(year,mH,suffix):
     WSpath=os.getcwd()+"/Workspaces_"+year+"/"+suffix+"/hwwlnuqq_all_"+mH+"_"+year+".root"
     LimitDIR="AsymptoticLimits/"+year+"/"+suffix
     command_list=["cd "+os.getcwd(),"mkdir -p "+LimitDIR,"cd "+LimitDIR]
-    LimitOptions=" -m "+mH
+    LimitOptions=" -m "+mH+" --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*}"
     Asymptotic="combine -M AsymptoticLimits -d "+WSpath+" "+LimitOptions+" "
     command_list.append(Asymptotic)
     return ";".join(command_list)
