@@ -20,11 +20,11 @@ def AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,suffix=""):
     ##--3)fvbf options
     opt_fvbf="-------"
     if 'ggfonly' in fvbf:
-        opt_fvbf="--freezeParameters fvbf --setParameters fvbf=0  --rAbsAcc 0"
+        opt_fvbf="--freezeParameters fvbf,rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} --setParameters fvbf=0  --rAbsAcc 0"
     if 'vbfonly' in fvbf:
-        opt_fvbf="--freezeParameters fvbf --setParameters fvbf=1  --rAbsAcc 0"
+        opt_fvbf="--freezeParameters fvbf,rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} --setParameters fvbf=1  --rAbsAcc 0"
     if 'floating' in fvbf:
-        opt_fvbf=" --rAbsAcc 0"
+        opt_fvbf="--freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} --rAbsAcc 0"
     
     ##---4)limit command
     asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -m "+mass+" "+opt_fvbf
