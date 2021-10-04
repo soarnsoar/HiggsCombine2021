@@ -2,6 +2,8 @@ import ROOT
 import json
 from array import array
 import sys
+##_--TODO
+# fix key err 
 ##---1st, read json file
 #
 #myinput="AsymptoticLimits/2016/all/floating/indep.json"
@@ -27,27 +29,30 @@ with open(myinput) as f:
     exp_m1list=array('d')
     exp_m2list=array('d')
 
-    for mass in data:
+    for mass in sorted(data):
         if not 'exp0' in data[mass] : continue
-        if 'obs' in data[mass] : obs=float(data[mass]['obs'])
+        if 'obs' in data[mass] : 
+            obs=float(data[mass]['obs'])
         exp0=float(data[mass]['exp0'])
         exp_p1=float(data[mass]['exp+1'])
         exp_p2=float(data[mass]['exp+2'])
         exp_m1=float(data[mass]['exp-1'])
         exp_m2=float(data[mass]['exp-2'])
-        mass=float(mass)
+        mass_in_float=float(mass)
 
-        data_in_float[mass]={}
-        if 'obs' in data[mass] : data_in_float[mass]['obs']=obs
-        data_in_float[mass]['exp0']=exp0
-        data_in_float[mass]['exp_p1']=exp_p1
-        data_in_float[mass]['exp_p2']=exp_p2
-        data_in_float[mass]['exp_m1']=exp_m1
-        data_in_float[mass]['exp_m2']=exp_m2
+        data_in_float[mass_in_float]={}
+        #print data[mass] 
+        #print data_in_float[mass]
+        if 'obs' in data[mass] : data_in_float[mass_in_float]['obs']=obs
+        data_in_float[mass_in_float]['exp0']=exp0
+        data_in_float[mass_in_float]['exp_p1']=exp_p1
+        data_in_float[mass_in_float]['exp_p2']=exp_p2
+        data_in_float[mass_in_float]['exp_m1']=exp_m1
+        data_in_float[mass_in_float]['exp_m2']=exp_m2
 
     for mass in sorted(data_in_float):
         
-        if 'obs' in data[mass] :  obs=float(data_in_float[mass]['obs'])
+        if 'obs' in data_in_float[mass] :  obs=float(data_in_float[mass]['obs'])
         exp0=float(data_in_float[mass]['exp0'])
         exp_p1=float(data_in_float[mass]['exp_p1'])
         exp_p2=float(data_in_float[mass]['exp_p2'])
@@ -55,7 +60,7 @@ with open(myinput) as f:
         exp_m2=float(data_in_float[mass]['exp_m2'])
 
         xlist.append(float(mass))
-        if 'obs' in data[mass] :  obslist.append(float(obs))
+        if 'obs' in data_in_float[mass] :  obslist.append(float(obs))
         exp0list.append(float(exp0))
         exp_p1list.append(float(exp_p1))
         exp_p2list.append(float(exp_p2))
@@ -77,7 +82,7 @@ TGraph_exp_m1=ROOT.TGraph(len(exp_m1list),xlist,exp_m1list)
 TGraph_exp_m1.SetName("TGraph_exp_m1")
 TGraph_exp_m2=ROOT.TGraph(len(exp_m2list),xlist,exp_m2list)
 TGraph_exp_m2.SetName("TGraph_exp_m2")
-TGraph_obs=ROOT.TGraph(len(obs0list),xlist,obslist)
+TGraph_obs=ROOT.TGraph(len(obslist),xlist,obslist)
 TGraph_obs.SetName("TGraph_obs")
 
 
