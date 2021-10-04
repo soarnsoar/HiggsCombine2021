@@ -21,8 +21,8 @@ def GetSMXsec(mH):
     ggh_scaleUp=xsec_smlike['GGF'][mH]['scaleUp']
     ggh_scaleDown=xsec_smlike['GGF'][mH]['scaleUp']
 
-    gghUp=sqrt((ggh_pdfUp-1)**2+(ggh_scaleUp)**2)
-    gghDown=sqrt((ggh_pdfDown-1)**2+(ggh_scaleDown)**2)
+    gghUp=sqrt((ggh_pdfUp-1)**2+(ggh_scaleUp-1)**2)
+    gghDown=sqrt((ggh_pdfDown-1)**2+(ggh_scaleDown-1)**2)
 
     qqh=xsec_smlike['VBF'][mH]['nominal']
     qqh_pdfUp=xsec_smlike['VBF'][mH]['pdfUp']

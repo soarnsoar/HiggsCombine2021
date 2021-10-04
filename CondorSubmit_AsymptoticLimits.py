@@ -26,8 +26,11 @@ def AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,suffix=""):
     if 'floating' in fvbf:
         opt_fvbf="--freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} --rAbsAcc 0"
     
+    ##--3-1) option for fast fitting
+    opt_minst="--cminDefaultMinimizerStrategy 0"
+
     ##---4)limit command
-    asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -m "+mass+" "+opt_fvbf
+    asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -m "+mass+" "+opt_fvbf+" "+opt_minst
     #asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -m "+mass+" --run expected "+opt_fvbf
     #asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -t -1 -m "+mass+" "+' --freezeParameters allConstrainedNuisances'
 
