@@ -132,9 +132,7 @@ if __name__=='__main__':
     #myjob=RebinShape('histos___BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01.root',[1,2,3,4])
     myconfig=config(confpath)
     for conf in myconfig.config:
-
         print '---',conf,'---'
-        if not 'vbf' in conf:continue
         filelist=glob.glob(myconfig.config[conf]['path'])
         print 'nfiles=',len(filelist)
         bins=myconfig.config[conf]['bintofix']
