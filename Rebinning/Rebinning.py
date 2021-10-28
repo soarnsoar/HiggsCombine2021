@@ -48,16 +48,25 @@ class RebinShape:
         #1==1
         self.xToRemove=[]
         for i in self.BinsForRebinning:
-            x=self.histolist[0].GetBinLowEdge(i+1)
+            x=self.histolist[0].GetBinLowEdge(i+1) ##Right Edge
+            #x=self.histolist[0].GetBinLowEdge(i) ##Left Edge
+
             self.xToRemove.append(x)
         self.newbinning=[]
         for b in self.oldbinning:
             if b in self.xToRemove:continue
             self.newbinning.append(float(b))
+        if not self.oldbinning[-1] in self.newbinning: ##if total range is changed -> recover
+            self.newbinning.pop()
+            self.newbinning.append(self.oldbinning[-1])
         print self.newbinning
     def doRebinning(self):
         for h in self.histolist:
+            integral_before=h.Integral()
             h=h.Rebin(len(self.newbinning)-1, h.GetName(),array(self.newbinning))
+            integral_after=h.Integral()
+            if integral_before!=integral_after and (integral_after-integral_before)/integral_after > 0.00001:
+                print h.GetName(),integral_before,integral_after,(integral_after-integral_before)
         self.mytfile.Write()
         self.mytfile.Close()
 
@@ -134,7 +143,7 @@ if __name__=='__main__':
     for conf in myconfig.config:
 
         print '---',conf,'---'
-        if not 'vbf' in conf:continue
+        
         filelist=glob.glob(myconfig.config[conf]['path'])
         print 'nfiles=',len(filelist)
         bins=myconfig.config[conf]['bintofix']
