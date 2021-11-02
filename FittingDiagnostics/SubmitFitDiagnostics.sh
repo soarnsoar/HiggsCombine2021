@@ -36,6 +36,22 @@ for Year in ${ARR_Year[@]};do
 		    Workspace=../../../Workspaces_${Year}/${model}/hwwlnuqq_${Region}_${Mass}_${Year}.root
 		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*},rgx{deltaTheory.*xsec},rgx{.*_stat} --setParameterRanges r=0,10&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
 		    cd -
+		    ##not freeze my stat
+		    WORKDIR=FitDiagnosticsDir_Sig${sig}_${Region}_${Mass}_${Year}_${model}_NOFREEZEMYSTAT
+		    mkdir -p ${WORKDIR}
+		    cd ${WORKDIR}
+		    Workspace=../../../Workspaces_${Year}/${model}/hwwlnuqq_${Region}_${Mass}_${Year}.root
+		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*},rgx{deltaTheory.*xsec} --setParameterRanges r=0,10&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
+		    cd -
+
+
+		    ##not freeze my stat__cminDefaultMinimizerStrategy0
+		    WORKDIR=FitDiagnosticsDir_Sig${sig}_${Region}_${Mass}_${Year}_${model}_NOFREEZEMYSTAT__cminDefaultMinimizerStrategy0
+		    mkdir -p ${WORKDIR}
+		    cd ${WORKDIR}
+		    Workspace=../../../Workspaces_${Year}/${model}/hwwlnuqq_${Region}_${Mass}_${Year}.root
+		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*},rgx{deltaTheory.*xsec} --setParameterRanges r=0,10 --cminDefaultMinimizerStrategy 0&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
+		    cd -
 		done
 	    done
 	done
