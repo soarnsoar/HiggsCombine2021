@@ -94,10 +94,25 @@ def getGraph(hist,shift):
    return gr
 """
 
+Nnostat=0
+print "prefit.getSize()",prefit.getSize()
+print "fpf_s.getSize()",fpf_s.getSize()
+for i in range(fpf_s.getSize()):
+    _nuis = fpf_s.at(i)
+    name   = _nuis.GetName();
+    print name
+    if 'prop' in name : continue
+    if name.endswith('_stat') : continue
+    if not prefit.find(name):continue
+    Nnostat+=1
+print Nnostat
 # Also make histograms for pull distributions:
-hist_fit_b  = ROOT.TH1F("fit_b"   ,"B-only fit Nuisances;;%s "%title,prefit.getSize(),0,prefit.getSize())
-hist_fit_s  = ROOT.TH1F("fit_s"   ,"S+B fit Nuisances   ;;%s "%title,prefit.getSize(),0,prefit.getSize())
-hist_prefit = ROOT.TH1F("prefit_nuisancs","Prefit Nuisances    ;;%s "%title,prefit.getSize(),0,prefit.getSize())
+#hist_fit_b  = ROOT.TH1F("fit_b"   ,"B-only fit Nuisances;;%s "%title,prefit.getSize(),0,prefit.getSize())
+#hist_fit_s  = ROOT.TH1F("fit_s"   ,"S+B fit Nuisances   ;;%s "%title,prefit.getSize(),0,prefit.getSize())
+#hist_prefit = ROOT.TH1F("prefit_nuisancs","Prefit Nuisances    ;;%s "%title,prefit.getSize(),0,prefit.getSize())
+hist_fit_b  = ROOT.TH1F("fit_b"   ,"B-only fit Nuisances;;%s "%title,Nnostat,0,Nnostat)
+hist_fit_s  = ROOT.TH1F("fit_s"   ,"S+B fit Nuisances   ;;%s "%title,Nnostat,0,Nnostat)
+hist_prefit = ROOT.TH1F("prefit_nuisancs","Prefit Nuisances    ;;%s "%title,Nnostat,0,Nnostat)
 # Store also the *asymmetric* uncertainties
 gr_fit_b    = ROOT.TGraphAsymmErrors(); gr_fit_b.SetTitle("fit_b_g")
 gr_fit_s    = ROOT.TGraphAsymmErrors(); gr_fit_s.SetTitle("fit_b_s")
@@ -110,7 +125,9 @@ for i in range(fpf_s.getSize()):
     name   = nuis_s.GetName();
     nuis_b = fpf_b.find(name)
     nuis_p = prefit.find(name)
-
+    print name
+    if 'prop' in name : continue
+    if name.endswith('_stat') : continue
     # keeps information to be printed about the nuisance parameter
     row = []
 
@@ -328,6 +345,7 @@ elif options.format == 'html':
 
 names = table.keys()
 names.sort()
+print "len(names)",len(names)
 highlighters = { 1:highlight, 2:morelight };
 for n in names:
     v = table[n]
@@ -388,7 +406,7 @@ if options.plotfile:
     hist_prefit.Draw("E2")
     hist_prefit.Draw("histsame")
     gr_fit_b.Draw("EPsame")
-    gr_fit_s.Draw("EPsame")
+    #gr_fit_s.Draw("EPsame")
     canvas_nuis.SetGridx()
     canvas_nuis.RedrawAxis()
     canvas_nuis.RedrawAxis('g')
@@ -397,14 +415,21 @@ if options.plotfile:
     leg.SetTextFont(42)
     leg.AddEntry(hist_prefit,"Prefit","FL")
     leg.AddEntry(gr_fit_b,"B-only fit","EPL")
-    leg.AddEntry(gr_fit_s,"S+B fit"   ,"EPL")
+    #leg.AddEntry(gr_fit_s,"S+B fit"   ,"EPL")
     leg.Draw()
     fout.WriteTObject(canvas_nuis)
     canvas_pferrs = ROOT.TCanvas("post_fit_errs", "post_fit_errs", 900, 600)
-    for b in range(1,hist_fit_e_s.GetNbinsX()+1): 
-      hist_fit_e_s.SetBinContent(b,hist_fit_s.GetBinError(b)/hist_prefit.GetBinError(b))
+    #print "hist_fit_e_s.GetNbinsX()+1",hist_fit_e_s.GetNbinsX()+1
+    #for b in range(1,hist_fit_e_s.GetNbinsX()+1):
+    
+    for b in range(1,hist_fit_e_s.GetNbinsX()+1):
+      #print b
+      #print name  
+      #hist_fit_e_s.SetBinContent(b,hist_fit_s.GetBinError(b)/hist_prefit.GetBinError(b))
+      #print "hist_fit_b.GetBinError(b)",hist_fit_b.GetBinError(b)
+      #print "hist_prefit.GetBinError(b)",hist_prefit.GetBinError(b)
       hist_fit_e_b.SetBinContent(b,hist_fit_b.GetBinError(b)/hist_prefit.GetBinError(b))
-      hist_fit_e_s.SetBinError(b,0)
+      #hist_fit_e_s.SetBinError(b,0)
       hist_fit_e_b.SetBinError(b,0)
     hist_fit_e_s.SetFillColor(ROOT.kRed)
     hist_fit_e_b.SetFillColor(ROOT.kBlue)
@@ -416,12 +441,13 @@ if options.plotfile:
     hist_fit_e_b.SetMaximum(1.5)
     hist_fit_e_b.SetMinimum(0)
     hist_fit_e_b.Draw("bar")
-    hist_fit_e_s.Draw("barsame")
+    hist_fit_e_b.SetStats(0)
+    #hist_fit_e_s.Draw("barsame")
     leg_rat=ROOT.TLegend(0.6,0.7,0.89,0.89)
     leg_rat.SetFillColor(0)
     leg_rat.SetTextFont(42)
     leg_rat.AddEntry(hist_fit_e_b,"B-only fit","F")
-    leg_rat.AddEntry(hist_fit_e_s,"S+B fit"   ,"F")
+    #leg_rat.AddEntry(hist_fit_e_s,"S+B fit"   ,"F")
     leg_rat.Draw()
     line_one = ROOT.TLine(0,1,hist_fit_e_s.GetXaxis().GetXmax(),1)
     line_one.SetLineColor(1); line_one.SetLineStyle(2); line_one.SetLineWidth(2)
