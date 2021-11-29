@@ -1,5 +1,7 @@
 import os
-
+#__BoostedVBFDNN_0.3_SR_NoMEKDCut
+#___ResolvedVBFDNN_0.15__SR_NoMEKDCut
+#___ResolvedVBFDNN_0.25__TOP_NoMEKDCut
 ##---------------------------------Card Config----------------------##
 def GetCardPath(mass,year,WP,isDNN=True):
     cats={}
@@ -7,13 +9,13 @@ def GetCardPath(mass,year,WP,isDNN=True):
     year=str(year)
     if isDNN:
         ##--Boosted
-        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_SB_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_TOP_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_SR_NoMEKDCut/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_"+WP+"_SB_NoMEKDCut/Event/datacard.txt"
+        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_"+WP+"_TOP_NoMEKDCut/Event/datacard.txt"
+        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_"+WP+"_SR_NoMEKDCut/WW_mass/datacard.txt"
         ##--Resolved
-        cats["hww_lqq_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__SB_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__TOP_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_vbf_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__SR_NoMEKDCut/WW_mass/datacard.txt"
+        cats["hww_lqq_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN_"+WP+"__SB_NoMEKDCut/Event/datacard.txt"
+        cats["hww_lqq_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN_"+WP+"__TOP_NoMEKDCut/Event/datacard.txt"
+        cats["hww_lqq_vbf_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN_"+WP+"__SR_NoMEKDCut/WW_mass/datacard.txt"
     else:
         print 1/0
         
@@ -38,9 +40,11 @@ def GetCombineCardCommands(mass,year,bst,WP,isDNN=True):
         cats.update(cats2017)
         cats.update(cats2018)
     else:
+        print "year=",year
         cats=GetCardPath(mass,year,WP,isDNN)
     
-
+    print "cats=",cats
+    print "bst=",bst
     command="combineCards.py -S "
     for cat in cats:
         if bst!="all":
@@ -72,7 +76,7 @@ if __name__ == '__main__':
 
     
 
-    cc_command=GetCombineCardCommands(mass,year,wp,bst,dnn)+'> combine_hwwlnuqq_'+bst+'_'+wp+'_'+mass+'_'+year+'.txt'
+    cc_command=GetCombineCardCommands(mass,year,bst,wp,dnn)+'> combine_hwwlnuqq_'+bst+'_'+wp+'_'+mass+'_'+year+'.txt'
 
     
     #Export(workdir,command,jobname,submit,ncpu)
