@@ -1,7 +1,7 @@
 import os
-#__BoostedVBFDNN_0.3_SR_NoMEKDCut
-#___ResolvedVBFDNN_0.15__SR_NoMEKDCut
-#___ResolvedVBFDNN_0.25__TOP_NoMEKDCut
+
+#__BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01__cut_0.0
+#___ResolvedGGFDNN__SR_MEKDTAG_M400_C0.001__cut0.0
 ##---------------------------------Card Config----------------------##
 def GetCardPath(mass,year,WP,isDNN=True):
     cats={}
@@ -9,13 +9,15 @@ def GetCardPath(mass,year,WP,isDNN=True):
     year=str(year)
     if isDNN:
         ##--Boosted
-        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_"+WP+"_SB_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_"+WP+"_TOP_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_"+WP+"_SR_NoMEKDCut/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN__SB_MEKDTAG_M1500_C0.01__cut_/"+WP+"Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN__TOP_MEKDTAG_M1500_C0.01__cut_/"+WP+"Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN__SR_MEKDTAG_M1500_C0.01__cut_/"+WP+"/WW_mass/datacard.txt"
+
         ##--Resolved
-        cats["hww_lqq_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN_"+WP+"__SB_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN_"+WP+"__TOP_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_vbf_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN_"+WP+"__SR_NoMEKDCut/WW_mass/datacard.txt"
+        cats["hww_lqq_ggf_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_MEKDTAG_M400_C0.001__cut"+WP+"/Event/datacard.txt"
+        cats["hww_lqq_ggf_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_MEKDTAG_M400_C0.001__cut"+WP+"/Event/datacard.txt"
+        cats["hww_lqq_ggf_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_MEKDTAG_M400_C0.001__cut"+WP+"/WW_mass/datacard.txt"
+
     else:
         print 1/0
         
