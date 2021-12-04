@@ -9,8 +9,8 @@ def GetCardPath(mass,year,WP,isDNN=True):
     year=str(year)
     if isDNN:
         ##--Boosted
-        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN__SB_MEKDTAG_M1500_C0.01__cut_/"+WP+"Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN__TOP_MEKDTAG_M1500_C0.01__cut_/"+WP+"Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN__SB_MEKDTAG_M1500_C0.01__cut_/"+WP+"/Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN__TOP_MEKDTAG_M1500_C0.01__cut_/"+WP+"/Event/datacard.txt"
         cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN__SR_MEKDTAG_M1500_C0.01__cut_/"+WP+"/WW_mass/datacard.txt"
 
         ##--Resolved
