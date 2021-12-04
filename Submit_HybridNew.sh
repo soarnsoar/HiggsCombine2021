@@ -13,14 +13,14 @@ for MASS in ${ARR_MASS[@]};do
     for BST in ${ARR_BST[@]};do
 	for YEAR in ${ARR_YEAR[@]};do
 	    for WP in ${ARR_WP[@]};do
-		##--interference
-		#python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f floating
-		#python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f ggfonly
-		python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f vbfonly -w ${WP}
+		##--interference 
+		#python CondorSubmit_HybridNew.py -y ${YEAR} -m ${MASS} -b ${BST} -i -f floating
+		#python CondorSubmit_HybridNew.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f ggfonly
+		python CondorSubmit_HybridNew.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f vbfonly -w ${WP}
 		##--no interference
-		#python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f floating
-		#python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f ggfonly
-		python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f vbfonly -w ${WP}
+		#python CondorSubmit_HybridNew.py  -y ${YEAR} -m ${MASS} -b ${BST} -f floating
+		#python CondorSubmit_HybridNew.py  -y ${YEAR} -m ${MASS} -b ${BST} -f ggfonly
+		python CondorSubmit_HybridNew.py  -y ${YEAR} -m ${MASS} -b ${BST} -f vbfonly -w ${WP}
 	    done
 	done
     done
