@@ -3,11 +3,11 @@ import sys
 sys.path.insert(0, "python_tool/")
 from ExportShellCondorSetup import Export
 
-def AsymptoticLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,suffix=""):
+def HybridNewLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,suffix=""):
 
     if not interference: suffix+="_NoI"
     ##---1)WORKDIR
-    workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+mass+"__"+bst+"__"+wp+"__"+year+"/"+fvbf+'/'
+    workdir="WORKDIR/HybridNewLimits/"+suffix+"/"+mass+"__"+bst+"__"+wp+"__"+year+"/"+fvbf+'/'
     ##---2)input WS
     WSDIRpath=os.getcwd()+"/"+'Workspaces_'+year
     #if not interference: WSDIRpath+="_NoI"
@@ -30,18 +30,18 @@ def AsymptoticLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,suffix=""):
     #opt_minst="--cminDefaultMinimizerStrategy 0"
     opt_minst=""
 
-    ##---4)limit command
-    asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -m "+mass+" "+opt_fvbf+" "+opt_minst
-    #asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -m "+mass+" --run expected "+opt_fvbf
-    #asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -t -1 -m "+mass+" "+' --freezeParameters allConstrainedNuisances'
+    ##---4)limit command combine -d hwwlnuqq_Boosted_1000_2016.root --LHCmode LHC-limits  -M HybridNew
+    limit_command="combine -M HybridNew -d "+WSpath+" -m "+mass+" "+opt_fvbf+" "+opt_minst+" --LHCmode LHC-limits -T 500 --expectedFromGrid=0.5"
+    #limit_command="combine -M HybridNew -d "+WSpath+" -m "+mass+" --run expected "+opt_fvbf
+    #limit_command="combine -M HybridNew -d "+WSpath+" -t -1 -m "+mass+" "+' --freezeParameters allConstrainedNuisances'
 
     ##---5)outputdir
-    outputdir='AsymptoticLimits/'+year+'/model_indep/'+bst+'/'+wp+"/"+fvbf+'/'+suffix
+    outputdir='HybridNewLimits/'+year+'/model_indep/'+bst+'/'+wp+"/"+fvbf+'/'+suffix
     
     
-    commands=["cd "+os.getcwd(),'mkdir -p '+outputdir,'cd '+outputdir,asymplimit_command]
+    commands=["cd "+os.getcwd(),'mkdir -p '+outputdir,'cd '+outputdir,limit_command]
     command=';'.join(commands)    
-    jobname=os.getcwd()+'/'+workdir
+    jobname="HybridNewLimits"
     submit=True
     ncpu=1
 
@@ -82,6 +82,6 @@ if __name__ == '__main__':
         
 
 
-    workdir,command,jobname,submit,ncpu=AsymptoticLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,"model_indep")
+    workdir,command,jobname,submit,ncpu=HybridNewLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,"model_indep")
     Export(workdir,command,jobname,submit,ncpu)
     
