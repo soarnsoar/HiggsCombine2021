@@ -1,7 +1,6 @@
 import os
 
-#__BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01__cut_0.0
-#___ResolvedGGFDNN__SR_MEKDTAG_M400_C0.001__cut0.0
+#__BoostedGGFDNN_SR_MEKDTAG_M1500_C0.2     ___ResolvedGGFDNN__SB_MEKDTAG_M400_C0.2
 ##---------------------------------Card Config----------------------##
 def GetCardPath(mass,year,WP,isDNN=True):
     cats={}
@@ -9,14 +8,14 @@ def GetCardPath(mass,year,WP,isDNN=True):
     year=str(year)
     if isDNN:
         ##--Boosted
-        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_MEKDTAG_M1500_C0.01__cut_"+WP+"/Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_MEKDTAG_M1500_C0.01__cut_"+WP+"/Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01__cut_"+WP+"/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_MEKDTAG_M1500_C"+WP+"/Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_MEKDTAG_M1500_C"+WP+"/Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_MEKDTAG_M1500_C"+WP+"/WW_mass/datacard.txt"
 
         ##--Resolved
-        cats["hww_lqq_ggf_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_MEKDTAG_M400_C0.001__cut"+WP+"/Event/datacard.txt"
-        cats["hww_lqq_ggf_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_MEKDTAG_M400_C0.001__cut"+WP+"/Event/datacard.txt"
-        cats["hww_lqq_ggf_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_MEKDTAG_M400_C0.001__cut"+WP+"/WW_mass/datacard.txt"
+        cats["hww_lqq_ggf_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_MEKDTAG_M400_C"+WP+"/Event/datacard.txt"
+        cats["hww_lqq_ggf_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_MEKDTAG_M400_C"+WP+"/Event/datacard.txt"
+        cats["hww_lqq_ggf_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_MEKDTAG_M400_C"+WP+"/WW_mass/datacard.txt"
 
     else:
         print 1/0
