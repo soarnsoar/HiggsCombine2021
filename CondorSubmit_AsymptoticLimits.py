@@ -41,7 +41,7 @@ def AsymptoticLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,suffix=""):
     
     commands=["cd "+os.getcwd(),'mkdir -p '+outputdir,'cd '+outputdir,asymplimit_command]
     command=';'.join(commands)    
-    jobname=os.getcwd()+'/'+workdir
+    jobname="Asymptotic"
     submit=True
     ncpu=1
 
