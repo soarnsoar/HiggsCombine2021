@@ -12,9 +12,9 @@ for MASS in ${ARR_MASS[@]};do
 	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f ggfonly
 	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -i -f vbfonly
 	    ##--no interference
-	    #python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f floating
-	    #python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f ggfonly
-	    #python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f vbfonly
+	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f floating
+	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f ggfonly
+	    python CondorSubmit_AsymptoticLimits.py  -y ${YEAR} -m ${MASS} -b ${BST} -f vbfonly
 
 	done
     done
