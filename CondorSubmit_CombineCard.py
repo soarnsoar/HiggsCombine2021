@@ -9,24 +9,24 @@ def GetCardPath(mass,year,isDNN=True):
         ##--Boosted
         cats["hww_lqq_bst_all_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_bst_all_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_bst_all_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_NoMEKDCut/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_all_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_NoMEKDCut/Event/datacard.txt"
         
         
         ##--Resolved
         cats["hww_lqq_all_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_all_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_all_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_NoMEKDCut/WW_mass/datacard.txt"
+        cats["hww_lqq_all_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_NoMEKDCut/Event/datacard.txt"
 
     else:
         ##--Boosted
         cats["hww_lqq_bst_all_sb_"+year]="Datacard_M"+mass+"/__BoostedaLL_SB_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_bst_all_top_"+year]="Datacard_M"+mass+"/__BoostedaLL_TOP_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_bst_all_"+year]="Datacard_M"+mass+"/__BoostedaLL_SR_NoMEKDCut/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_all_"+year]="Datacard_M"+mass+"/__BoostedaLL_SR_NoMEKDCut/Event/datacard.txt"
         ##--Resolved
         
         cats["hww_lqq_all_sb_"+year]="Datacard_M"+mass+"/___ResolvedaLL__SB_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_all_top_"+year]="Datacard_M"+mass+"/___ResolvedaLL__TOP_NoMEKDCut/Event/datacard.txt"
-        cats["hww_lqq_all_"+year]="Datacard_M"+mass+"/___ResolvedaLL__SR_NoMEKDCut/WW_mass/datacard.txt"
+        cats["hww_lqq_all_"+year]="Datacard_M"+mass+"/___ResolvedaLL__SR_NoMEKDCut/Event/datacard.txt"
 
         
     return cats
