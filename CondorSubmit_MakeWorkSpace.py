@@ -4,7 +4,7 @@ sys.path.insert(0, "python_tool/")
 from ExportShellCondorSetup import Export
 
 
-def MakeWorkSpaceCommand(year,mass,bst,wp,interference,POlist,model_alias=""):
+def MakeWorkSpaceCommand(year,mass,bst,mela_m,c,wp,interference,POlist,model_alias=""):
     year=str(year)
     mass=str(mass)
     #model_alias="_".join(POlist)
@@ -14,9 +14,10 @@ def MakeWorkSpaceCommand(year,mass,bst,wp,interference,POlist,model_alias=""):
     #    workdir="WORKDIR/MakeWorkSpace/"+mass+"__"+bst+"__"+year
     #else:
     #    workdir="WORKDIR/MakeWorkSpace/"+mass+"__"+bst+"__"+year+"__"+model_alias
-    workdir="WORKDIR/MakeWorkSpace/"+model_alias+'/'+wp+"/"+("__".join([mass,bst,year]))
+    workdir="WORKDIR/MakeWorkSpace/"+model_alias+'/'+'M'+mela_m+'__'+'C_'+c+'/'+wp+"/"+("__".join([mass,bst,year]))
     ##---2)input card path #combine_hwwlnuqq_Boosted_0.6_1000_2016
-    combinecard_path="Datacards_"+year+"/combine_hwwlnuqq_"+bst+'_'+wp+"_"+mass+"_"+year+".txt"
+    #combinecard_path="Datacards_"+year+"/combine_hwwlnuqq_"+bst+'_'+wp+"_"+mass+"_"+year+".txt"
+    combinecard_path="Datacards_"+year+"/combine_hwwlnuqq_"+bst+'_M'+mela_m+"_"+"c"+c+"_"+wp+'_'+mass+'_'+year+'.txt'
     ##---3)model python
     modelpy="HiggsAnalysis.CombinedLimit.HiggsCombinePhysicsModel.XWWInterference_jhchoi:XWW"
     ##---4)Physics Options
@@ -25,7 +26,7 @@ def MakeWorkSpaceCommand(year,mass,bst,wp,interference,POlist,model_alias=""):
     for _PO in POlist:
         PO+=" --PO "+_PO
     ##---5)WS output paths
-    WSDIRpath='Workspaces_'+year+"/"+model_alias+'/'+wp
+    WSDIRpath='Workspaces_'+year+"/"+model_alias+'/'+'M'+mela_m+'__'+'C_'+c+'/'+wp
 
     
     WSpath=WSDIRpath+"/hwwlnuqq_"+("_".join([bst,mass,year]))+".root"
@@ -33,7 +34,8 @@ def MakeWorkSpaceCommand(year,mass,bst,wp,interference,POlist,model_alias=""):
     ws_command="text2workspace.py "+combinecard_path+" -P "+modelpy+" "+PO+" -o "+WSpath
     commands=["cd "+os.getcwd(),'mkdir -p '+WSDIRpath,ws_command]
     command=';'.join(commands)    
-    jobname=workdir
+    #jobname=workdir
+    jobname='MakeWS'
     submit=True
     ncpu=1
 
@@ -52,6 +54,10 @@ if __name__ == '__main__':
     parser.add_option("-w", "--wp", dest="wp" , help="bst")
     parser.add_option("-i", "--interference", dest="interference" ,default=False  , action="store_true")
     parser.add_option("-p", "--PO", dest="PO" ,default=False)
+
+    parser.add_option("-c", "--c", dest="c" , help="c")
+    parser.add_option("-a", "--mela_m", dest="mela_m" , help="mela_m")
+
     
     (options, args) = parser.parse_args()
 
@@ -64,9 +70,10 @@ if __name__ == '__main__':
         POlist=options.PO.split(',')
     else:
         POlist=[]
-
+    c=options.c
+    mela_m=options.mela_m
 
     
-        
-    workdir,command,jobname,submit,ncpu=MakeWorkSpaceCommand(year,mass,bst,wp,interference,POlist,"model_indep")
+    #def MakeWorkSpaceCommand(year,mass,bst,mela_m,c,wp,interference,POlist,model_alias=""):
+    workdir,command,jobname,submit,ncpu=MakeWorkSpaceCommand(year,mass,bst,mela_m,c,wp,interference,POlist,"model_indep")
     Export(workdir,command,jobname,submit,ncpu)

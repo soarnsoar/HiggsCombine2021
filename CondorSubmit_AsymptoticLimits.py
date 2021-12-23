@@ -3,11 +3,13 @@ import sys
 sys.path.insert(0, "python_tool/")
 from ExportShellCondorSetup import Export
 
-def AsymptoticLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,suffix=""):
+def AsymptoticLimitCommand(year,mass,bst,mela_m,c,wp,interference,fvbf,POlist,suffix=""):
 
     if not interference: suffix+="_NoI"
     ##---1)WORKDIR
-    workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+mass+"__"+bst+"__"+wp+"__"+year+"/"+fvbf+'/'
+    #workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+mass+"__"+bst+"__"+wp+"__"+year+"/"+fvbf+'/'
+    workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+'M'+mela_m+"_C"+c+'/'+mass+"__"+bst+"__"+wp+"__"+year+"/"+fvbf+'/'
+
     ##---2)input WS
     WSDIRpath=os.getcwd()+"/"+'Workspaces_'+year
     #if not interference: WSDIRpath+="_NoI"
@@ -15,16 +17,16 @@ def AsymptoticLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,suffix=""):
 
     #suffix="_".join(POlist)
     #Workspaces_2016/model_indep/0.0/hwwlnuqq_Boosted_1000_2016.root
-    WSpath=WSDIRpath+"/"+suffix+'/'+wp+"/hwwlnuqq_"+("_".join([bst,mass,year]))+".root"
+    WSpath=WSDIRpath+"/"+suffix+'/'+'M'+mela_m+'__'+'C_'+c+'/'+wp+"/hwwlnuqq_"+("_".join([bst,mass,year]))+".root"
     #WSpath=WSDIRpath+"/hwwlnuqq_"+bst+"_"+mass+"_"+year+".root"
     ##--3)fvbf options
     opt_fvbf="-------"
     if 'ggfonly' in fvbf:
-        opt_fvbf="--freezeParameters fvbf,rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} --setParameters fvbf=0  --rAbsAcc 0"
+        opt_fvbf="--freezeParameters fvbf --setParameters fvbf=0  --rAbsAcc 0"
     if 'vbfonly' in fvbf:
-        opt_fvbf="--freezeParameters fvbf,rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} --setParameters fvbf=1  --rAbsAcc 0"
+        opt_fvbf="--freezeParameters fvbf --setParameters fvbf=1  --rAbsAcc 0"
     if 'floating' in fvbf:
-        opt_fvbf="--freezeParameters rgx{prop_.*qqWWqq.*},rgx{prop_.*ggWW.*},rgx{prop_.*ggH_hww.*},rgx{prop_.*qqH_hww.*} --rAbsAcc 0"
+        opt_fvbf="--freezeParameters --rAbsAcc 0"
     
     ##--3-1) option for fast fitting
     #opt_minst="--cminDefaultMinimizerStrategy 0"
@@ -36,7 +38,7 @@ def AsymptoticLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,suffix=""):
     #asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -t -1 -m "+mass+" "+' --freezeParameters allConstrainedNuisances'
 
     ##---5)outputdir
-    outputdir='AsymptoticLimits/'+year+'/model_indep/'+bst+'/'+wp+"/"+fvbf+'/'+suffix
+    outputdir='AsymptoticLimits/'+year+'/model_indep/'+"/"+'M'+mela_m+"_C"+c+'/'+bst+'/'+wp+"/"+fvbf+'/'+suffix
     
     
     commands=["cd "+os.getcwd(),'mkdir -p '+outputdir,'cd '+outputdir,asymplimit_command]
@@ -61,6 +63,10 @@ if __name__ == '__main__':
     parser.add_option("-i", "--interference", dest="interference" ,default=False  , action="store_true")
     parser.add_option("-f", "--fvbf", default=False,dest="fvbf")
     parser.add_option("-p", "--PO", default=False,dest="PO")
+
+    parser.add_option("-c", "--c", dest="c" , help="c")
+    parser.add_option("-a", "--mela_m", dest="mela_m" , help="mela_m")
+
     
     (options, args) = parser.parse_args()
 
@@ -69,6 +75,9 @@ if __name__ == '__main__':
     bst=options.bst
     wp=options.wp
     interference=bool(options.interference)
+    c=options.c
+    mela_m=options.mela_m
+
     print 'interference',interference
     if options.fvbf:
         fvbf=options.fvbf
@@ -82,6 +91,6 @@ if __name__ == '__main__':
         
 
 
-    workdir,command,jobname,submit,ncpu=AsymptoticLimitCommand(year,mass,bst,wp,interference,fvbf,POlist,"model_indep")
+    workdir,command,jobname,submit,ncpu=AsymptoticLimitCommand(year,mass,bst,mela_m,c,wp,interference,fvbf,POlist,"model_indep")
     Export(workdir,command,jobname,submit,ncpu)
     
