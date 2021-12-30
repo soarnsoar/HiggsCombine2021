@@ -4,7 +4,7 @@ echo "--"
 while [ 1 ];do
     N=`ls done_cpcard_201*.token|wc -l`
     echo "N="$N
-    if [ $N -eq 3 ];then
+    if [ $N -eq 2 ];then
         break
     fi
     echo "sleep 180@cpcards"
