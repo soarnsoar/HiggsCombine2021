@@ -6,6 +6,7 @@ ARR_MASS=(115 120 124 125 126 130 135 140 145 150 155 160 165 170 175 180 190 20
 ARR_BST=(Boosted Resolved)
 #ARR_BST=(Boosted)
 ARR_YEAR=(2016 2017 2018)
+#ARR_YEAR=(2016 2017)
 #ARR_YEAR=(2016)
 #MELA_C_BOOST=['0.0001','0.0002','0.0004','0.0006','0.0008',\
 #    '0.001','0.002','0.004','0.006','0.008',\
@@ -27,14 +28,14 @@ for MASS in ${ARR_MASS[@]};do
 	for WP in ${ARR_WP[@]};do
 	    echo ${WP}
 	    BST=Boosted
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 1500 -c 0.0001
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 900 -c 0.001
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.02
+	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 1500 -c 0.002
+	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 900 -c 0.02
+	    #python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.02
 
 	    BST=Resolved
 
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.005
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 200 -c 0.0008
+	    #python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.005
+	    #python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 200 -c 0.0008
 	done
     done
 done

@@ -39,7 +39,7 @@ def CheckLog(logfile, jid):
 
 ##-----START----##
 logger=open("logs/ResubLog.txt","w")
-DIRLIST=glob.glob("WORKDIR/AsymptoticLimits/*/*/")
+DIRLIST=glob.glob("WORKDIR/*Limits/*/*/")
 
 #ncurrentjob=int(GetN_RUNNING_IDLE_JobsByName('mkShapes'))
 

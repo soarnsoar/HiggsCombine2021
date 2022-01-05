@@ -24,14 +24,14 @@ for MASS in ${ARR_MASS[@]};do
 
             echo ${WP}
             BST=Boosted
-            python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 1500 -c 0.0001
-            python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 900 -c 0.001
-            python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.02
+            python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 1500 -c 0.002
+            python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 900 -c 0.02
+            #python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.02
 
             BST=Resolved
 
-            python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.005
-            python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 200 -c 0.0008
+            #python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.005
+            #python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 200 -c 0.0008
 
 	    
 	    #python CondorSubmit_MakeWorkSpace.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} -c --mela_m
