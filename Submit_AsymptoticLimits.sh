@@ -19,8 +19,8 @@ for MASS in ${ARR_MASS[@]};do
 	for WP in ${ARR_WP[@]};do
 	    ##--interference
 	    BST=Boosted
-            python CondorSubmit_AsymptoticLimits.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 1500 -c 0.002 -f ggfonly
-            python CondorSubmit_AsymptoticLimits.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 900 -c 0.02 -f ggfonly
+            python CondorSubmit_AsymptoticLimits.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 1500 -c 0.05 -f ggfonly
+            python CondorSubmit_AsymptoticLimits.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 900 -c 0.2 -f ggfonly
             #python CondorSubmit_AsymptoticLimits.py -y ${YEAR} -m ${MASS} -b ${BST} -w ${WP} --mela_m 400 -c 0.02 -f ggfonly
 
             BST=Resolved

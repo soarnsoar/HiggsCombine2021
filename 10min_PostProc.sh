@@ -11,7 +11,7 @@ while [ 1 ];do
     sleep 180
 
 done
-python Tools/FixRateParams_condor.py &> logs/FixRateParams_condor.log
+#python Tools/FixRateParams_condor.py &> logs/FixRateParams_condor.log
 
 ##--CombineProc--##
 while [ 1 ];do
@@ -23,7 +23,7 @@ while [ 1 ];do
     sleep 180
 done
 
-source Submit_CombineCard.sh &> logs/Submit_CombineCard.log
+#source Submit_CombineCard.sh &> logs/Submit_CombineCard.log
 ##---CombineCard
 while [ 1 ];do
     N=`ls WORKDIR/CombineCard/*/*jid|wc -l`
