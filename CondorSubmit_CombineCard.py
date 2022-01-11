@@ -6,31 +6,49 @@ def GetCardPath(mass,year,isDNN=True):
     mass=str(mass)
     year=str(year)
     if isDNN:
+        dict_MEKDWP={
+            'Boosted':{
+                '2016':'M1500_C0.05',
+                '2017':'M900_C0.2',
+                '2018':'M1500_C0.05',
+            },
+            'Resolved':{
+                '2016':'M200_C0.0008',
+                '2017':'M200_C0.0008',
+                '2018':'M200_C0.0008',
+            }
+        }
         ##--Boosted
-        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_MEKDTAG_M1500_C0.01/Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_MEKDTAG_M1500_C0.01/Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01/WW_mass/datacard.txt"
+        #M1500_C0.05
+        #M900_C0.2
+        #M1500_C0.05
+        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_MEKDTAG_"+dict_MEKDWP['Boosted'][year]+"/Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_MEKDTAG_"+dict_MEKDWP['Boosted'][year]++"/Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_MEKDTAG_"+dict_MEKDWP['Boosted'][year]++"/WW_mass/datacard.txt"
         
         cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_SB_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_TOP_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_SR_NoMEKDCut/WW_mass/datacard.txt"
         
-        cats["hww_lqq_bst_untag_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_UNTAGGED_M1500_C0.01/Event/datacard.txt"
-        cats["hww_lqq_bst_untag_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_UNTAGGED_M1500_C0.01/Event/datacard.txt"
-        cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_UNTAGGED_M1500_C0.01/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_untag_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_UNTAGGED_"+dict_MEKDWP['Boosted'][year]++"/Event/datacard.txt"
+        cats["hww_lqq_bst_untag_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_UNTAGGED_"+dict_MEKDWP['Boosted'][year]++"/Event/datacard.txt"
+        cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_UNTAGGED_"+dict_MEKDWP['Boosted'][year]++"/WW_mass/datacard.txt"
         
         ##--Resolved
-        cats["hww_lqq_ggf_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_MEKDTAG_M400_C0.0025/Event/datacard.txt"
-        cats["hww_lqq_ggf_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_MEKDTAG_M400_C0.0025/Event/datacard.txt"
-        cats["hww_lqq_ggf_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_MEKDTAG_M400_C0.0025/WW_mass/datacard.txt"
+        #M200_C0.0008
+        #M200_C0.0008
+        #M200_C0.0008
+        cats["hww_lqq_ggf_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_MEKDTAG_"+dict_MEKDWP['Resolved'][year]+"/Event/datacard.txt"
+        cats["hww_lqq_ggf_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_MEKDTAG_"+dict_MEKDWP['Resolved'][year]+"/Event/datacard.txt"
+        cats["hww_lqq_ggf_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_MEKDTAG_"+dict_MEKDWP['Resolved'][year]+"/WW_mass/datacard.txt"
         
         cats["hww_lqq_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__SB_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__TOP_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_vbf_"+year]="Datacard_M"+mass+"/___ResolvedVBFDNN__SR_NoMEKDCut/WW_mass/datacard.txt"
         
-        cats["hww_lqq_untag_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_UNTAGGED_M400_C0.0025/Event/datacard.txt"
-        cats["hww_lqq_untag_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_UNTAGGED_M400_C0.0025/Event/datacard.txt"
-        cats["hww_lqq_untag_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_UNTAGGED_M400_C0.0025/WW_mass/datacard.txt"
+        cats["hww_lqq_untag_sb_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SB_UNTAGGED_"+dict_MEKDWP['Resolved'][year]+"/Event/datacard.txt"
+        cats["hww_lqq_untag_top_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__TOP_UNTAGGED_"+dict_MEKDWP['Resolved'][year]+"/Event/datacard.txt"
+        cats["hww_lqq_untag_"+year]="Datacard_M"+mass+"/___ResolvedGGFDNN__SR_UNTAGGED_"+dict_MEKDWP['Resolved'][year]+"/WW_mass/datacard.txt"
     else:
         ##--Boosted
         cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGF_SB_MEKDTAG_M1500_C0.01/Event/datacard.txt"
