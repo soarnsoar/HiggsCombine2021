@@ -23,16 +23,16 @@ def GetCardPath(mass,year,isDNN=True):
         #M900_C0.2
         #M1500_C0.05
         cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_MEKDTAG_"+dict_MEKDWP['Boosted'][year]+"/Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_MEKDTAG_"+dict_MEKDWP['Boosted'][year]++"/Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_MEKDTAG_"+dict_MEKDWP['Boosted'][year]++"/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_MEKDTAG_"+dict_MEKDWP['Boosted'][year]+"/Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_MEKDTAG_"+dict_MEKDWP['Boosted'][year]+"/WW_mass/datacard.txt"
         
         cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_SB_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_TOP_NoMEKDCut/Event/datacard.txt"
         cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedVBFDNN_SR_NoMEKDCut/WW_mass/datacard.txt"
         
-        cats["hww_lqq_bst_untag_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_UNTAGGED_"+dict_MEKDWP['Boosted'][year]++"/Event/datacard.txt"
-        cats["hww_lqq_bst_untag_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_UNTAGGED_"+dict_MEKDWP['Boosted'][year]++"/Event/datacard.txt"
-        cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_UNTAGGED_"+dict_MEKDWP['Boosted'][year]++"/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_untag_sb_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SB_UNTAGGED_"+dict_MEKDWP['Boosted'][year]+"/Event/datacard.txt"
+        cats["hww_lqq_bst_untag_top_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_TOP_UNTAGGED_"+dict_MEKDWP['Boosted'][year]+"/Event/datacard.txt"
+        cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/__BoostedGGFDNN_SR_UNTAGGED_"+dict_MEKDWP['Boosted'][year]+"/WW_mass/datacard.txt"
         
         ##--Resolved
         #M200_C0.0008
