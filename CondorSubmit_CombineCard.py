@@ -142,6 +142,7 @@ if __name__ == '__main__':
     command=';'.join(commands)
     
     jobname=workdir
+    jobname='CombineDatacards'
     submit=True
     ncpu=1
 
