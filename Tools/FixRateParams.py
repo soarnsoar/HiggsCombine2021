@@ -2,7 +2,8 @@
 
 ##---scan all datacards
 import glob
-DCLIST=glob.glob('Datacards_2016/Datacard_M1000/__BoostedGGFDNN_SR_UNTAGGED_M1500_C0.01/Event/datacard.txt')
+#DCLIST=glob.glob('Datacards_2016/Datacard_M1000/__BoostedGGFDNN_SR_UNTAGGED_M1500_C0.01/Event/datacard.txt')
+DCLIST=glob.glob('Datacards_*/*/*/*/*.txt')
 print "nDC=",len(DCLIST)
 
 ##--fix
