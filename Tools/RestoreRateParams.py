@@ -2,7 +2,8 @@
 
 ##---scan all datacards
 import glob
-DCLIST=glob.glob('Datacards_2016/Datacard_M1000/__BoostedGGFDNN_SR_UNTAGGED_M1500_C0.01/Event/datacard.txt')
+#DCLIST=glob.glob('Datacards_2016/Datacard_M1000/__BoostedGGFDNN_SR_UNTAGGED_M1500_C0.01/Event/datacard.txt')
+DCLIST=glob.glob('Datacards_*/*/*/*/*.txt')
 print "nDC=",len(DCLIST)
 
 ##--fix
@@ -13,9 +14,9 @@ for DC in DCLIST:
     lines=f.readlines()
     for line in lines:
         
-        if ("rateParam" in line) and not ('1 [0,10]' in line):
+        if ("rateParam" in line) and ('1 [0.5,1.5]' in line):
             #Wjetsnorm_Boosted_GGFDNN0_2016                              rateParam                __BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01       Wjets0j                  1.0000
-            newline_inlist=line.split()[:-1]+['1 [0,10]\n']
+            newline_inlist=line.split()[:-1]+['\n']
             line='  '.join(newline_inlist)
             #print line
         fnew.write(line)
