@@ -9,6 +9,7 @@ import HiggsAnalysis.CombinedLimit.calculate_pulls as CP
 
 ##---jhchoi---##
 dict_large_uncer={}
+dict_bonlymodel_nonzero={}
 ##---[END]jhchoi---##
 
 
@@ -238,6 +239,8 @@ for i in range(fpf_s.getSize()):
                 elif options.show_all_parameters:
                     flag = True
                 print name,valShift
+                if valShift!=0 and fit_name=='b':
+                    dict_bonlymodel_nonzero[name]=valShift
     # end of loop over s and b
 
     row += [ "%+4.2f"  % fit_s.correlation(name, options.poi) ]
@@ -434,5 +437,10 @@ if options.plotfile:
    
 
 #print dict_large_uncer
+print "---Large uncertainty---"
 for n in dict_large_uncer:
-    print n,dict_large_uncer[n]['up'],dict_large_uncer[n]['down']
+    print n,'\t',dict_large_uncer[n]['up'],'\t',dict_large_uncer[n]['down']
+print "---non zero bonly model's nuisance---"
+for n in sorted(dict_bonlymodel_nonzero):
+    #print n,'\t',dict_bonlymodel_nonzero[n]
+    print n
