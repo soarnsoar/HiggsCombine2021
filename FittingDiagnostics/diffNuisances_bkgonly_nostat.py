@@ -9,6 +9,7 @@ import HiggsAnalysis.CombinedLimit.calculate_pulls as CP
 
 ##---jhchoi---##
 dict_large_uncer={}
+dict_uncertainty={}
 ##---[END]jhchoi---##
 
 
@@ -255,6 +256,9 @@ for i in range(fpf_s.getSize()):
                 elif options.show_all_parameters:
                     flag = True
                 print name,valShift
+                if fitname=='b':
+                    #True #dict_uncertainty
+                    dict_uncertainty[name]=sigShift
     # end of loop over s and b
 
     row += [ "%+4.2f"  % fit_s.correlation(name, options.poi) ]
@@ -461,3 +465,8 @@ if options.plotfile:
 #print dict_large_uncer
 for n in dict_large_uncer:
     print n,dict_large_uncer[n]['up'],dict_large_uncer[n]['down']
+
+#dict_uncertainty
+myf=open('sigma_variation.py')
+myf.write("sigma_var="+str(dict_uncertainty))
+myf.close()
