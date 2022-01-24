@@ -256,7 +256,7 @@ for i in range(fpf_s.getSize()):
                 elif options.show_all_parameters:
                     flag = True
                 print name,valShift
-                if fitname=='b':
+                if fit_name=='b':
                     #True #dict_uncertainty
                     dict_uncertainty[name]=sigShift
     # end of loop over s and b
@@ -467,6 +467,6 @@ for n in dict_large_uncer:
     print n,dict_large_uncer[n]['up'],dict_large_uncer[n]['down']
 
 #dict_uncertainty
-myf=open('sigma_variation.py')
+myf=open('sigma_variation.py','w')
 myf.write("sigma_var="+str(dict_uncertainty))
 myf.close()
