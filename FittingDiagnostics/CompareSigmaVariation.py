@@ -4,6 +4,8 @@ import sys
 import ROOT
 def Plot(dict_all,alias):
   #hist_fit_b  = ROOT.TH1F("fit_b"   ,"B-only fit Nuisances;;%s "%title,prefit.getSize(),0,prefit.getSize())
+  fout = ROOT.TFile(alias+'.root',"RECREATE")
+
   dict_hist={}
   color={
     400:2,
@@ -11,8 +13,9 @@ def Plot(dict_all,alias):
     3000:4,
   }
   c=ROOT.TCanvas("post_fit_errs", "post_fit_errs", 900, 600)
-  leg=ROOT.TLegend(0.6,0.7,0.89,0.89)
-  
+  leg=ROOT.TLegend(0.6,0.77,0.8,0.9)
+  #TLegend (Double_t x1, Double_t y1, Double_t x2, Double_t y2, const char *header="", Option_t *option="brNDC")
+
   for im,mass in enumerate(sorted(dict_all)):
     offset=im*0.2
     size=len(dict_all[mass])
@@ -20,7 +23,7 @@ def Plot(dict_all,alias):
     for b in range(1,size+1):
       syslist=sorted(dict_all[mass])
       sysname=syslist[b-1]
-      print dict_all[mass][sysname]
+      #print dict_all[mass][sysname]
       dict_hist[mass].SetBinContent(b,dict_all[mass][sysname])
       dict_hist[mass].SetBinError(b,0)
       dict_hist[mass].GetXaxis().SetBinLabel(b,sysname)
@@ -38,7 +41,17 @@ def Plot(dict_all,alias):
   leg.SetFillColor(0)
   leg.SetTextFont(42)
   leg.Draw()
+  fout.WriteTObject(c)
+
+
+  #ROOT.gPad.GetRangeAxis(xmin,ymin,xmax,ymax)
+  #ROOT.gPad.RangeAxis(0,0,1,0.5)
+  c.SetMargin(0.2,0.2,0.5,0.1)#SetMargin (Float_t left, Float_t right, Float_t bottom, Float_t top)
+  #c.Modified()
   c.SaveAs(alias+".pdf")
+  #fout.Close()
+  #c.SetLogy()
+  #c.SaveAs(alias+"_logy.pdf")
 def Print(YEAR):
 
     YEAR=str(YEAR)
