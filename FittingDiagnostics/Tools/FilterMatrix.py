@@ -27,7 +27,7 @@ def GetLabels(axis):
         #print label
         label_list.append(label)
     return label_list
-def GetMostCorrelatedIndices(h,Nmax=30):
+def GetMostCorrelatedIndices(h,musthave,Nmax=30):
     ####-------To Get Most correlated nuisances
     N=h.GetXaxis().GetNbins()
     print N
@@ -58,8 +58,10 @@ def GetMostCorrelatedIndices(h,Nmax=30):
     nuisanceidx_list=[]
     for i in range(1,N+1):
         this_maxcor=max_cor_list[i-1]
-        if this_maxcor < cor_cut : continue
+
         label=h.GetXaxis().GetBinLabel(i)
+        if not label in musthave: 
+            if this_maxcor < cor_cut : continue
         nuisance_list.append(label)
         nuisanceidx_list.append(i)
     return nuisanceidx_list,nuisance_list
@@ -89,9 +91,13 @@ if __name__ == '__main__':
     import sys
     filename=sys.argv[1]
     histoname=sys.argv[2]
+    if len(sys.argv)>3:
+        musthavelist=sys.argv[3].split(',')
+    else:
+        musthavelist=[]
     #h2=ReadMatrix("fitDiagnostics.Test.root","covariance_fit_b")
     h2=ReadMatrix(filename,histoname)
-    nuisanceidx_list,nuisance_list=GetMostCorrelatedIndices(h2)
+    nuisanceidx_list,nuisance_list=GetMostCorrelatedIndices(h2,musthavelist)
     #print nuisanceidx_list
     #print len(nuisanceidx_list)
     h2_filter=GetFilteredTH2D(h2,nuisanceidx_list,nuisance_list)
