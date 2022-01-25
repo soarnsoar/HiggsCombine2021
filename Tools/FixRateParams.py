@@ -14,9 +14,9 @@ for DC in DCLIST:
     lines=f.readlines()
     for line in lines:
         
-        if ("rateParam" in line) and not ('1 [0,10]' in line):
+        if ("rateParam" in line) and not ('1 [0,50]' in line):
             #Wjetsnorm_Boosted_GGFDNN0_2016                              rateParam                __BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01       Wjets0j                  1.0000
-            newline_inlist=line.split()[:-1]+['1 [0,10]\n']
+            newline_inlist=line.split()[:-1]+['1 [0,50]\n']
             line='  '.join(newline_inlist)
             #print line
         fnew.write(line)
