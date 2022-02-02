@@ -1,6 +1,7 @@
 import os
 import sys
 sys.path.insert(0, "python_tool/")
+sys.path.insert(0, "../python_tool/")
 from ExportShellCondorSetup import Export
 
 
@@ -32,7 +33,7 @@ def MakeWorkSpaceCommand(year,mass,bst,interference,POlist,model_alias=""):
     ##---6)WS command
     ws_command="text2workspace.py "+combinecard_path+" -P "+modelpy+" "+PO+" -o "+WSpath
     commands=["cd "+os.getcwd(),'mkdir -p '+WSDIRpath,ws_command]
-    command=';'.join(commands)    
+    command='&&'.join(commands)    
     jobname=workdir
     submit=True
     ncpu=1
