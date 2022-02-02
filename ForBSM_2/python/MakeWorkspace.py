@@ -49,13 +49,13 @@ class MakeWorkspace:
                 "delta_ggH_xsec:"+str(self.ratio_totalup)+","+str(self.ratio_totaldown)]
 
         if self.mH_low > 350 and self.mH_high>350: 
-            bst='all'
+            self.bst='all'
         else:
-            bst='Resolved'
+            self.bst='Resolved'
         curdir=os.getcwd()
         os.chdir('../')
-        workdir_low,command_low,jobname_low,submit_low,ncpu_low = MakeWorkSpaceCommand(self.year,self.mH_low,bst,self.doInterference,POlist,self.alias+self.suffix_I+"/"+"mA_"+str(self.mA)+"_tanb_"+str(self.tanb))
-        workdir_high,command_high,jobname_high,submit_high,ncpu_high = MakeWorkSpaceCommand(self.year,self.mH_high,bst,self.doInterference,POlist,self.alias+self.suffix_I+"/"+"mA_"+str(self.mA)+"_tanb_"+str(self.tanb))
+        workdir_low,command_low,jobname_low,submit_low,ncpu_low = MakeWorkSpaceCommand(self.year,self.mH_low,self.bst,self.doInterference,POlist,self.alias+self.suffix_I+"/"+"mA_"+str(self.mA)+"_tanb_"+str(self.tanb))
+        workdir_high,command_high,jobname_high,submit_high,ncpu_high = MakeWorkSpaceCommand(self.year,self.mH_high,self.bst,self.doInterference,POlist,self.alias+self.suffix_I+"/"+"mA_"+str(self.mA)+"_tanb_"+str(self.tanb))
         
 
         os.chdir(curdir)
