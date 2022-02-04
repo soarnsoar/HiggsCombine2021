@@ -132,14 +132,19 @@ class Run_model:
         final_command='&&'.join(all_command_list)
         #print final_command
         #---combined job---#
-        workdir="WORDIR/Combined_JOB"+str(self.year)+"/"+wsd_suffix
+        workdir="WORKDIR/Combined_JOB"+str(self.year)+"/"+wsd_suffix
         jobname=self.alias
         submit=True
         ncpu=1
-        #Export(workdir,final_command,jobname,submit,ncpu)
-        print final_command
+        Export(workdir,final_command,jobname,submit,ncpu)
+        #print final_command
 if __name__ == '__main__':
-    model=Run_model('model_files/mh125_13_withVBF.root','mh125_13',2016)
+    model_file=sys.argv[1]
+    alias=sys.argv[2]
+    year=sys.argv[3]
+
+    #model=Run_model('model_files/mh125_13_withVBF.root','mh125_13',2016)
+    model=Run_model(model_file,alias,year)
     idx=0
     for mA in model.list_mA:
         for tanb in model.list_tanb:
