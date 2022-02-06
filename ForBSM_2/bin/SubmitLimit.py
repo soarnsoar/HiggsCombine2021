@@ -11,17 +11,7 @@ from MakeWorkspace import *
 from ExportShellCondorSetup import Export
 from AsymptoticLimitCommand import AsymptoticLimitCommand
 from CollectLimitCommand import CollectLimitCommand
-
-def Read_grid():
-    with open("config/mA_grid.json","r") as handle:
-        list_mA=json.load(handle)
-    ##--read grid
-    with open("config/tanb_grid.json","r") as handle:
-        list_tanb=json.load(handle)
-    ##--read grid
-    with open("config/mH_grid.json","r") as handle:
-        list_mH=json.load(handle)
-    return list_mA,list_tanb,list_mH
+from Read_grid import Read_grid
 
 
 class Run_model:
@@ -118,10 +108,10 @@ if __name__ == '__main__':
     model=Run_model(model_file,alias,year)
     idx=0
     for mA in model.list_mA:
-        if str(mA)!='220':continue
+        #if str(mA)!='220':continue
         for tanb in model.list_tanb:
             #if idx>0:continue
-            if str(tanb)!='1.0':continue
+            #if str(tanb)!='1.0':continue
             model.Set_mA_tanb(mA,tanb)
             model.Run()
             idx+=1
