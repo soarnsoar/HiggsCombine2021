@@ -26,16 +26,16 @@ class ExDrawer:
         self.dict_modeltag={
             'mh125_13_withVBF':'M^{h^{125}}',
             'mh125_13':'M^{h^{125}}',
-            'mh125_lc_13':'M^{h^{125}(\tilde \chi)}',
-            'mh125_lc_13_withVBF':'M^{h^{125}(\tilde \chi)}',
-            'mh125_ls_13':'M^{h^{125}(\tilde\tau)}',
-            'mh125_ls_13_withVBF':'M^{h^{125}(\tilde\tau)}',
+            'mh125_lc_13':'M^{h^{125}(#tilde{#chi})}',
+            'mh125_lc_13_withVBF':'M^{h^{125}(#tilde{#chi})}',
+            'mh125_ls_13':'M^{h^{125}(#tilde{#tau})}',
+            'mh125_ls_13_withVBF':'M^{h^{125}(#tilde{#tau})}',
             'mh125_align_13':'M^{h^{125}}_{alignment}',
             'mh125_align_13_withVBF':'M^{h^{125}}_{alignment}',
             'mh125EFT_13':'M^{h}^{125}_{EFT}',
             'mh125EFT_13_withVBF':'M^{h}^{125}_{EFT}',
-            'mh125EFT_lc_13':'M^{h}^{125}_{EFT}(\tilde \chi)',
-            'mh125EFT_lc_13_withVBF':'M^{h}^{125}_{EFT}(\tilde \chi)',
+            'mh125EFT_lc_13':'M^{h}^{125}_{EFT}(#tilde{#chi})',
+            'mh125EFT_lc_13_withVBF':'M^{h}^{125}_{EFT}(#tilde{#chi})',
         }
 
 
@@ -47,8 +47,28 @@ class ExDrawer:
         self.model=model
         self.list_mA,self.list_tanb,self.list_mH=Read_grid()
         ##------
-        self.xlist=array('d',sorted(self.list_mA))
-        self.ylist=array('d',sorted(self.list_tanb))
+        self.xlist=[]
+        dmA0=self.list_mA[1]-self.list_mA[0]
+        self.xlist.append(self.list_mA[0]-dmA0/2)
+        for i_mA in range(len(self.list_mA)-1):
+            dmA=self.list_mA[i_mA+1] - self.list_mA[i_mA]
+            self.xlist.append(self.list_mA[i_mA] + dmA/2 )
+        dmA1 = self.list_mA[-1]+self.list_mA[-2]
+        self.xlist.append(self.list_mA[-1]+dmA1/2)
+
+        self.ylist=[]
+        dtanb0=self.list_tanb[1]-self.list_tanb[0]
+        self.ylist.append(self.list_tanb[0]-dtanb0/2)
+        for i_tanb in range(len(self.list_tanb)-1):
+            dtanb=self.list_tanb[i_tanb+1] - self.list_tanb[i_tanb]
+            self.ylist.append(self.list_tanb[i_tanb] + dtanb/2 )
+        dtanb1 = self.list_tanb[-1]+self.list_tanb[-2]
+        self.ylist.append(self.list_tanb[-1]+dtanb1/2)
+        
+        self.xlist=array('d',sorted(self.xlist))
+        self.ylist=array('d',sorted(self.ylist))
+        #self.xlist=array('d',sorted(self.list_mA))
+        #self.ylist=array('d',sorted(self.list_tanb))
         ##-----
         self.keylist=['exp-2','exp-1','exp0']
 
@@ -90,6 +110,7 @@ class ExDrawer:
         self.mg=ROOT.TMultiGraph()
         for key in self.keylist:
             cont=self.myconts[key]
+            print key,'--->contuor size',cont.GetSize()
             for i in range(cont.GetSize()):
                 _this_cont=cont[i]
                 _this_cont.SetFillColor(self.dict_color[key])
@@ -100,6 +121,7 @@ class ExDrawer:
                     _this_cont.SetLineStyle(7)
                     _this_cont.SetLineWidth(3)
                 self.mg.Add(_this_cont.Clone())
+        #print "len(self.myconts['exp0'])",len(self.myconts['exp0'])
     def Draw(self):
         c1=ROOT.TCanvas("c","c",2000,1500)
         self.mg.Draw("afl")
@@ -118,13 +140,17 @@ class ExDrawer:
         legend = plot.PositionedLegend(0.3, 0.15, 3, 0.001,0.001)
         if 'exp0' in self.keylist:
             if 'obs' in self.keylist:
-                legend.AddEntry(self.myconts['exp0'][0], "Expected", "L")
+                if len(self.myconts['exp0'])>0:
+                    legend.AddEntry(self.myconts['exp0'][0], "Expected", "L")
             else:
-                legend.AddEntry(self.myconts['exp0'][0], "Expected", "F")
+                if len(self.myconts['exp0'])>0:
+                    legend.AddEntry(self.myconts['exp0'][0], "Expected", "F")
         if 'exp-1' in self.keylist:
-            legend.AddEntry(self.myconts['exp-1'][0], "68% expected", "F")
+            if len(self.myconts['exp-1'])>0:
+                legend.AddEntry(self.myconts['exp-1'][0], "68% expected", "F")
         if 'exp-2' in self.keylist:
-            legend.AddEntry(self.myconts['exp-2'][0], "95% expected", "F")
+            if len(self.myconts['exp-2'])>0:
+                legend.AddEntry(self.myconts['exp-2'][0], "95% expected", "F")
 
         legend.Draw()
         c1.SetLogy()
