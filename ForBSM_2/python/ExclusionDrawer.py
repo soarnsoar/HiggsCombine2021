@@ -142,5 +142,5 @@ if __name__ == '__main__':
 
     #print r
     #    def __init__(self,year,model):
-    mydraw=ExDrawer(2016,'mh125_13')
+    mydraw=ExDrawer('2016','mh125_13')
     mydraw.Draw()
