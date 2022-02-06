@@ -12,9 +12,9 @@ for year in ${ARR_year[@]};do
     python bin/SubmitLimit.py model_files/mh125EFT_lc_13_withVBF.root mh125EFT_lc_13 $year
     python bin/SubmitLimit.py model_files/mh125EFT_13_withVBF.root mh125EFT_13 $year
     python bin/SubmitLimit.py model_files/mh125_align_13_withVBF.root mh125_align_13 $year
-    python bin/SubmitLimit.py model_files/mh125_lc_13_withVBF.root mh125_lc_13_withVBF.root $year
-    python bin/SubmitLimit.py model_files/mh125_ls_13_withVBF.root mh125_ls_13_withVBF.root $year
-    python bin/SubmitLimit.py model_files/thdm_type1_0.1cba.root thdm_type1_0.1cba.root $year
+    python bin/SubmitLimit.py model_files/mh125_lc_13_withVBF.root mh125_lc_13 $year
+    python bin/SubmitLimit.py model_files/mh125_ls_13_withVBF.root mh125_ls_13 $year
+    python bin/SubmitLimit.py model_files/thdm_type1_0.1cba.root thdm_type1_0.1cba $year
     
 
 done 
