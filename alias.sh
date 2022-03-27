@@ -1,0 +1,1 @@
+export __HC_VBFOPT__SOARNSOAR__=${PWD}
