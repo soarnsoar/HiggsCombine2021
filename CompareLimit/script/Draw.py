@@ -3,14 +3,62 @@ import os
 __HC_VBFOPT__SOARNSOAR__=os.getenv("__HC_VBFOPT__SOARNSOAR__")
 sys.path.append(__HC_VBFOPT__SOARNSOAR__+'/CompareLimit/python/')
 from LimitReader import LimitReader
+import ROOT
 
-if __name__ == '__main__':
-    bst="Boosted"
-    year="2016"
-    masses=[400,500,600,700,800,900,1000]
-    cuts=['nocut',0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95]
-    for cut in cuts:
-        for mass in masses:
+
+
+
+def Draw(bst,year):
+    year=str(year)
+    name=bst+'__'+year
+    if bst=="Boosted":
+        masses=[400,450,500,550,600,650,700,750,800,900,1000,1500,2000,2500,3000,4000,5000]
+    if bst=="Resolved":
+        masses=[200,210,230,250,270,300,350,400]
+
+    #cuts=['nocut',0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95]
+    cuts=[0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95]
+
+
+    ##---graph
+    gr=ROOT.TGraph2D()
+
+
+    idx=0
+    for mass in masses:
+        x=float(mass)
+        for cut in cuts:
+            reader=LimitReader(mass,bst,year,'nocut')
+            _limit0=reader.GetLimit()
+            y=float(cut)
             reader=LimitReader(mass,bst,year,cut)
             _limit=reader.GetLimit()
-            print mass,cut,_limit
+            z=_limit0/_limit
+            #print mass,cut,_limit
+            gr.SetPoint(idx,x,y,z)
+            idx+=1
+    c=ROOT.TCanvas()
+    #gr.Draw()
+    h=gr.GetHistogram()
+    h.SetTitle('Exp.Limit(nocut)/Exp.Limit')
+    h.GetXaxis().SetTitle("M(X) [GeV]")
+    h.GetYaxis().SetTitle("isVBF score")
+    h.Draw("colz")
+    if bst=="Boosted":c.SetLogx()
+    os.system('mkdir -p plots/')
+    savepath='plots/'+name+'.pdf'
+    c.SaveAs(savepath)
+if __name__ == '__main__':
+    #bst="Boosted"
+    #year="2016"
+    #bst=sys.argv[1]
+    #year=sys.argv[2]
+    bstlist=['Boosted','Resolved']
+    yearlist=[2016,2017,2018]
+    for year in yearlist:
+        for bst in bstlist:
+            Draw(bst,year)
+
+
+
+    
