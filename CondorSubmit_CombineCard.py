@@ -31,10 +31,10 @@ def GetCardPath(mass,year,cut):
         
     return cats
 
-def GetCombineCardCommands(mass,year,bst,isDNN=True):
+def GetCombineCardCommands(mass,year,bst,cut=True):
     cats={}
 
-    cats=GetCardPath(mass,year,isDNN)
+    cats=GetCardPath(mass,year,cut)
     
 
     command="combineCards.py -S "
