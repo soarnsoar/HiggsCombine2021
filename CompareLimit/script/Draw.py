@@ -34,6 +34,7 @@ def Draw(bst,year):
             reader=LimitReader(mass,bst,year,cut)
             _limit=reader.GetLimit()
             z=_limit0/_limit
+            if z<1:z=0
             #print mass,cut,_limit
             gr.SetPoint(idx,x,y,z)
             idx+=1
