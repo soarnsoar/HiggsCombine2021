@@ -13,24 +13,38 @@ ARR_YEAR=(2016 2017 2018)
 #___ResolvedALL__TOP_MEKDCUT_C0.01__M400_0.75
 #___ResolvedALL__SR_MEKDCUT_C0.01__M400_0.25
 
-ARR_CUT=(0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 nocut)
+#ARR_CUT=(0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95)
 #ARR_CUT=(nocut)
+for BST in ${ARR_BST[@]};do
+    for YEAR in ${ARR_YEAR[@]};do
+	source Submit_CombineCard_arg.sh ${YEAR} ${BST} &> logs/Submit_CombineCard_arg.${YEAR}.${BST}.log&
+    done
+done
 for MASS in ${ARR_MASS[@]};do
     for YEAR in ${ARR_YEAR[@]};do
-	for CUT in ${ARR_CUT[@]};do
-	    #__BoostedALL_SB_VBFCUT_"+cut+"
-	    BST=Boosted
-	    MELACUT="C0.005__M900_${CUT}"
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut $CUT
-	    MELACUT="C0.0005__M1500_${CUT}"
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut $CUT
+	continue
+	##--nocut
+	#BST=Boosted
+	#python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut nocut
+	#BST=Resolved
+	#python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut nocut
 
-	    BST=Resolved
-	    MELACUT="C0.001__M200_${CUT}"
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut $CUT
-	    MELACUT="C0.01__M400_${CUT}"
-	    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut $CUT
+
+	#for CUT in ${ARR_CUT[@]};do
+	#    #__BoostedALL_SB_VBFCUT_"+cut+"
+	#    BST=Boosted
+	#    MELACUT="C0.005__M900_${CUT}"
+	#    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut $MELACUT
+	#    MELACUT="C0.0005__M1500_${CUT}"
+	#    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut $MELACUT
+
+	#    BST=Resolved
+	#    MELACUT="C0.001__M200_${CUT}"
+	#    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut $MELACUT
+	#    MELACUT="C0.01__M400_${CUT}"
+	#    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} --cut $MELACUT
 	    
-	done
+	#done
+	
     done
 done
