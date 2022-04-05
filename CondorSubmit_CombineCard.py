@@ -7,14 +7,14 @@ def GetCardPath(mass,year,cut):
     year=str(year)
     #__BoostedALL_SB_VBFCUT_0.3
     if cut=="nocut":
-        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB__nocut/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP__nocut/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR__nocut/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_novbfcut/Event/datacard.txt"
+        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_novbfcut/Event/datacard.txt"
+        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_novbfcut/WW_mass/datacard.txt"
         
         #notcut
-        cats["hww_lqq_res_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_notcut/Event/datacard.txt"
-        cats["hww_lqq_res_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_notcut/Event/datacard.txt"
-        cats["hww_lqq_res_vbf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_notcut/WW_mass/datacard.txt"
+        cats["hww_lqq_res_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_novbfcut/Event/datacard.txt"
+        cats["hww_lqq_res_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_novbfcut/Event/datacard.txt"
+        cats["hww_lqq_res_vbf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_novbfcut/WW_mass/datacard.txt"
     else:
         cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_VBFCUT_"+cut+"/Event/datacard.txt"
         cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_VBFCUT_"+cut+"/Event/datacard.txt"
