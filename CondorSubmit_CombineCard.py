@@ -5,8 +5,7 @@ def GetCardPath(mass,year,cut):
     cats={}
     mass=str(mass)
     year=str(year)
-    #__BoostedALL_SR_nomekdcut
-    #__BoostedALL_SB_MEKDCUT_0.3
+
     if cut=="nocut":
         cats["hww_lqq_bst_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_nomekdcut/Event/datacard.txt"
         cats["hww_lqq_bst_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_nomekdcut/Event/datacard.txt"
@@ -17,23 +16,33 @@ def GetCardPath(mass,year,cut):
         cats["hww_lqq_res_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_nomekdcut/Event/datacard.txt"
         cats["hww_lqq_res_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_nomekdcut/WW_mass/datacard.txt"
     else:
-        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_MEKDCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_MEKDCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_MEKDCUT_"+cut+"/WW_mass/datacard.txt"
+        #BoostedGGF_SB0
+        cats["hww_lqq_bst_ggf_sb_"+year]="Datacard_M"+mass+"/BoostedGGF_SB"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_top_"+year]="Datacard_M"+mass+"/BoostedGGF_TOP"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_bst_ggf_"+year]="Datacard_M"+mass+"/BoostedGGF_SR"+cut+"/WW_mass/datacard.txt"
 
-        cats["hww_lqq_bst_untag_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_UNTAGMEKDCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_bst_untag_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_UNTAGMEKDCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_UNTAGMEKDCUT_"+cut+"/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_untag_sb_"+year]="Datacard_M"+mass+"/BoostedUNTAG_SB"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_bst_untag_top_"+year]="Datacard_M"+mass+"/BoostedUNTAG_TOP"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/BoostedUNTAG_SR"+cut+"/WW_mass/datacard.txt"
+
+        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/BoostedVBF_SB"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/BoostedVBF_TOP"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/BoostedVBF_SR"+cut+"/WW_mass/datacard.txt"
+
+
+        cats["hww_lqq_ggf_sb_"+year]="Datacard_M"+mass+"/ResolvedGGF_SB"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_ggf_top_"+year]="Datacard_M"+mass+"/ResolvedGGF_TOP"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_ggf_"+year]="Datacard_M"+mass+"/ResolvedGGF_SR"+cut+"/WW_mass/datacard.txt"
+
+        cats["hww_lqq_untag_sb_"+year]="Datacard_M"+mass+"/ResolvedUNTAG_SB"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_untag_top_"+year]="Datacard_M"+mass+"/ResolvedUNTAG_TOP"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_untag_"+year]="Datacard_M"+mass+"/ResolvedUNTAG_SR"+cut+"/WW_mass/datacard.txt"
+
+        cats["hww_lqq_vbf_sb_"+year]="Datacard_M"+mass+"/ResolvedVBF_SB"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_vbf_top_"+year]="Datacard_M"+mass+"/ResolvedVBF_TOP"+cut+"/Event/datacard.txt"
+        cats["hww_lqq_vbf_"+year]="Datacard_M"+mass+"/ResolvedVBF_SR"+cut+"/WW_mass/datacard.txt"
         
         
-        cats["hww_lqq_res_ggf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_MEKDCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_res_ggf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_MEKDCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_res_ggf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_MEKDCUT_"+cut+"/WW_mass/datacard.txt"
-
-
-        cats["hww_lqq_res_untag_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_UNTAGMEKDCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_res_untag_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_UNTAGMEKDCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_res_untag_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_UNTAGMEKDCUT_"+cut+"/WW_mass/datacard.txt"
         
 
 
@@ -73,7 +82,8 @@ if __name__ == '__main__':
     mass=options.mass
     bst=options.bst
     cut=(options.cut)
-
+    ##--fix mass
+    mass='1000'
     
 
     cc_command=GetCombineCardCommands(mass,year,bst,cut)+'> combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'__CUT_'+cut+'.txt'
