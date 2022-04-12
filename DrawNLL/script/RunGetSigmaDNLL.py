@@ -2,7 +2,7 @@ import sys
 import os
 __HC_RATEPARAMTEST__SOARNSOAR__=os.getenv('__HC_RATEPARAMTEST__SOARNSOAR__')
 sys.path.append(__HC_RATEPARAMTEST__SOARNSOAR__+'/DrawNLL/python')
-from ReadValErr import ReadValErr
+from deltaNLL_Parser import deltaNLL_Parser
 if __name__ == '__main__':
     region=sys.argv[1]
 
@@ -69,7 +69,7 @@ if __name__ == '__main__':
     #inputpath="../../MultiDimFit/2016/model_indep/Boosted/0/"+par+"/model_indep_NoI/higgsCombineTest.MultiDimFit.mH1000.root"
 
     for year in dict_data:
-        myjob=ReadValErr()
+        myjob=deltaNLL_Parser()
         for param in sorted(dict_data[year]):
 
             param_year=param+"_"+year
@@ -84,4 +84,6 @@ if __name__ == '__main__':
             myjob.SetInput(inputpath,"limit")
             myjob.SetParam(param_year)
             myjob.ReadTree()
-            myjob.GetValue(1)
+            #myjob.GetValue(1)
+            savepath="plots/"+param_year+".pdf"
+            myjob.Draw(savepath)

@@ -1,0 +1,1 @@
+config={'hww_lqq_bst_ggf_2018': [1, 2], 'hww_lqq_bst_ggf_top_2018': [1], 'hww_lqq_bst_ggf_sb_2018': [1, 2]}

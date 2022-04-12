@@ -71,17 +71,18 @@ class RebinShape:
         self.mytfile.Close()
 
 class config:
-    def __init__(self,path):
+    def __init__(self,path,regioncode):
         #../Datacards_2016/Datacard_M1000/__BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01/WW_mass/
         #[jhchoi@ui20 Rebinning]$ ls ../Datacards_2016/Datacard_M500/__BoostedALL_SR_NoMEKDCut/WW_mass/shapes/histos___BoostedALL_SR_NoMEKDCut.root 
 
         #hww_lqq_bst_ggf_2016
         exec(open(path,'r'))
         self.rawconfig=config
+        self.regioncode=regioncode
         self.config={}
         self.Parse()
     def Parse(self):
-        
+        #BoostedUNTAG_SR0
         for key in self.rawconfig:
             ##--Year
             if '2016' in key:
@@ -100,24 +101,21 @@ class config:
             ##--GGF VBF UNTAG
             if 'ggf' in key:
                 GGFVBF='GGF'
-                MEKD='MEKDTAG'
+            elif 'untag' in key:
+                GGFVBF='UNTAG'
             elif 'vbf' in key:
                 GGFVBF='VBF'
-                MEKD='NoMEKD'
-            elif 'untag' in key:
-                GGFVBF='GGF'
-                MEKD='UNTAGGED'
             ##--SRCR region
             if 'sb' in key:
                 REGION='SB'
-                variable='Event'
+                variable='WW_mass'
             elif 'top' in key:
                 REGION='TOP'
-                variable='Event'
+                variable='WW_mass'
             else:
                 REGION='SR'
                 variable='WW_mass'
-            formula='Datacards_'+Year+'/Datacard_M*/*'+Boosted+'*'+GGFVBF+'*'+REGION+'*'+MEKD+'*/'+variable+'/shapes/*.root'
+            formula='Datacards_'+Year+'/Datacard_M*/*'+Boosted+'*'+GGFVBF+'*'+REGION+self.regioncode+'*/'+variable+'/shapes/*.root'
             self.config[key]={
                 'path':formula,
                 'bintofix':self.rawconfig[key]
@@ -130,8 +128,9 @@ if __name__=='__main__':
     #parser.add_argument("--c", help="filename")
     #parser.add_argument("--b", help="binningtofix")
     confpath=sys.argv[1]
+    #regioncode=sys.argv[2]
     #filename=args.f
-    
+    regioncode=confpath.split('_')[1].rstrip('.py')
 
     #bins=(args.b)
     #bins=bins.split(',')
@@ -139,7 +138,7 @@ if __name__=='__main__':
     #for b in bins:
     #    bins_in_int.append(int)
     #myjob=RebinShape('histos___BoostedGGFDNN_SR_MEKDTAG_M1500_C0.01.root',[1,2,3,4])
-    myconfig=config(confpath)
+    myconfig=config(confpath,regioncode)
     for conf in myconfig.config:
 
         print '---',conf,'---'

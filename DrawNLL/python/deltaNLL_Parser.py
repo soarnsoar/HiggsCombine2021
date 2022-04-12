@@ -33,6 +33,8 @@ class deltaNLL_Parser:
             if y <4 :
                 data2[x]=y
                 if y==0:self.x0=x
+
+        print sorted(data2)
         #print self.xlist
         #print self.ylist
         xlist2=[]
@@ -68,6 +70,14 @@ class deltaNLL_Parser:
         xp1=xmp[2]
         xp2=xmp[3]
         self.xp=self.GetIntersectionTo1(xp1,xp2,self.tgr2.Eval(xp1),self.tgr2.Eval(xp2))
+
+        xlist.insert(0,self.xm)
+        ylist.insert(0,self.tgr2.Eval(self.xm))
+        xlist.append(self.xp)
+        ylist.append(self.tgr2.Eval(self.xp))
+
+        self.tgr=ROOT.TGraph(len(xlist) , array('f',xlist), array('f',ylist))
+
 
         print self.xm,self.x0,self.xp
         if abs(self.tgr2.Eval(self.xm)-1)>0.01:
