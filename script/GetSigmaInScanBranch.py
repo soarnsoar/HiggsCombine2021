@@ -5,7 +5,7 @@ import sys
 def GetSigmaOnScanBranch(param):
 
     xlist=[]
-    inputpath=glob.glob("higgsCombinescan.MultiDimFit**.root")[0]
+    inputpath=glob.glob("higgsCombinescan.MultiDimFit*.root")[0]
     tfile=ROOT.TFile.Open(inputpath)
     ttree=tfile.Get("limit")
     for i in ttree:
@@ -18,3 +18,4 @@ def GetSigmaOnScanBranch(param):
     return xlist[0],xlist[1],xlist[2]
 if __name__ == '__main__':
     param=sys.argv[1] ##
+    GetSigmaOnScanBranch(param)
