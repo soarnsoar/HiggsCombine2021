@@ -14,8 +14,13 @@ def GetSigmaOnScanBranch(param):
     xlist=sorted(set(xlist))
     tfile.Close()
     #print xlist[0],xlist[1],xlist[2]
-    print 'param='+str(xlist[0])+','+str(xlist[2])
+    
     return xlist[0],xlist[1],xlist[2]
 if __name__ == '__main__':
     param=sys.argv[1] ##
-    GetSigmaOnScanBranch(param)
+    nominal=int(sys.argv[2])
+    xm,x0,xp=GetSigmaOnScanBranch(param)
+    if nominal:
+        print param+'='+str(x0)
+    else:
+        print param+'='+str(xm)+','+str(xp)

@@ -1,0 +1,2256 @@
+{
+    "emptyProcessShape": {
+        "Bin0": [
+            "ggH_hww",
+            "DY",
+            "QCD",
+            "qqH_hww",
+            "Wjets",
+            "ggH_hww__NOTMATCH"
+        ],
+        "Bin1": [
+            "ggH_hww",
+            "DY",
+            "QCD",
+            "qqH_hww",
+            "Wjets",
+            "qqH_hww__NOTMATCH",
+            "ggH_hww__NOTMATCH"
+        ],
+        "Bin2": [
+            "ggH_hww",
+            "DY",
+            "QCD",
+            "qqH_hww",
+            "Wjets",
+            "qqH_hww__NOTMATCH",
+            "ggH_hww__NOTMATCH"
+        ]
+    },
+    "largeNormEff": {
+        "CMS_PU_2016": {
+            "Bin0": {
+                "qqH_hww__NOTMATCH": {
+                    "value_d": 0.8079996037888807,
+                    "value_u": 1.1971688381625487
+                }
+            },
+            "Bin1": {
+                "QCD__NOTMATCH": {
+                    "value_d": 1.1937156113403415,
+                    "value_u": 0.8451718501582663
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 0.8937897295415206,
+                    "value_u": 1.097431589064535
+                }
+            },
+            "Bin2": {
+                "MultiBoson__NOTMATCH": {
+                    "value_d": 0.9333630751187841,
+                    "value_u": 1.1098867980382159
+                },
+                "QCD__NOTMATCH": {
+                    "value_d": 0.8429990536620238,
+                    "value_u": 1.1845379032055359
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 0.8059875737355092,
+                    "value_u": 1.1764872501132726
+                }
+            }
+        },
+        "CMS_btag_cferr1": {
+            "Bin0": {
+                "MultiBoson__NOTMATCH": {
+                    "value_d": 1.1152505322257602,
+                    "value_u": 0.9403375437524703
+                },
+                "VH": {
+                    "value_d": 1.1307366634791225,
+                    "value_u": 0.9210828265523789
+                },
+                "VH__NOTMATCH": {
+                    "value_d": 1.1201199085338058,
+                    "value_u": 0.9411583821349142
+                },
+                "WW__NOTMATCH": {
+                    "value_d": 1.159252759192315,
+                    "value_u": 0.9130513245839814
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.1878589387608025,
+                    "value_u": 0.8939358062073577
+                },
+                "qqH_hww__NOTMATCH": {
+                    "value_d": 1.2525412389349837,
+                    "value_u": 0.8305870582730486
+                }
+            },
+            "Bin1": {
+                "DY__NOTMATCH": {
+                    "value_d": 1.185505352435023,
+                    "value_u": 0.9102590196325102
+                },
+                "MultiBoson__NOTMATCH": {
+                    "value_d": 1.1613184097392601,
+                    "value_u": 0.9021626073871647
+                },
+                "QCD__NOTMATCH": {
+                    "value_d": 0.8818706530171047,
+                    "value_u": 1.0892481908547536
+                },
+                "VH": {
+                    "value_d": 1.1153989967829196,
+                    "value_u": 0.9150105402735322
+                },
+                "WW__NOTMATCH": {
+                    "value_d": 1.1369477033416875,
+                    "value_u": 0.9157706460675331
+                }
+            },
+            "Bin2": {
+                "VH__NOTMATCH": {
+                    "value_d": 1.5146379031737314,
+                    "value_u": 0.8468077181980858
+                },
+                "WW": {
+                    "value_d": 1.1122273026495906,
+                    "value_u": 0.9336287762785112
+                },
+                "WW__NOTMATCH": {
+                    "value_d": 1.1499354494656977,
+                    "value_u": 0.9226805727581151
+                }
+            }
+        },
+        "CMS_btag_cferr2": {
+            "Bin0": {
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.107316267944258,
+                    "value_u": 0.9179349778112151
+                },
+                "qqH_hww__NOTMATCH": {
+                    "value_d": 1.1935255789953503,
+                    "value_u": 0.8486455714237986
+                }
+            },
+            "Bin1": {
+                "MultiBoson__NOTMATCH": {
+                    "value_d": 1.1022653192274618,
+                    "value_u": 0.9215203257882856
+                }
+            },
+            "Bin2": {
+                "VH__NOTMATCH": {
+                    "value_d": 1.1210623495297019,
+                    "value_u": 0.9270983454815942
+                }
+            }
+        },
+        "MultiBosonnorm2016": {
+            "Bin0": {
+                "MultiBoson": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                },
+                "MultiBoson__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            },
+            "Bin1": {
+                "MultiBoson": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                },
+                "MultiBoson__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            },
+            "Bin2": {
+                "MultiBoson": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                },
+                "MultiBoson__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            }
+        },
+        "QCDnorm2016": {
+            "Bin0": {
+                "QCD__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            },
+            "Bin1": {
+                "QCD__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            },
+            "Bin2": {
+                "QCD__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            }
+        },
+        "QCDscale_WW_ACCEPT": {
+            "Bin2": {
+                "WW": {
+                    "value_d": 0.9165411210142994,
+                    "value_u": 1.1041798714977415
+                },
+                "WW__NOTMATCH": {
+                    "value_d": 0.8949335451221552,
+                    "value_u": 1.130939938312361
+                }
+            }
+        },
+        "QCDscale_WpH_ACCEPT": {
+            "Bin1": {
+                "VH": {
+                    "value_d": 0.9275516570519882,
+                    "value_u": 1.151460111638432
+                }
+            },
+            "Bin2": {
+                "VH": {
+                    "value_d": 0.9267520404478331,
+                    "value_u": 1.1171319132883526
+                }
+            }
+        },
+        "QCDscale_ZH_ACCEPT": {
+            "Bin2": {
+                "VH__NOTMATCH": {
+                    "value_d": 0.88134032060051,
+                    "value_u": 1.0987312050212699
+                }
+            }
+        },
+        "QCDscale_ttbar_ACCEPT": {
+            "Bin0": {
+                "Top": {
+                    "value_d": 0.8969907171522131,
+                    "value_u": 1.1020770293662119
+                },
+                "Top__NOTMATCH": {
+                    "value_d": 0.868390557197167,
+                    "value_u": 1.15405631049591
+                }
+            },
+            "Bin1": {
+                "Top": {
+                    "value_d": 0.8991381907234802,
+                    "value_u": 1.1010116382841326
+                },
+                "Top__NOTMATCH": {
+                    "value_d": 0.8440695742039789,
+                    "value_u": 1.2009562729736925
+                }
+            },
+            "Bin2": {
+                "Top": {
+                    "value_d": 0.9031842313710258,
+                    "value_u": 1.1017820944881216
+                },
+                "Top__NOTMATCH": {
+                    "value_d": 0.8240843631216984,
+                    "value_u": 1.2523025565674846
+                }
+            }
+        },
+        "QCDscale_wjets_ACCEPT": {
+            "Bin0": {
+                "Wjets__NOTMATCH": {
+                    "value_d": 0.8593919737694568,
+                    "value_u": 1.168213381199474
+                }
+            },
+            "Bin1": {
+                "Wjets__NOTMATCH": {
+                    "value_d": 0.8660242849626599,
+                    "value_u": 1.1590779377396339
+                }
+            },
+            "Bin2": {
+                "Wjets__NOTMATCH": {
+                    "value_d": 0.860583796736953,
+                    "value_u": 1.1499008908022197
+                }
+            }
+        },
+        "dynorm2016": {
+            "Bin0": {
+                "DY__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            },
+            "Bin1": {
+                "DY__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            },
+            "Bin2": {
+                "DY__NOTMATCH": {
+                    "value_d": 0.0,
+                    "value_u": 1.4
+                }
+            }
+        },
+        "ggWWnorm": {
+            "Bin0": {
+                "ggWW": {
+                    "value_d": 0.803,
+                    "value_u": 1.265
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 0.803,
+                    "value_u": 1.265
+                }
+            },
+            "Bin1": {
+                "ggWW": {
+                    "value_d": 0.803,
+                    "value_u": 1.2649999999999997
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 0.803,
+                    "value_u": 1.265
+                }
+            },
+            "Bin2": {
+                "ggWW": {
+                    "value_d": 0.803,
+                    "value_u": 1.265
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 0.803,
+                    "value_u": 1.265
+                }
+            }
+        },
+        "pdf_Higgs_qqbar_ACCEPT": {
+            "Bin0": {
+                "qqH_hww__NOTMATCH": {
+                    "value_d": 0.5449226485412683,
+                    "value_u": 1.4550773514587314
+                }
+            }
+        },
+        "pdf_wjets_ACCEPT": {
+            "Bin0": {
+                "Wjets__NOTMATCH": {
+                    "value_d": 0.8603649477927174,
+                    "value_u": 1.1396350522072827
+                }
+            },
+            "Bin1": {
+                "Wjets__NOTMATCH": {
+                    "value_d": 0.8563644294804953,
+                    "value_u": 1.1436355705195045
+                }
+            },
+            "Bin2": {
+                "Wjets__NOTMATCH": {
+                    "value_d": 0.8562485053772371,
+                    "value_u": 1.143751494622763
+                }
+            }
+        },
+        "qqWWqqnorm": {
+            "Bin0": {
+                "qqWWqq": {
+                    "value_d": 0.7,
+                    "value_u": 1.2999999999999998
+                },
+                "qqWWqq__NOTMATCH": {
+                    "value_d": 0.6999999999999998,
+                    "value_u": 1.2999999999999996
+                }
+            },
+            "Bin1": {
+                "qqWWqq": {
+                    "value_d": 0.6999999999999998,
+                    "value_u": 1.3
+                },
+                "qqWWqq__NOTMATCH": {
+                    "value_d": 0.7,
+                    "value_u": 1.2999999999999998
+                }
+            },
+            "Bin2": {
+                "qqWWqq": {
+                    "value_d": 0.7,
+                    "value_u": 1.3000000000000003
+                },
+                "qqWWqq__NOTMATCH": {
+                    "value_d": 0.7,
+                    "value_u": 1.3
+                }
+            }
+        }
+    },
+    "smallShapeEff": {
+        "CMS_PU_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 1.1102230246251565e-16,
+                    "diff_u": 1.1102230246251565e-16
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_btag_cferr1": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 1.1102230246251565e-16,
+                    "diff_u": 1.1102230246251565e-16
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_btag_cferr2": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 1.1102230246251565e-16,
+                    "diff_u": 1.1102230246251565e-16
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_btag_hf": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_btag_hfstats1_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "VH__NOTMATCH": {
+                    "diff_d": 1.0894996768300515e-07,
+                    "diff_u": 1.0894996768300515e-07
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 5.442161945309492e-08,
+                    "diff_u": 5.442161945309492e-08
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "VH": {
+                    "diff_d": 0.0005365915320575413,
+                    "diff_u": 0.0005244525000720283
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "VH": {
+                    "diff_d": 1.3047463797350922e-07,
+                    "diff_u": 1.3047463797350922e-07
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 1.1102230246251565e-16,
+                    "diff_u": 1.1102230246251565e-16
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_btag_hfstats2_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "VH__NOTMATCH": {
+                    "diff_d": 1.0894996768300515e-07,
+                    "diff_u": 1.0894996768300515e-07
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 5.442161945309492e-08,
+                    "diff_u": 5.442161945309492e-08
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "VH": {
+                    "diff_d": 1.9439356445744894e-05,
+                    "diff_u": 1.865800808754044e-05
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "VH": {
+                    "diff_d": 1.3047463797350922e-07,
+                    "diff_u": 1.3047463797350922e-07
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 1.1102230246251565e-16,
+                    "diff_u": 1.1102230246251565e-16
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_btag_lf": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "VH__NOTMATCH": {
+                    "diff_d": 1.0894996768300515e-07,
+                    "diff_u": 1.0894996768300515e-07
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 5.442161945309492e-08,
+                    "diff_u": 5.442161945309492e-08
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "VH": {
+                    "diff_d": 1.3047463797350922e-07,
+                    "diff_u": 1.3047463797350922e-07
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 1.1102230246251565e-16,
+                    "diff_u": 1.1102230246251565e-16
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_btag_lfstats1_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Top": {
+                    "diff_d": 0.0008515567280980477,
+                    "diff_u": 0.0008440291379302274
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_btag_lfstats2_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_eff_e_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_eff_hwwtrigger_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Top": {
+                    "diff_d": 0.0008466335635872124,
+                    "diff_u": 0.0009345023285228036
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 1.1102230246251565e-16
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_eff_m_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "CMS_eff_prefiring_2016": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "QCD": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 1.1102230246251565e-16,
+                    "diff_u": 1.1102230246251565e-16
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "PS_FSR": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 5.442161930796971e-08,
+                    "diff_u": 5.442161933498082e-08
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "DY__NOTMATCH": {
+                    "diff_d": 9.473949847658493e-08,
+                    "diff_u": 9.47394987284538e-08
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "PS_ISR": {
+            "Bin0": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Top": {
+                    "diff_d": 0.0006891806357964299,
+                    "diff_u": 0.0005439987294101835
+                },
+                "Top__NOTMATCH": {
+                    "diff_d": 0.0005645326970217281,
+                    "diff_u": 0.00040040364274397254
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 5.442161942608381e-08,
+                    "diff_u": 5.4421619544197893e-08
+                }
+            },
+            "Bin1": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "DY": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "DY__NOTMATCH": {
+                    "diff_d": 9.473949842529038e-08,
+                    "diff_u": 9.473949873684596e-08
+                },
+                "VH__NOTMATCH": {
+                    "diff_d": 0.0004191657175216999,
+                    "diff_u": 0.0003043050143450623
+                },
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "ggH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "QCDscale_WpH_ACCEPT": {
+            "Bin2": {
+                "VH__NOTMATCH": {
+                    "diff_d": 1.0725753398721186e-07,
+                    "diff_u": 1.0725753398721186e-07
+                }
+            }
+        },
+        "QCDscale_ZH_ACCEPT": {
+            "Bin2": {
+                "VH": {
+                    "diff_d": 1.3047463797350922e-07,
+                    "diff_u": 1.3047463797350922e-07
+                }
+            }
+        },
+        "QCDscale_qqH_ACCEPT": {
+            "Bin0": {
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "QCDscale_wjets_ACCEPT": {
+            "Bin0": {
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "ggWWnorm": {
+            "Bin0": {
+                "ggWW": {
+                    "diff_d": 2.075828229409781e-07,
+                    "diff_u": 2.0758282340155797e-07
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 3.2731939820944047e-07,
+                    "diff_u": 3.2731939890102704e-07
+                }
+            },
+            "Bin1": {
+                "ggWW": {
+                    "diff_d": 2.9535050521639213e-07,
+                    "diff_u": 2.9535050533758666e-07
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 1.449277548855732e-07,
+                    "diff_u": 1.4492775479425307e-07
+                }
+            },
+            "Bin2": {
+                "ggWW": {
+                    "diff_d": 1.685920090161887e-07,
+                    "diff_u": 1.6859200857039514e-07
+                },
+                "ggWW__NOTMATCH": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "pdf_Higgs_qqbar_ACCEPT": {
+            "Bin0": {
+                "qqH_hww": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "pdf_WpH_ACCEPT": {
+            "Bin2": {
+                "VH__NOTMATCH": {
+                    "diff_d": 1.0725753398721186e-07,
+                    "diff_u": 1.0725753398721186e-07
+                }
+            }
+        },
+        "pdf_ZH_ACCEPT": {
+            "Bin2": {
+                "VH": {
+                    "diff_d": 1.3047463797350922e-07,
+                    "diff_u": 1.3047463797350922e-07
+                }
+            }
+        },
+        "pdf_wjets_ACCEPT": {
+            "Bin0": {
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin1": {
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            },
+            "Bin2": {
+                "Wjets": {
+                    "diff_d": 0.0,
+                    "diff_u": 0.0
+                }
+            }
+        },
+        "qqWWqqnorm": {
+            "Bin0": {
+                "qqWWqq": {
+                    "diff_d": 1.766279851274274e-07,
+                    "diff_u": 1.7662798487207286e-07
+                },
+                "qqWWqq__NOTMATCH": {
+                    "diff_d": 2.2671118294092025e-07,
+                    "diff_u": 2.2671118258555737e-07
+                }
+            },
+            "Bin1": {
+                "qqWWqq": {
+                    "diff_d": 3.124837214409309e-07,
+                    "diff_u": 3.1248372147778805e-07
+                },
+                "qqWWqq__NOTMATCH": {
+                    "diff_d": 3.3243383144557156e-07,
+                    "diff_u": 3.324338313868634e-07
+                }
+            },
+            "Bin2": {
+                "qqWWqq": {
+                    "diff_d": 1.0478135997986498e-07,
+                    "diff_u": 1.0478135937639997e-07
+                },
+                "qqWWqq__NOTMATCH": {
+                    "diff_d": 1.0378497315819033e-07,
+                    "diff_u": 1.0378497350799952e-07
+                }
+            }
+        }
+    },
+    "smallSignalProc": {
+        "Bin0": {
+            "DY": {
+                "procrate": 0.0,
+                "sigrate_tot": 4263.996084016631
+            },
+            "MultiBoson": {
+                "procrate": 3.204420604094127,
+                "sigrate_tot": 4263.996084016631
+            },
+            "QCD": {
+                "procrate": 0.0,
+                "sigrate_tot": 4263.996084016631
+            },
+            "VH": {
+                "procrate": 0.4925999380613445,
+                "sigrate_tot": 4263.996084016631
+            },
+            "Wjets": {
+                "procrate": 0.0,
+                "sigrate_tot": 4263.996084016631
+            },
+            "ggH_hww": {
+                "procrate": 0.0,
+                "sigrate_tot": 4263.996084016631
+            },
+            "ggWW": {
+                "procrate": 3.0005282572052616,
+                "sigrate_tot": 4263.996084016631
+            },
+            "qqH_hww": {
+                "procrate": 0.0,
+                "sigrate_tot": 4263.996084016631
+            }
+        },
+        "Bin1": {
+            "DY": {
+                "procrate": 0.0,
+                "sigrate_tot": 1326.3345195995487
+            },
+            "QCD": {
+                "procrate": 0.0,
+                "sigrate_tot": 1326.3345195995487
+            },
+            "VH": {
+                "procrate": 0.383269429072231,
+                "sigrate_tot": 1326.3345195995487
+            },
+            "Wjets": {
+                "procrate": 0.0,
+                "sigrate_tot": 1326.3345195995487
+            },
+            "ggH_hww": {
+                "procrate": 0.0,
+                "sigrate_tot": 1326.3345195995487
+            },
+            "qqH_hww": {
+                "procrate": 0.0,
+                "sigrate_tot": 1326.3345195995487
+            }
+        },
+        "Bin2": {
+            "DY": {
+                "procrate": 0.0,
+                "sigrate_tot": 379.50563159789874
+            },
+            "QCD": {
+                "procrate": 0.0,
+                "sigrate_tot": 379.50563159789874
+            },
+            "VH": {
+                "procrate": 0.15656305154661995,
+                "sigrate_tot": 379.50563159789874
+            },
+            "Wjets": {
+                "procrate": 0.0,
+                "sigrate_tot": 379.50563159789874
+            },
+            "ggH_hww": {
+                "procrate": 0.0,
+                "sigrate_tot": 379.50563159789874
+            },
+            "qqH_hww": {
+                "procrate": 0.0,
+                "sigrate_tot": 379.50563159789874
+            }
+        }
+    },
+    "uncertTemplSame": {
+        "CMS_btag_cferr1": {
+            "Bin2": {
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "CMS_btag_cferr2": {
+            "Bin2": {
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "CMS_btag_hfstats1_2016": {
+            "Bin0": {
+                "VH__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            },
+            "Bin2": {
+                "VH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "CMS_btag_hfstats2_2016": {
+            "Bin0": {
+                "VH__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            },
+            "Bin2": {
+                "VH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "CMS_btag_lf": {
+            "Bin0": {
+                "VH__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                },
+                "qqH_hww__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            },
+            "Bin2": {
+                "VH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "CMS_eff_prefiring_2016": {
+            "Bin2": {
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "QCDscale_WpH_ACCEPT": {
+            "Bin2": {
+                "VH__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "QCDscale_ZH_ACCEPT": {
+            "Bin2": {
+                "VH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "pdf_WpH_ACCEPT": {
+            "Bin2": {
+                "VH__NOTMATCH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        },
+        "pdf_ZH_ACCEPT": {
+            "Bin2": {
+                "VH": {
+                    "value_d": 1.0,
+                    "value_u": 1.0
+                }
+            }
+        }
+    },
+    "uncertVarySameDirect": {
+        "CMS_PU_2016": {
+            "Bin0": {
+                "QCD__NOTMATCH": {
+                    "value_d": 1.0096476416087756,
+                    "value_u": 1.0087888091417923
+                },
+                "VH__NOTMATCH": {
+                    "value_d": 0.991619862499923,
+                    "value_u": 0.9895727722871914
+                }
+            },
+            "Bin1": {
+                "DY__NOTMATCH": {
+                    "value_d": 0.9997749169599927,
+                    "value_u": 0.9813561748838221
+                },
+                "qqWWqq__NOTMATCH": {
+                    "value_d": 0.9980113147157554,
+                    "value_u": 0.9981831219097712
+                }
+            },
+            "Bin2": {
+                "MultiBoson": {
+                    "value_d": 1.009627566947121,
+                    "value_u": 1.0043183025802882
+                }
+            }
+        },
+        "CMS_btag_cferr2": {
+            "Bin0": {
+                "qqWWqq": {
+                    "value_d": 1.0000953215146569,
+                    "value_u": 1.0005470788515198
+                }
+            },
+            "Bin2": {
+                "Wjets__NOTMATCH": {
+                    "value_d": 0.9981706708941543,
+                    "value_u": 0.9972131355698054
+                }
+            }
+        },
+        "CMS_btag_lfstats1_2016": {
+            "Bin2": {
+                "VH": {
+                    "value_d": 0.9998914156725535,
+                    "value_u": 0.9999777010268385
+                },
+                "WW": {
+                    "value_d": 1.0006914212215847,
+                    "value_u": 1.000398226805709
+                },
+                "ggWW__NOTMATCH": {
+                    "value_d": 1.000749468027962,
+                    "value_u": 1.0087045635096576
+                }
+            }
+        }
+    }
+}
