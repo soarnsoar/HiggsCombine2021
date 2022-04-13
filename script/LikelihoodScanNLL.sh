@@ -1,8 +1,8 @@
 SFs=SF_bin2,SF_bin1,SF_bin0
 NP=1200
-SF_bin0_RANGE=`python ../script/LikelihoodScanNLL.sh SF_bin0`
-SF_bin1_RANGE=`python ../script/LikelihoodScanNLL.sh SF_bin1`
-SF_bin2_RANGE=`python ../script/LikelihoodScanNLL.sh SF_bin2`
+SF_bin0_RANGE=`python ../script/LikelihoodScanNLL.py SF_bin0`
+SF_bin1_RANGE=`python ../script/LikelihoodScanNLL.py SF_bin1`
+SF_bin2_RANGE=`python ../script/LikelihoodScanNLL.py SF_bin2`
 
 
 RANGE_ARG="${SF_bin0_RANGE}:${SF_bin1_RANGE}:${SF_bin2_RANGE}"
