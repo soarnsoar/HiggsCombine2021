@@ -1,5 +1,0 @@
-MSSM
-https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHXSWGMSSMNeutral#ROOT_histograms_2018_and_beyond
-
-2HDM
-https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHWG2HDM?redirectedfrom=LHCPhysics.LHCHXSWG2HDM
