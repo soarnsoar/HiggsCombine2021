@@ -26,11 +26,11 @@ def MultiDimFitCommand(year,mass,bst,interference,POI,POlist,cut,suffix=""):
     
     ##---4)limit command
     POIARG=','.join(POI)
-    POIRANGE='=0,5:'.join(POI)
+    POIRANGE='=0.5,1.5:'.join(POI)
     POIRANGE.rstrip(':')
-    POIRANGE+='=0,5'
-    #multidimfit_command="combine -M MultiDimFit -d "+WSpath+" -m "+mass+" --redefineSignalPOIs "+POIARG+" --freezeParameters sigma,fvbf --setParameters sigma=0,fvbf=0 --algo grid --points 1200 --setParameterRanges "+POIRANGE+" "+opt_minst
-    multidimfit_command="combine -M MultiDimFit -d "+WSpath+" -m "+mass+" --redefineSignalPOIs "+POIARG+" --freezeParameters sigma,fvbf --setParameters sigma=0,fvbf=0 --algo singles --cl=0.68 --setParameterRanges "+POIRANGE+" "+opt_minst
+    POIRANGE+='=0.5,1.5'
+    multidimfit_command="combine -M MultiDimFit -d "+WSpath+" -m "+mass+" --redefineSignalPOIs "+POIARG+" --freezeParameters sigma,fvbf --setParameters sigma=0,fvbf=0 --algo grid --points 1200 --setParameterRanges "+POIRANGE+" "+opt_minst
+    #multidimfit_command="combine -M MultiDimFit -d "+WSpath+" -m "+mass+" --redefineSignalPOIs "+POIARG+" --freezeParameters sigma,fvbf --setParameters sigma=0,fvbf=0 --algo singles --cl=0.68 --setParameterRanges "+POIRANGE+" "+opt_minst
 
 
     ##---5)outputdir
