@@ -20,9 +20,9 @@ if __name__ == '__main__':
     param=sys.argv[1] ##
     nominal=int(sys.argv[2])
     xm,x0,xp=GetSigmaOnScanBranch(param)
-    x2m=xm-(x0-xm)
-    x2p=x0+(xp-x0)
+    x3m=xm-2*(x0-xm)
+    x3p=x0+2*(xp-x0)
     if nominal:
         print param+'='+str(x0)
     else:
-        print param+'='+str(x2m)+','+str(x2p)
+        print param+'='+str(x3m)+','+str(x3p)
