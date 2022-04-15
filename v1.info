@@ -1,0 +1,4 @@
+##--
+v1
+-ptoverm cut applied->rm @v2
+-not rm SR -> rm @v2
