@@ -6,24 +6,35 @@ def GetCardPath(mass,year,cut):
     mass=str(mass)
     year=str(year)
     #__BoostedALL_SB_VBFCUT_0.3
+    CRVAR="WW_mass"
+    SRVAR="WW_mass"
+
     if cut=="nocut":
-        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_novbfcut/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_novbfcut/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_novbfcut/WW_mass/datacard.txt"
-        
+        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_novbfcut/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_novbfcut/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_novbfcut/"+SRVAR+"/datacard.txt"
+
         #notcut
-        cats["hww_lqq_res_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_novbfcut/Event/datacard.txt"
-        cats["hww_lqq_res_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_novbfcut/Event/datacard.txt"
-        cats["hww_lqq_res_vbf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_novbfcut/WW_mass/datacard.txt"
+        cats["hww_lqq_res_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_novbfcut/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_novbfcut/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_novbfcut/"+SRVAR+"/datacard.txt"
     else:
-        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_VBFCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_VBFCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_VBFCUT_"+cut+"/WW_mass/datacard.txt"
+        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_VBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_VBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_VBFCUT_"+cut+"/"+SRVAR+"/datacard.txt"
+
+        cats["hww_lqq_bst_untag_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_UNTAGVBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_untag_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_UNTAGVBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_UNTAGVBFCUT_"+cut+"/"+SRVAR+"/datacard.txt"
         
         
-        cats["hww_lqq_res_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_VBFCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_res_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_VBFCUT_"+cut+"/Event/datacard.txt"
-        cats["hww_lqq_res_vbf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_VBFCUT_"+cut+"/WW_mass/datacard.txt"
+        cats["hww_lqq_res_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_VBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_VBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_VBFCUT_"+cut+"/"+SRVAR+"/datacard.txt"
+
+        cats["hww_lqq_res_untag_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_UNTAGVBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_untag_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_UNTAGVBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_untag_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_UNTAGVBFCUT_"+cut+"/"+SRVAR+"/datacard.txt"
         
 
 
