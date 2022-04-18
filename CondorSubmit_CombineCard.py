@@ -8,33 +8,33 @@ def GetCardPath(mass,year,cut):
     #__BoostedALL_SB_VBFCUT_0.3
     CRVAR="WW_mass"
     SRVAR="WW_mass"
-
+    #Datacards_Boosted_2016/Datacard_M1000/SR__VBFCUT0.1
+    #TOPCR__VBFCUT0.1
+    #Datacards_Boosted_2016_SB/Datacard_M1000/WJETCR__VBFCUT0.1
+    #Datacards_2016/Datacards_Boosted_2016/Datacard_M1000/SR__VBFCUT0.1
+    #Datacards_2016/Datacards_Boosted_2016_SB/Datacard_M1000/WJETCR__VBFCUT0.1
+    #Datacards_2016/Datacards_Resolved_2016/Datacard_M1000/SR__VBFCUT0.8
     if cut=="nocut":
-        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_novbfcut/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_novbfcut/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_novbfcut/"+SRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR/"+ CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR/"+ CRVAR+"/datacard.txt"
+
 
         #notcut
-        cats["hww_lqq_res_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_novbfcut/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_novbfcut/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_vbf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_novbfcut/"+SRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR/" +CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR/"    +CRVAR+"/datacard.txt"
     else:
-        cats["hww_lqq_bst_vbf_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_VBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_VBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_VBFCUT_"+cut+"/"+SRVAR+"/datacard.txt"
 
-        cats["hww_lqq_bst_untag_sb_"+year]="Datacard_M"+mass+"/__BoostedALL_SB_UNTAGVBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_untag_top_"+year]="Datacard_M"+mass+"/__BoostedALL_TOP_UNTAGVBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_untag_"+year]="Datacard_M"+mass+"/__BoostedALL_SR_UNTAGVBFCUT_"+cut+"/"+SRVAR+"/datacard.txt"
-        
-        
-        cats["hww_lqq_res_vbf_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_VBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_vbf_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_VBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_vbf_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_VBFCUT_"+cut+"/"+SRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_sb_"+year]= "Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__VBFCUT"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_top_"+year]="Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/TOPCR__VBFCUT" +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_vbf_"+year]=    "Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/SR__VBFCUT"    +cut+"/"+CRVAR+"/datacard.txt"
 
-        cats["hww_lqq_res_untag_sb_"+year]="Datacard_M"+mass+"/___ResolvedALL__SB_UNTAGVBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_untag_top_"+year]="Datacard_M"+mass+"/___ResolvedALL__TOP_UNTAGVBFCUT_"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_untag_"+year]="Datacard_M"+mass+"/___ResolvedALL__SR_UNTAGVBFCUT_"+cut+"/"+SRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__VBFCUT"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__VBFCUT" +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_vbf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__VBFCUT/"   +cut+"/"+CRVAR+"/datacard.txt"
+
+
         
 
 
@@ -86,7 +86,7 @@ if __name__ == '__main__':
     from ExportShellCondorSetup import Export
     workdir="WORKDIR/CombineCard/"+mass+"__"+bst+"__cut_"+cut+"__"+year
     os.system('mkdir -p Datacards_'+year)
-    commands=["cd "+os.getcwd()+'/Datacards_'+year,cc_command]
+    commands=["cd "+os.getcwd()+'/Datacards',cc_command]
     command=';'.join(commands)
     
     jobname=workdir
