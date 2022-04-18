@@ -8,6 +8,6 @@ for BST in ${ARR_BST[@]};do
 
 done
 
-    cp -r /cms_scratch/jhchoi/VBF_OPT_22_V10/WJETCR/2016/Datacards_Boosted Datacards_2016_Boosted_SB&
-    cp -r /cms_scratch/jhchoi/VBF_OPT_22_V10/WJETCR2017/Datacards_Boosted Datacards_2017_Boosted_SB&
-    cp -r /cms_scratch/jhchoi/VBF_OPT_22_V10/WJETCR/2018/Datacards_Boosted Datacards_2018_Boosted_SB&
+    cp -r /cms_scratch/jhchoi/VBF_OPT_22_V10/WJETCR/2016/Datacards_Boosted Datacards_Boosted_2016_SB&
+    cp -r /cms_scratch/jhchoi/VBF_OPT_22_V10/WJETCR/2017/Datacards_Boosted Datacards_Boosted_2017_SB&
+    cp -r /cms_scratch/jhchoi/VBF_OPT_22_V10/WJETCR/2018/Datacards_Boosted Datacards_Boosted_2018_SB&
