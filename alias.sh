@@ -1,1 +1,1 @@
-export __HC_VBFOPT__SOARNSOAR__=${PWD}
+export __HC_WTAGGER_COMPARE__SOARNSOAR__=${PWD}
