@@ -6,5 +6,5 @@ CURDIR=$PWD
 for MASS in ${ARR_MASS[@]};do
     #HP/Datacards_2016/Datacard_M1000/FullCutSR/WW_mass/
     command="cd ${CURDIR}/${WTAG}/Datacards_${YEAR}/Datacard_M${MASS}/FullCutSR/WW_mass&&text2workspace.py datacard.txt -P HiggsAnalysis.CombinedLimit.HiggsCombinePhysicsModel.XWWInterference_jhchoi:XWW  --PO noInterference -o WS.root&&combine -M AsymptoticLimits -d WS.root -m 1000 --freezeParameters fvbf --setParameters fvbf=0 --rAbsAcc 0 -n ggfonly&&combine -M AsymptoticLimits -d WS.root -m 1000 --freezeParameters fvbf --setParameters fvbf=1 --rAbsAcc 0 -n vbfonly"
-    python python_tool/ExportShellCondorSetup.py -c "$command" -d "WORKDIR/${WTAG}/${YEAR}/M${MASS}" -n "asymp" -m 1
+    python python_tool/ExportShellCondorSetup.py -c "$command" -d "WORKDIR/${WTAG}/${YEAR}/M${MASS}" -n "asymp" -m 1 -s 
 done
