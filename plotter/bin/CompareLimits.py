@@ -94,6 +94,6 @@ if __name__ == '__main__':
         ('MDWP0p5',{'name':'DeepAK8MD WP0p5','color':6,'linestyle':2}),
     ])
     for fvbf in ['ggfonly','vbfonly']:
-        #for year in [2016,2017,2018]:
-        for year in ['3yrs']:
+        for year in [2016,2017,2018,'3yrs']:
+        #for year in ['3yrs']:
             Draw(year,fvbf,wtaggers)

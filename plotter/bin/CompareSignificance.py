@@ -55,12 +55,14 @@ def Draw(year,fvbf,wtaggers):
         ylist=[]
         dict_y=CollectNevent(year,wtag,bkglist,xlist)
         _ybkg=dict_y['bkg']
+        
         for mass in xlist:
             mass=str(mass)
             if fvbf=='ggfonly': _ysig=dict_y['ggH_hww'+mass+'_RelW002']
             if fvbf=='vbfonly': _ysig=dict_y['qqH_hww'+mass+'_RelW002']
             _significance=_ysig/math.sqrt(_ybkg)
             ylist.append(_significance)
+            print _ybkg
             if mass=='1000':
                 print '---',wtag,'---'
                 print _ysig,_ybkg,_significance
