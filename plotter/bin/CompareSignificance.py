@@ -15,6 +15,8 @@ from collections import OrderedDict
 
 def CollectNevent(year,wtag,bkglist=[],masslist=[300,350,400,450,500,550,600,650,700,750,800,900,1000,1500,2000,2500,3000,4000,5000]):
     year=str(year)
+    if year=='3yrs':
+        return CollectNevent_3yrs(wtag,bkglist,masslist)
     maindir=os.getenv('__HC_WTAGGER_COMPARE__SOARNSOAR__')
     
     dict_y={}
@@ -39,6 +41,19 @@ def CollectNevent(year,wtag,bkglist=[],masslist=[300,350,400,450,500,550,600,650
 
 
     return dict_y
+
+def CollectNevent_3yrs(wtag,bkglist,masslist):
+    dict_y={}
+
+    dict_y_2016=CollectNevent(2016,wtag,bkglist,masslist)
+    dict_y_2017=CollectNevent(2017,wtag,bkglist,masslist)
+    dict_y_2018=CollectNevent(2018,wtag,bkglist,masslist)
+
+
+    proclist=list(set(sorted(dict_y_2016)+sorted(dict_y_2017)+sorted(dict_y_2018)))
+    for proc in proclist:
+        dict_y[proc]=dict_y_2016[proc]+dict_y_2017[proc]+dict_y_2018[proc]
+    return dict_y
 def GetTGraph(xlist,ylist):
     n=len(xlist)
     _gr=ROOT.TGraph(n,array('f',xlist),array('f',ylist))
@@ -62,10 +77,10 @@ def Draw(year,fvbf,wtaggers):
             if fvbf=='vbfonly': _ysig=dict_y['qqH_hww'+mass+'_RelW002']
             _significance=_ysig/math.sqrt(_ybkg)
             ylist.append(_significance)
-            print _ybkg
-            if mass=='1000':
-                print '---',wtag,'---'
-                print _ysig,_ybkg,_significance
+            #print _ybkg
+            #if mass=='1000':
+            #    print '---',wtag,'---'
+            #    print _ysig,_ybkg,_significance
         dict_gr[wtag]=GetTGraph(xlist,ylist)
         
 
@@ -83,7 +98,7 @@ def Draw(year,fvbf,wtaggers):
         #def SetStats(self,showstat=True):
         #def ShowCMSLumi(self,showcms=True,lumi=0):
         #def Draw(self,SavePath,l="L"):##l ==legend location
-    drawer=DrawTGraphs()
+    drawer=DrawTGraphs(year+'__'+fvbf)
     if str(year)=='2017':drawer.ShowCMSLumi(1,41.5)
     if str(year)=='2018':drawer.ShowCMSLumi(1,59.7)
     if str(year)=='3yrs':drawer.ShowCMSLumi(1,137)
@@ -95,6 +110,8 @@ def Draw(year,fvbf,wtaggers):
     if 'ggfonly' in fvbf:drawer.SetTitle('gg->X only')
     if 'vbfonly' in fvbf:drawer.SetTitle('vbfX only')
     drawer.SetLogy()
+    drawer.SetLogx()
+    drawer.SetRangeX(xlist[0]/2,xlist[-1]*2)
     os.system('mkdir -p plots/')
     drawer.Draw('plots/Significance__'+year+'__'+fvbf+'.pdf','RB')
     del drawer
@@ -120,6 +137,6 @@ if __name__ == '__main__':
         ('MDWP0p5',{'name':'DeepAK8MD WP0p5','color':6,'linestyle':2}),
     ])
     for fvbf in ['ggfonly','vbfonly']:
-        for year in [2016,2017,2018]:
+        for year in [2016,2017,2018,'3yrs']:
         #for year in ['3yrs']:
             Draw(year,fvbf,wtaggers)

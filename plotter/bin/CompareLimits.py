@@ -57,7 +57,7 @@ def Draw(year,fvbf,wtaggers):
         #def SetStats(self,showstat=True):
         #def ShowCMSLumi(self,showcms=True,lumi=0):
         #def Draw(self,SavePath,l="L"):##l ==legend location
-    drawer=DrawTGraphs()
+    drawer=DrawTGraphs(year+'__'+fvbf)
     if str(year)=='2017':drawer.ShowCMSLumi(1,41.5)
     if str(year)=='2018':drawer.ShowCMSLumi(1,59.7)
     if str(year)=='3yrs':drawer.ShowCMSLumi(1,137)
@@ -68,9 +68,13 @@ def Draw(year,fvbf,wtaggers):
         drawer.AddGraph(dict_gr[wtag],_name,_color,_linestyle)
     if 'ggfonly' in fvbf:drawer.SetTitle('gg->X only')
     if 'vbfonly' in fvbf:drawer.SetTitle('vbfX only')
+
     drawer.SetLogy()
+    drawer.SetLogx()
+    drawer.SetRangeX(xlist[0]/2,xlist[-1]*2)
     os.system('mkdir -p plots/')
     drawer.Draw('plots/'+year+'__'+fvbf+'.pdf','R')
+    del drawer.c
     del drawer
 
 
