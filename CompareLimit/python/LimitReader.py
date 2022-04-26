@@ -23,11 +23,19 @@ class LimitReader:
         self.cut=str(cut)
 
     def ReadJson(self):
+
         path='/'.join([__HC_VBFOPT__SOARNSOAR__,'AsymptoticLimits',self.year,'model_indep',self.bst,self.cut,'vbfonly','model_indep_NoI','indep.json'])
+        #print path
         self.data={}
         with open(path,'r') as st_json:
             self.data=json.load(st_json)
     def GetLimit(self,l='exp0'):
         self.ReadJson()
-        limit=self.data[str(float(self.mass))][l]
+        if str(float(self.mass)) in self.data:
+            if l in self.data[str(float(self.mass))]:
+                limit=self.data[str(float(self.mass))][l]
+            else:
+                limit=9999999999
+        else:
+            limit=99999999999999
         return limit
