@@ -7,7 +7,7 @@ import ROOT
 from array import array
 
 
-def GetOptCut(cuts,listmaxcut,dict_gr):
+def GetOptCut(cuts,listmaxcut,dict_gr,name):
     ###---Condition
     ##1) <increase/max(increase)> (avg for mass) is maximised
     ##2) increase > 1 ( cut must improve sensitivity )
@@ -30,11 +30,9 @@ def GetOptCut(cuts,listmaxcut,dict_gr):
             dict_Increase[cut].append(increase)
             if increase<1:
                 SkipThisCut=True
-                #print 'increase<1',mass,cut
                 break
             SumOfIncreaseOverMax+=increase/maxincrease
 
-        #print "SkipThisCut,",SkipThisCut
         if not SkipThisCut:
             AvgIncreaseOverMax=SumOfIncreaseOverMax/len(dict_gr)
         else:
@@ -45,13 +43,66 @@ def GetOptCut(cuts,listmaxcut,dict_gr):
             OptCut=cut
             i_OptCut=ic
             MaxAvgIncreaseOverMax=AvgIncreaseOverMax
-    print 'OptCut=',OptCut
-    print 'MaxAvgIncreaseOverMax',MaxAvgIncreaseOverMax
-    print '<List IncreaseOverMax>'
-    print dict_IncreaseOverMax[OptCut]
-    print '<List Increase>'
-    print dict_Increase[OptCut]
+    #print 'OptCut=',OptCut
+    #print 'MaxAvgIncreaseOverMax',MaxAvgIncreaseOverMax
+    #print '<List IncreaseOverMax>'
+    #print dict_IncreaseOverMax[OptCut]
+    #print '<List Increase>'
+    #print dict_Increase[OptCut]
 
+    ##----SaveALL Shapes
+    for im,mass in enumerate(sorted(dict_gr)):
+        
+        c2=ROOT.TCanvas("c__"+name,"c__"+name,800,600)
+        dict_gr[mass].Draw()
+        dict_gr[mass].SetTitle('')
+        dict_gr[mass].GetXaxis().SetTitle('isVBF Cut')
+        dict_gr[mass].GetYaxis().SetTitle('Increase of Sensitivity')
+
+        tline=ROOT.TLine(OptCut,0,OptCut,dict_gr[mass].GetYaxis().GetXmax())#TLine (Double_t x1, Double_t y1, Double_t x2, Double_t y2)
+        tline.SetLineStyle(2)
+        tline.SetLineColor(2)
+        
+        tline.Draw('same')
+        _leg=ROOT.TLegend(0.1,0.7,0.3,0.9)#x,y,x,y
+        _leg.AddEntry(tline,'Opt. Cut','l')
+        _leg.Draw()
+        savedir='plots/cut_increase/'+name
+        os.system('mkdir -p '+savedir)
+        c2.SaveAs(savedir+'/'+str(mass)+'.pdf')
+        del c2
+        del tline
+        del _leg
+
+    ##----x : mass y:ratio to maximum
+    masslist=sorted(dict_gr)
+    ratio_to_max_list=[]
+    for im, mass in enumerate(sorted(dict_gr)):
+        dict_IncreaseOverMax[OptCut]
+        maxcut=listmaxcut[im]
+        increase=dict_gr[mass].Eval(OptCut)
+        maxincrease=dict_gr[mass].Eval(maxcut)
+        ratio_to_max=increase/maxincrease
+        ratio_to_max_list.append(ratio_to_max)
+    ##--Graph
+    gr_ratio=ROOT.TGraph(len(dict_gr),array('f',masslist),array('f',ratio_to_max_list))
+    c3=ROOT.TCanvas("c__"+name,"c__"+name,800,600)
+    gr_ratio.Draw()
+    gr_ratio.SetTitle('')
+    gr_ratio.GetXaxis().SetTitle("M(X) [GeV]")
+    gr_ratio.GetYaxis().SetTitle("Ratio to max. increase")
+
+    tline=ROOT.TLine(gr_ratio.GetXaxis().GetXmin(),MaxAvgIncreaseOverMax,gr_ratio.GetXaxis().GetXmax(),MaxAvgIncreaseOverMax)#TLine (Double_t x1, Double_t y1, Double_t x2, Double_t y2)
+    tline.SetLineStyle(2)
+    tline.SetLineColor(2)
+    tline.Draw('same')
+    _leg=ROOT.TLegend(0.1,0.9,0.3,1.0)#x,y,x,y                                                                                                                                
+    _leg.AddEntry(tline,'Avg. = '+str(round(MaxAvgIncreaseOverMax,2)),'l')
+    _leg.Draw()
+
+    savedir='plots/ratio_to_maxincrease/'
+    os.system('mkdir -p '+savedir)
+    c3.SaveAs(savedir+'/'+name+'.pdf')
     return OptCut,MaxAvgIncreaseOverMax
 
 def Draw(bst,year):
@@ -106,7 +157,7 @@ def Draw(bst,year):
     c=ROOT.TCanvas()
     #gr.Draw()
     ##----draw cut give max performance
-    optcut,MaxAvgIncreaseOverMax=GetOptCut(cuts,listmaxcut,dict_gr)
+    optcut,MaxAvgIncreaseOverMax=GetOptCut(cuts,listmaxcut,dict_gr,bst+'__'+year)
     listoptcut=[optcut]*len(masses)
     #print listoptcut
     gropt=ROOT.TGraph(len(masses),array('f',masses),array('f',listoptcut))
@@ -118,15 +169,7 @@ def Draw(bst,year):
     h.SetTitle('Exp.Limit(nocut)/Exp.Limit')
     h.GetXaxis().SetTitle("M(X) [GeV]")
     h.GetYaxis().SetTitle("isVBF score")
-    #h.GetZaxis().SetNdivisions(550)
-    
-    #gr.Draw("colz")
-    #gr.Draw("PCOL")
-    #ROOT.gPad.Modified()
-    #ROOT.gPad.Update()
-    #ROOT.gPad.GetView().TopView()
     h.Draw('colz')
-    #grmax.Draw('same')
     gropt.Draw('same')
     if bst=="Boosted":c.SetLogx()
     ##---Add Box
@@ -139,13 +182,8 @@ def Draw(bst,year):
     c.SaveAs(savepath)
 
 
-    ##----GetOptCut()----##
-
 if __name__ == '__main__':
-    #bst="Boosted"
-    #year="2016"
-    #bst=sys.argv[1]
-    #year=sys.argv[2]
+
     bstlist=['Boosted','Resolved']
     yearlist=[2016,2017,2018]
     for year in yearlist:
