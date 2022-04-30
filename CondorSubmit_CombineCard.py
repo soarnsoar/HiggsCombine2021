@@ -95,7 +95,19 @@ if __name__ == '__main__':
     workdir="WORKDIR/CombineCard/"+mass+"__"+bst+"__cut_"+cut+"__"+year
     os.system('mkdir -p Datacards_'+year)
     commands=["cd "+os.getcwd()+'/Datacards_'+year,cc_command]
-    command=';'.join(commands)
+    ##--Add Validation and Rebinning
+    cardpath='combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'__CUT_'+cut+'.txt'
+    vjson='combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'__CUT_'+cut+'.json'
+    #--1)Validation
+    valcom='ValidateDatacards.py '+cardpath+' --jsonFile '+vjson
+    commands.append(valcom)
+    #--2)Rebinning
+    RebinningScript=os.getcwd()+'/python_tool/HC/RebinningTool.py'
+    rebincom='python '+RebinningScript+' '+cardpath+' '+vjson
+    commands.append(rebincom)
+
+    #------all commands
+    command='&&'.join(commands)
     
     jobname=workdir
     jobname='CombineDatacards'
