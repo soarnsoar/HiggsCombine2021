@@ -12,8 +12,8 @@ while [ 1 ];do
 done
 python Tools/FixRateParamsCombinedCard.py
 
-source Submit_Workspace.sh &> logs/Submit_Workspace.log
-
+source Submit_Workspace.sh
+sleep 60
 while [ 1 ];do
     N=`ls WORKDIR/MakeWorkSpace/model_indep_NoI/*/*jid|wc -l`
     if [ $N -eq 0 ];then
@@ -24,7 +24,17 @@ while [ 1 ];do
     sleep 180
     
 done
-source Submit_AsymptoticLimits.sh &> logs/Submit_AsymptoticLimits.log
-
-source CollectLimits.sh &> logs/CollectLimits.log
+source Submit_AsymptoticLimits.sh
+sleep 60
+while [ 1 ];do
+    N=`ls WORKDIR/AsymptoticLimits/model_indep_NoI/*/*/*jid|wc -l`
+    if [ $N -eq 0 ];then
+        break
+    fi
+    echo $N
+    echo "sleep 180@Asymp"
+    sleep 180
+    
+done
+source CollectLimits.sh
 

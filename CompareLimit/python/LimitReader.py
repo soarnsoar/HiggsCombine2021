@@ -1,10 +1,10 @@
 import json
 import sys
 import os
-__HC_VBFOPT__SOARNSOAR__=os.getenv("__HC_VBFOPT__SOARNSOAR__")
-#sys.path.append(__HC_VBFOPT__SOARNSOAR__)
+__HC_MEKDOPT__SOARNSOAR__=os.getenv("__HC_MEKDOPT__SOARNSOAR__")
+#sys.path.append(__HC_MEKDOPT__SOARNSOAR__)
 #combineTool.py -M CollectLimits -i higgsCombine*.root -o indep.json
-#AsymptoticLimits/2016/model_indep/Boosted/0.05/vbfonly/model_indep_NoI/indep.json
+#AsymptoticLimits/2016/model_indep/Boosted/0.05/ggfonly/model_indep_NoI/indep.json
 '''
   "1000.0": {
     "exp+1": 0.027506103739142418,
@@ -24,7 +24,7 @@ class LimitReader:
 
     def ReadJson(self):
 
-        path='/'.join([__HC_VBFOPT__SOARNSOAR__,'AsymptoticLimits',self.year,'model_indep',self.bst,self.cut,'vbfonly','model_indep_NoI','indep.json'])
+        path='/'.join([__HC_MEKDOPT__SOARNSOAR__,'AsymptoticLimits',self.year,'model_indep',self.bst,self.cut,'ggfonly','model_indep_NoI','indep.json'])
         #print path
         self.data={}
         with open(path,'r') as st_json:

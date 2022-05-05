@@ -10,7 +10,17 @@ while [ 1 ];do
     sleep 180
     
 done
-source Submit_AsymptoticLimits.sh &> logs/Submit_AsymptoticLimits.log
-
-source CollectLimits.sh &> logs/CollectLimits.log
+source Submit_AsymptoticLimits.sh
+sleep 60
+while [ 1 ];do
+    N=`ls WORKDIR/AsymptoticLimits/model_indep_NoI/*/*/*jid|wc -l`
+    if [ $N -eq 0 ];then
+        break
+    fi
+    echo $N
+    echo "sleep 180@Asymp"
+    sleep 180
+    
+done
+source CollectLimits.sh
 

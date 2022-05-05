@@ -3,6 +3,7 @@ ARR_MASS=(115 120 124 125 126 130 135 140 145 150 155 160 165 170 175 180 190 20
 #ARR_BST=(all Boosted Resolved)
 
 ARR_BST=(Boosted Resolved)
+#ARR_BST=(Resolved)
 ARR_YEAR=(2016 2017 2018 )
 
 for YEAR in ${ARR_YEAR[@]};do

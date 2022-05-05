@@ -1,4 +1,5 @@
 ARR_BST=(Boosted Resolved)
+#ARR_BST=(Resolved)
 ARR_YEAR=(2016 2017 2018 )
 
 for YEAR in ${ARR_YEAR[@]};do

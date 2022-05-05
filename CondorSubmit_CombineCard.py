@@ -15,32 +15,32 @@ def GetCardPath(mass,year,cut):
     #Datacards_2016/Datacards_Boosted_2016_SB/Datacard_M1000/WJETCR__VBFCUT0.1
     #Datacards_2016/Datacards_Resolved_2016/Datacard_M1000/SR__VBFCUT0.8
     if cut=="nocut":
-        cats["hww_lqq_bst_vbf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR/"+ CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR/"+ CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_ggf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_ggf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR/"+ CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_ggf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR/"+ CRVAR+"/datacard.txt"
 
 
         #notcut
-        cats["hww_lqq_res_vbf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_vbf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR/" +CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_vbf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR/"    +CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_ggf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_ggf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR/" +CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_ggf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR/"    +CRVAR+"/datacard.txt"
     else:
 
-        cats["hww_lqq_bst_vbf_sb_"+year]= "Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__VBFTAG"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_vbf_top_"+year]="Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/TOPCR__VBFTAG" +cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_vbf_"+year]=    "Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/SR__VBFTAG"    +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_ggf_sb_"+year]= "Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__MEKDTAG"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_ggf_top_"+year]="Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/TOPCR__MEKDTAG" +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_ggf_"+year]=    "Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/SR__MEKDTAG"    +cut+"/"+CRVAR+"/datacard.txt"
 
-        cats["hww_lqq_res_vbf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__VBFTAG"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_vbf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__VBFTAG" +cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_vbf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__VBFTAG"   +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_ggf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__MEKDTAG"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_ggf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__MEKDTAG" +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_ggf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__MEKDTAG"   +cut+"/"+CRVAR+"/datacard.txt"
         ##--untag
-        cats["hww_lqq_bst_untag_sb_"+year]= "Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__VBFUNTAG"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_untag_top_"+year]="Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/TOPCR__VBFUNTAG" +cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_untag_"+year]=    "Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/SR__VBFUNTAG"    +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_untag_sb_"+year]= "Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__MEKDUNTAG"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_untag_top_"+year]="Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/TOPCR__MEKDUNTAG" +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_bst_untag_"+year]=    "Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/SR__MEKDUNTAG"    +cut+"/"+CRVAR+"/datacard.txt"
 
-        cats["hww_lqq_res_untag_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__VBFUNTAG"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_untag_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__VBFUNTAG" +cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_untag_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__VBFUNTAG"   +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_untag_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__MEKDUNTAG"+cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_untag_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__MEKDUNTAG" +cut+"/"+CRVAR+"/datacard.txt"
+        cats["hww_lqq_res_untag_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__MEKDUNTAG"   +cut+"/"+CRVAR+"/datacard.txt"
 
 
         
@@ -95,7 +95,21 @@ if __name__ == '__main__':
     workdir="WORKDIR/CombineCard/"+mass+"__"+bst+"__cut_"+cut+"__"+year
     os.system('mkdir -p Datacards_'+year)
     commands=["cd "+os.getcwd()+'/Datacards_'+year,cc_command]
-    command=';'.join(commands)
+
+
+    ##--Add Validation and Rebinning
+    cardpath='combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'__CUT_'+cut+'.txt'
+    vjson='combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'__CUT_'+cut+'.json'
+    #--1)Validation
+    valcom='ValidateDatacards.py '+cardpath+' --jsonFile '+vjson
+    commands.append(valcom)
+    #--2)Rebinning
+    RebinningScript=os.getcwd()+'/python_tool/HC/RebinningTool.py'
+    rebincom='python '+RebinningScript+' '+cardpath+' '+vjson
+    commands.append(rebincom)
+
+
+    command='&&'.join(commands)
     
     jobname=workdir
     jobname='CombineDatacards'
