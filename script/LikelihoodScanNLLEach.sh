@@ -16,21 +16,29 @@ echo "---->${INIT_ARG}"
 echo "---->$RANGE_ARG"
 
 
+RANGE_ARG="${SF_Bin0_RANGE}:${SF_Bin1_RANGE}:${SF_Bin2_RANGE}"
+INIT_ARG="${SF_Bin0_init},${SF_Bin1_init},${SF_Bin2_init}"
+
+
+INIT_ARG="SF_Bin2=1,SF_Bin1=1,SF_Bin0=1"
 ##---SF_Bin0
 echo SF_Bin0
 POI="SF_Bin0"
 POIRANGE="$SF_Bin0_RANGE"
-combine -M MultiDimFit -d ${1} -m 1000 --algo grid --points ${NP}  --redefineSignalPOIs ${POI} --setParameters r=1,${INIT_ARG} --freezeParameters r -n nll_${POI} --setParameterRanges ${POIRANGE}  &> NLL_${POI}.log&
+#POIRANGE="SF_Bin0=0.4,2"
+combine -M MultiDimFit -d ${1} -m 1000 --algo grid --points ${NP}  --redefineSignalPOIs ${POI} --setParameters ${INIT_ARG} -n nll_${POI} --setParameterRanges ${POIRANGE}  &> NLL_${POI}.log&
 
 echo SF_Bin1
 POI="SF_Bin1"
 POIRANGE="$SF_Bin1_RANGE"
-combine -M MultiDimFit -d ${1} -m 1000 --algo grid --points ${NP}  --redefineSignalPOIs ${POI} --setParameters r=1,${INIT_ARG} --freezeParameters r -n nll_${POI} --setParameterRanges ${POIRANGE}  &> NLL_${POI}.log&
+#POIRANGE="SF_Bin1=0.4,2"
+combine -M MultiDimFit -d ${1} -m 1000 --algo grid --points ${NP}  --redefineSignalPOIs ${POI} --setParameters ${INIT_ARG} -n nll_${POI} --setParameterRanges ${POIRANGE}  &> NLL_${POI}.log&
 
 echo SF_Bin2
 POI="SF_Bin2"
 POIRANGE="$SF_Bin2_RANGE"
-combine -M MultiDimFit -d ${1} -m 1000 --algo grid --points ${NP}  --redefineSignalPOIs ${POI} --setParameters r=1,${INIT_ARG} --freezeParameters r -n nll_${POI} --setParameterRanges ${POIRANGE}  &> NLL_${POI}.log&
+#POIRANGE="SF_Bin2=0.4,2"
+combine -M MultiDimFit -d ${1} -m 1000 --algo grid --points ${NP}  --redefineSignalPOIs ${POI} --setParameters ${INIT_ARG} -n nll_${POI} --setParameterRanges ${POIRANGE}  &> NLL_${POI}.log&
 
 
 

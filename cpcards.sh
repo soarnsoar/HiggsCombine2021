@@ -1,5 +1,8 @@
-cp -r /cms_scratch/jhchoi/ANv9Base/SBWTAGSF_MEASURE/FATJETBASE/2016/Datacards Datacards_2016&
-cp -r /cms_scratch/jhchoi/ANv9Base/SBWTAGSF_MEASURE/FATJETBASE/2017/Datacards Datacards_2017&
-cp -r /cms_scratch/jhchoi/ANv9Base/SBWTAGSF_MEASURE/FATJETBASE/2018/Datacards Datacards_2018&
+YEARS=(2016 2017 2018)
+for YEAR in ${YEARS[@]};do
+    mkdir -p Datacards_${YEAR}
+    cp -r /cms_scratch/jhchoi/ANv9Base/SBWTAGSF_MEASURE/FATJETBASE/${YEAR}/Datacards_MC Datacards_${YEAR}/&
+    cp -r /cms_scratch/jhchoi/ANv9Base/SBWTAGSF_MEASURE/FATJETBASE/${YEAR}/Datacards_DATA Datacards_${YEAR}/&
+done
 
 
