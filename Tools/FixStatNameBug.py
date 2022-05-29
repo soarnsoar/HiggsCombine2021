@@ -2,7 +2,7 @@
 
 ##---scan all datacards
 import glob
-DCLIST=glob.glob('Datacards_201*/*/*/*/*.txt')
+DCLIST=glob.glob('Datacards_201*/*/*/*/*/*.txt')
 print "nDC=",len(DCLIST)
 
 ##--fix

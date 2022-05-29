@@ -3,11 +3,11 @@ import sys
 sys.path.insert(0, "python_tool/")
 from ExportShellCondorSetup import Export
 
-def AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,cut,suffix=""):
+def AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,suffix=""):
 
     if not interference: suffix+="_NoI"
     ##---1)WORKDIR
-    workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+mass+"__"+bst+"__"+year+"__"+cut+"/"+fvbf+'/'
+    workdir="WORKDIR/AsymptoticLimits/"+suffix+"/"+mass+"__"+bst+"__"+year+"/"+fvbf+'/'
     ##---2)input WS
     WSDIRpath=os.getcwd()+"/"+'Workspaces_'+year
     #if not interference: WSDIRpath+="_NoI"
@@ -15,7 +15,7 @@ def AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,cut,suffix="")
 
     #suffix="_".join(POlist)
 
-    WSpath=WSDIRpath+"/"+suffix+"/hwwlnuqq_"+("_".join([bst,mass,year,cut]))+".root"
+    WSpath=WSDIRpath+"/"+suffix+"/hwwlnuqq_"+("_".join([bst,mass,year]))+".root"
     #WSpath=WSDIRpath+"/hwwlnuqq_"+bst+"_"+mass+"_"+year+".root"
     ##--3)fvbf options
     opt_fvbf="-------"
@@ -36,7 +36,7 @@ def AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,cut,suffix="")
     #asymplimit_command="combine -M AsymptoticLimits -d "+WSpath+" -t -1 -m "+mass+" "+' --freezeParameters allConstrainedNuisances'
 
     ##---5)outputdir
-    outputdir='AsymptoticLimits/'+year+'/model_indep/'+bst+"/"+"/"+cut+"/"+fvbf+'/'+suffix
+    outputdir='AsymptoticLimits/'+year+'/model_indep/'+bst+"/"+"/"+"/"+fvbf+'/'+suffix
     
     
     commands=["cd "+os.getcwd(),'mkdir -p '+outputdir,'cd '+outputdir,asymplimit_command]
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     parser.add_option("-i", "--interference", dest="interference" ,default=False  , action="store_true")
     parser.add_option("-f", "--fvbf", default=False,dest="fvbf")
     parser.add_option("-p", "--PO", default=False,dest="PO")
-    parser.add_option("-c", "--cut", default=False,dest="cut")
+    
     
     (options, args) = parser.parse_args()
 
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     mass=options.mass
     bst=options.bst
     interference=bool(options.interference)
-    cut=options.cut
+    
     print 'interference',interference
     if options.fvbf:
         fvbf=options.fvbf
@@ -82,6 +82,6 @@ if __name__ == '__main__':
         
 
 
-    workdir,command,jobname,submit,ncpu=AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,cut,"model_indep")
+    workdir,command,jobname,submit,ncpu=AsymptoticLimitCommand(year,mass,bst,interference,fvbf,POlist,"model_indep")
     Export(workdir,command,jobname,submit,ncpu)
     

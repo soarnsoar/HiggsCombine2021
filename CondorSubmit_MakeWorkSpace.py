@@ -5,7 +5,7 @@ sys.path.insert(0, "../python_tool/")
 from ExportShellCondorSetup import Export
 
 
-def MakeWorkSpaceCommand(year,mass,bst,interference,POlist,cut,model_alias=""):
+def MakeWorkSpaceCommand(year,mass,bst,interference,POlist,model_alias=""):
     year=str(year)
     mass=str(mass)
     #model_alias="_".join(POlist)
@@ -15,10 +15,10 @@ def MakeWorkSpaceCommand(year,mass,bst,interference,POlist,cut,model_alias=""):
     #    workdir="WORKDIR/MakeWorkSpace/"+mass+"__"+bst+"__"+year
     #else:
     #    workdir="WORKDIR/MakeWorkSpace/"+mass+"__"+bst+"__"+year+"__"+model_alias
-    workdir="WORKDIR/MakeWorkSpace/"+model_alias+"/"+("__".join([mass,bst,year,cut]))
+    workdir="WORKDIR/MakeWorkSpace/"+model_alias+"/"+("__".join([mass,bst,year]))
     ##---2)input card path
-    #combine_hwwlnuqq_Boosted_1000_2016__CUT_0.1
-    combinecard_path="Datacards_"+year+"/combine_hwwlnuqq_"+bst+"_"+mass+"_"+year+"__CUT_"+cut+".txt"
+
+    combinecard_path="Datacards_"+year+"/combine_hwwlnuqq_"+bst+"_"+mass+"_"+year+".txt"
     ##---3)model python
     modelpy="HiggsAnalysis.CombinedLimit.HiggsCombinePhysicsModel.XWWInterference_jhchoi:XWW"
     ##---4)Physics Options
@@ -30,7 +30,7 @@ def MakeWorkSpaceCommand(year,mass,bst,interference,POlist,cut,model_alias=""):
     WSDIRpath='Workspaces_'+year+"/"+model_alias
 
     
-    WSpath=WSDIRpath+"/hwwlnuqq_"+("_".join([bst,mass,year,cut]))+".root"
+    WSpath=WSDIRpath+"/hwwlnuqq_"+("_".join([bst,mass,year]))+".root"
     ##---6)WS command
     ws_command="text2workspace.py "+combinecard_path+" -P "+modelpy+" "+PO+" -o "+WSpath
     commands=["cd "+os.getcwd(),'mkdir -p '+WSDIRpath,ws_command]
@@ -53,7 +53,7 @@ if __name__ == '__main__':
     parser.add_option("-b", "--bst", dest="bst" , help="bst")
     parser.add_option("-i", "--interference", dest="interference" ,default=False  , action="store_true")
     parser.add_option("-p", "--PO", dest="PO" ,default=False)
-    parser.add_option("-c", "--cut", dest="cut" ,default=False)
+    
 
     
     (options, args) = parser.parse_args()
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     mass=options.mass
     bst=options.bst
     interference=options.interference
-    cut=options.cut
+    
     if options.PO:
         POlist=options.PO.split(',')
     else:
@@ -71,5 +71,5 @@ if __name__ == '__main__':
 
     
         
-    workdir,command,jobname,submit,ncpu=MakeWorkSpaceCommand(year,mass,bst,interference,POlist,cut,"model_indep")
+    workdir,command,jobname,submit,ncpu=MakeWorkSpaceCommand(year,mass,bst,interference,POlist,"model_indep")
     Export(workdir,command,jobname,submit,ncpu)
