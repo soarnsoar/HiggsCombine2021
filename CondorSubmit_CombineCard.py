@@ -1,46 +1,45 @@
 import os
 
 ##---------------------------------Card Config----------------------##
-def GetCardPath(mass,year,cut):
+def GetCardPath(mass,year):
     cats={}
     mass=str(mass)
     year=str(year)
-    #__BoostedALL_SB_VBFCUT_0.3
+
     CRVAR="WW_mass"
     SRVAR="WW_mass"
-    #Datacards_Boosted_2016/Datacard_M1000/SR__VBFCUT0.1
-    #TOPCR__VBFCUT0.1
-    #Datacards_Boosted_2016_SB/Datacard_M1000/WJETCR__VBFCUT0.1
-    #Datacards_2016/Datacards_Boosted_2016/Datacard_M1000/SR__VBFCUT0.1
-    #Datacards_2016/Datacards_Boosted_2016_SB/Datacard_M1000/WJETCR__VBFCUT0.1
-    #Datacards_2016/Datacards_Resolved_2016/Datacard_M1000/SR__VBFCUT0.8
-    if cut=="nocut":
-        cats["hww_lqq_bst_ggf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_ggf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR/"+ CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_ggf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR/"+ CRVAR+"/datacard.txt"
 
 
-        #notcut
-        cats["hww_lqq_res_ggf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_ggf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR/" +CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_ggf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR/"    +CRVAR+"/datacard.txt"
-    else:
+    #Boosted
+    cats["hww_lqq_bst_vbf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__VBF/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_vbf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR__VBF/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_vbf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR__VBF/"+ CRVAR+"/datacard.txt"
 
-        cats["hww_lqq_bst_ggf_sb_"+year]= "Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__MEKDTAG"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_ggf_top_"+year]="Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/TOPCR__MEKDTAG" +cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_ggf_"+year]=    "Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/SR__MEKDTAG"    +cut+"/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_ggf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__GGF/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_ggf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR__GGF/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_ggf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR__GGF/"+ CRVAR+"/datacard.txt"
 
-        cats["hww_lqq_res_ggf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__MEKDTAG"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_ggf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__MEKDTAG" +cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_ggf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__MEKDTAG"   +cut+"/"+CRVAR+"/datacard.txt"
-        ##--untag
-        cats["hww_lqq_bst_untag_sb_"+year]= "Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__MEKDUNTAG"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_untag_top_"+year]="Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/TOPCR__MEKDUNTAG" +cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_bst_untag_"+year]=    "Datacards_Boosted_"+year+    "/Datacard_M"+mass+"/SR__MEKDUNTAG"    +cut+"/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_untag_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__UNTAG/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_untag_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR__UNTAG/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_untag_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR__UNTAG/"+ CRVAR+"/datacard.txt"
 
-        cats["hww_lqq_res_untag_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__MEKDUNTAG"+cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_untag_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__MEKDUNTAG" +cut+"/"+CRVAR+"/datacard.txt"
-        cats["hww_lqq_res_untag_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__MEKDUNTAG"   +cut+"/"+CRVAR+"/datacard.txt"
+
+    
+
+    #Resolved
+    cats["hww_lqq_res_vbf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__VBF/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_vbf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__VBF/" +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_vbf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__VBF/"    +CRVAR+"/datacard.txt"
+
+    cats["hww_lqq_res_ggf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__GGF/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_ggf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__GGF/" +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_ggf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__GGF/"    +CRVAR+"/datacard.txt"
+
+    cats["hww_lqq_res_untag_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__UNTAG/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_untag_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__UNTAG/" +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_untag_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__UNTAG/"    +CRVAR+"/datacard.txt"
+
+
 
 
         
@@ -50,10 +49,10 @@ def GetCardPath(mass,year,cut):
         
     return cats
 
-def GetCombineCardCommands(mass,year,bst,cut=True):
+def GetCombineCardCommands(mass,year,bst):
     cats={}
 
-    cats=GetCardPath(mass,year,cut)
+    cats=GetCardPath(mass,year)
     
 
     command="combineCards.py -S "
@@ -75,31 +74,30 @@ if __name__ == '__main__':
     parser.add_option("-y", "--year", dest="year" , help="year")
     parser.add_option("-m", "--mass", dest="mass" , help="mass")
     parser.add_option("-b", "--bst", dest="bst" , help="bst")
-    parser.add_option("-c", "--cut", dest="cut" , help="cut")
     (options, args) = parser.parse_args()
 
     year=options.year
     mass=options.mass
     bst=options.bst
-    cut=(options.cut)
+
 
     
 
-    cc_command=GetCombineCardCommands(mass,year,bst,cut)+'> combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'__CUT_'+cut+'.txt'
+    cc_command=GetCombineCardCommands(mass,year,bst)+'> combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'.txt'
 
     
     #Export(workdir,command,jobname,submit,ncpu)
     import sys
     sys.path.insert(0, "python_tool/")
     from ExportShellCondorSetup import Export
-    workdir="WORKDIR/CombineCard/"+mass+"__"+bst+"__cut_"+cut+"__"+year
+    workdir="WORKDIR/CombineCard/"+mass+"__"+bst+"__"+year
     os.system('mkdir -p Datacards_'+year)
     commands=["cd "+os.getcwd()+'/Datacards_'+year,cc_command]
 
 
     ##--Add Validation and Rebinning
-    cardpath='combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'__CUT_'+cut+'.txt'
-    vjson='combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'__CUT_'+cut+'.json'
+    cardpath='combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'.txt'
+    vjson='combine_hwwlnuqq_'+bst+'_'+mass+'_'+year+'.json'
     #--1)Validation
     valcom='ValidateDatacards.py '+cardpath+' --jsonFile '+vjson
     commands.append(valcom)
