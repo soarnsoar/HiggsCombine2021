@@ -1,0 +1,500 @@
+Warning: Bin PassBin0m has no signal processes contributing to it
+Warning: Bin PassBin1m has no signal processes contributing to it
+Warning: Bin PassBin2m has no signal processes contributing to it
+Warning: Bin FailBin0m has no signal processes contributing to it
+Warning: Bin FailBin1m has no signal processes contributing to it
+Warning: Bin FailBin2m has no signal processes contributing to it
+<init>
+<setPhysicsOptions>
+Ninit_PassBin0:31251.0
+self.Ninit_PassBin0= 31251.0
+Ninit_PassBin1:8787.0
+self.Ninit_PassBin1= 8787.0
+Ninit_PassBin2:2491.0
+self.Ninit_PassBin2= 2491.0
+Ninit_FailBin0:125683.0
+self.Ninit_FailBin0= 125683.0
+Ninit_FailBin1:39370.0
+self.Ninit_FailBin1= 39370.0
+Ninit_FailBin2:12930.0
+self.Ninit_FailBin2= 12930.0
+<setModelBuilder>
+<doParametersOfInterest>
+<preProcessNuisances>
+---preProcessNuisances---
+--nuisances--
+CMS_PU_2018
+CMS_ak8jet_res_j_2018
+CMS_ak8jet_scale_JESTotal
+CMS_btag_cferr1
+CMS_btag_cferr2
+CMS_btag_hf
+CMS_btag_hfstats1_2018
+CMS_btag_hfstats2_2018
+CMS_btag_lf
+CMS_btag_lfstats1_2018
+CMS_btag_lfstats2_2018
+CMS_eff_e_2018
+CMS_eff_hwwtrigger_2018
+CMS_eff_m_2018
+CMS_res_j_2018
+CMS_scale_JESTotal
+CMS_scale_e_2018
+CMS_scale_m_2018
+CMS_scale_met_2018
+PS_FSR
+PS_ISR
+QCDscale_WW_ACCEPT
+QCDscale_WmH_ACCEPT
+QCDscale_WpH_ACCEPT
+QCDscale_ZH_ACCEPT
+QCDscale_ggH_ACCEPT
+QCDscale_qqH_ACCEPT
+QCDscale_ttbar_ACCEPT
+QCDscale_wjets_ACCEPT
+ggWWnorm
+lumi_13TeV_2018
+lumi_13TeV_BCC
+lumi_13TeV_LS
+lumi_13TeV_XY
+pdf_Higgs_gg_ACCEPT
+pdf_Higgs_qqbar_ACCEPT
+pdf_WW_ACCEPT
+pdf_WmH_ACCEPT
+pdf_WpH_ACCEPT
+pdf_ZH_ACCEPT
+pdf_ttbar_ACCEPT
+pdf_wjets_ACCEPT
+qqWWqqnorm
+<getYieldScale>
+PassBin0
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin PassBin0 by 1
+<getYieldScale>
+PassBin0
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin PassBin0 by N_PassBin0
+<getYieldScale>
+PassBin1
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin PassBin1 by 1
+<getYieldScale>
+PassBin1
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin PassBin1 by N_PassBin1
+<getYieldScale>
+PassBin2
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin PassBin2 by 1
+<getYieldScale>
+PassBin2
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin PassBin2 by N_PassBin2
+<getYieldScale>
+FailBin0
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin FailBin0 by 1
+<getYieldScale>
+FailBin0
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin FailBin0 by N_FailBin0
+<getYieldScale>
+FailBin1
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin FailBin1 by 1
+<getYieldScale>
+FailBin1
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin FailBin1 by N_FailBin1
+<getYieldScale>
+FailBin2
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin FailBin2 by 1
+<getYieldScale>
+FailBin2
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin FailBin2 by N_FailBin2
+<getYieldScale>
+PassBin0m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin PassBin0m by N_PassBin0m
+<getYieldScale>
+PassBin1m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin PassBin1m by N_PassBin1m
+<getYieldScale>
+PassBin2m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin PassBin2m by N_PassBin2m
+<getYieldScale>
+FailBin0m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin FailBin0m by N_FailBin0m
+<getYieldScale>
+FailBin1m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin FailBin1m by N_FailBin1m
+<getYieldScale>
+FailBin2m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin FailBin2m by N_FailBin2m
+Channel PassBin0 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+PassBin0
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin PassBin0 by 1
+<getYieldScale>
+PassBin0
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin PassBin0 by N_PassBin0
+============================================================
+Analysing bin errors for: prop_binPassBin0
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          7869.642963     274.137258      total sum                     
+0          824.000000      28.705400       Unweighted events, alpha=9.550538
+  => Total parameter prop_binPassBin0_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+1          9399.330056     230.886173      total sum                     
+1          1657.000000     40.706265       Unweighted events, alpha=5.672499
+  => Total parameter prop_binPassBin0_bin1[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+2          10655.503961    271.186156      total sum                     
+2          1544.000000     39.293765       Unweighted events, alpha=6.901233
+  => Total parameter prop_binPassBin0_bin2[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+3          10656.969897    225.308313      total sum                     
+3          2237.000000     47.296934       Unweighted events, alpha=4.763956
+  => Total parameter prop_binPassBin0_bin3[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+4          10518.093003    244.970178      total sum                     
+4          1844.000000     42.941821       Unweighted events, alpha=5.703955
+  => Total parameter prop_binPassBin0_bin4[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+5          8653.413925     163.140773      total sum                     
+5          2814.000000     53.047149       Unweighted events, alpha=3.075129
+  => Total parameter prop_binPassBin0_bin5[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+6          7289.864345     221.191747      total sum                     
+6          1086.000000     32.954514       Unweighted events, alpha=6.712582
+  => Total parameter prop_binPassBin0_bin6[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+7          5068.443802     125.733674      total sum                     
+7          1625.000000     40.311289       Unweighted events, alpha=3.119042
+  => Total parameter prop_binPassBin0_bin7[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel PassBin1 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+PassBin1
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin PassBin1 by 1
+<getYieldScale>
+PassBin1
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin PassBin1 by N_PassBin1
+============================================================
+Analysing bin errors for: prop_binPassBin1
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          1131.328790     94.095043       total sum                     
+0          145.000000      12.041595       Unweighted events, alpha=7.802268
+  => Total parameter prop_binPassBin1_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+1          2155.176692     122.662896      total sum                     
+1          309.000000      17.578396       Unweighted events, alpha=6.974682
+  => Total parameter prop_binPassBin1_bin1[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+2          2234.456903     122.545829      total sum                     
+2          332.000000      18.220867       Unweighted events, alpha=6.730292
+  => Total parameter prop_binPassBin1_bin2[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+3          2502.811107     116.371426      total sum                     
+3          463.000000      21.517435       Unweighted events, alpha=5.405640
+  => Total parameter prop_binPassBin1_bin3[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+4          2642.411547     131.410708      total sum                     
+4          404.000000      20.099751       Unweighted events, alpha=6.540623
+  => Total parameter prop_binPassBin1_bin4[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+5          2783.201472     176.512324      total sum                     
+5          249.000000      15.779734       Unweighted events, alpha=11.177516
+  => Total parameter prop_binPassBin1_bin5[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+6          2594.128531     107.146851      total sum                     
+6          586.000000      24.207437       Unweighted events, alpha=4.426840
+  => Total parameter prop_binPassBin1_bin6[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+7          2217.745124     95.257051       total sum                     
+7          542.000000      23.280893       Unweighted events, alpha=4.091781
+  => Total parameter prop_binPassBin1_bin7[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel PassBin2 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+PassBin2
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin PassBin2 by 1
+<getYieldScale>
+PassBin2
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin PassBin2 by N_PassBin2
+============================================================
+Analysing bin errors for: prop_binPassBin2
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          454.954518      66.332633       total sum                     
+0          47.000000       6.855655        Unweighted events, alpha=9.679883
+  => Total parameter prop_binPassBin2_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+1          719.405234      73.415133       total sum                     
+1          96.000000       9.797959        Unweighted events, alpha=7.493805
+  => Total parameter prop_binPassBin2_bin1[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+2          664.369363      72.692960       total sum                     
+2          84.000000       9.165151        Unweighted events, alpha=7.909159
+  => Total parameter prop_binPassBin2_bin2[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+3          1013.769863     91.196129       total sum                     
+3          124.000000      11.135529       Unweighted events, alpha=8.175563
+  => Total parameter prop_binPassBin2_bin3[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+4          860.565372      76.253590       total sum                     
+4          127.000000      11.269428       Unweighted events, alpha=6.776105
+  => Total parameter prop_binPassBin2_bin4[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+5          946.715136      81.464161       total sum                     
+5          135.000000      11.618950       Unweighted events, alpha=7.012705
+  => Total parameter prop_binPassBin2_bin5[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+6          838.585605      57.532818       total sum                     
+6          212.000000      14.560220       Unweighted events, alpha=3.955592
+  => Total parameter prop_binPassBin2_bin6[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+7          709.523376      67.102192       total sum                     
+7          112.000000      10.583005       Unweighted events, alpha=6.335030
+  => Total parameter prop_binPassBin2_bin7[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel FailBin0 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+FailBin0
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin FailBin0 by 1
+<getYieldScale>
+FailBin0
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin FailBin0 by N_FailBin0
+============================================================
+Analysing bin errors for: prop_binFailBin0
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          39086.923592    2245.231502     total sum                     
+0          303.000000      17.406895       Unweighted events, alpha=128.999748
+  => Total parameter prop_binFailBin0_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+1          37391.241400    591.051907      total sum                     
+1          4002.000000     63.261363       Unweighted events, alpha=9.343139
+  => Total parameter prop_binFailBin0_bin1[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+2          41635.969940    823.936991      total sum                     
+2          2554.000000     50.537115       Unweighted events, alpha=16.302259
+  => Total parameter prop_binFailBin0_bin2[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+3          45362.639094    843.271801      total sum                     
+3          2894.000000     53.795911       Unweighted events, alpha=15.674720
+  => Total parameter prop_binFailBin0_bin3[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+4          42877.673731    389.420583      total sum                     
+4          12123.000000    110.104496      Unweighted events, alpha=3.536886
+  => Total parameter prop_binFailBin0_bin4[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+5          36618.490413    2233.059183     total sum                     
+5          269.000000      16.401219       Unweighted events, alpha=136.128217
+  => Total parameter prop_binFailBin0_bin5[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+6          23781.143777    345.395072      total sum                     
+6          4741.000000     68.854920       Unweighted events, alpha=5.016061
+  => Total parameter prop_binFailBin0_bin6[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+7          16233.487349    275.339311      total sum                     
+7          3476.000000     58.957612       Unweighted events, alpha=4.670163
+  => Total parameter prop_binFailBin0_bin7[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel FailBin1 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+FailBin1
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin FailBin1 by 1
+<getYieldScale>
+FailBin1
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin FailBin1 by N_FailBin1
+============================================================
+Analysing bin errors for: prop_binFailBin1
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          7595.444710     265.654403      total sum                     
+0          817.000000      28.583212       Unweighted events, alpha=9.296750
+  => Total parameter prop_binFailBin1_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+1          7436.452658     252.262717      total sum                     
+1          869.000000      29.478806       Unweighted events, alpha=8.557483
+  => Total parameter prop_binFailBin1_bin1[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+2          9345.210695     324.747999      total sum                     
+2          828.000000      28.774989       Unweighted events, alpha=11.286486
+  => Total parameter prop_binFailBin1_bin2[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+3          10944.308856    229.009261      total sum                     
+3          2284.000000     47.791213       Unweighted events, alpha=4.791729
+  => Total parameter prop_binFailBin1_bin3[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+4          12993.605267    270.956389      total sum                     
+4          2300.000000     47.958315       Unweighted events, alpha=5.649394
+  => Total parameter prop_binFailBin1_bin4[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+5          12128.131028    217.845967      total sum                     
+5          3099.000000     55.668663       Unweighted events, alpha=3.913563
+  => Total parameter prop_binFailBin1_bin5[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+6          10318.725223    274.373687      total sum                     
+6          1414.000000     37.603191       Unweighted events, alpha=7.297543
+  => Total parameter prop_binFailBin1_bin6[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+7          8134.359357     195.596493      total sum                     
+7          1730.000000     41.593269       Unweighted events, alpha=4.701942
+  => Total parameter prop_binFailBin1_bin7[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel FailBin2 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+FailBin2
+ALLPROC__NOTMATCH
+Will scale ALLPROC__NOTMATCH in bin FailBin2 by 1
+<getYieldScale>
+FailBin2
+ALLPROCNORMONE
+Will scale ALLPROCNORMONE in bin FailBin2 by N_FailBin2
+============================================================
+Analysing bin errors for: prop_binFailBin2
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          2870.592346     173.157882      total sum                     
+0          275.000000      16.583124       Unweighted events, alpha=10.438518
+  => Total parameter prop_binFailBin2_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+1          3448.164187     174.690952      total sum                     
+1          390.000000      19.748418       Unweighted events, alpha=8.841447
+  => Total parameter prop_binFailBin2_bin1[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+2          3544.002831     162.524962      total sum                     
+2          475.000000      21.794495       Unweighted events, alpha=7.461059
+  => Total parameter prop_binFailBin2_bin2[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+3          4406.372805     165.652711      total sum                     
+3          708.000000      26.608269       Unweighted events, alpha=6.223690
+  => Total parameter prop_binFailBin2_bin3[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+4          4754.575292     152.105149      total sum                     
+4          977.000000      31.256999       Unweighted events, alpha=4.866505
+  => Total parameter prop_binFailBin2_bin4[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+5          4208.653587     156.664860      total sum                     
+5          722.000000      26.870058       Unweighted events, alpha=5.829160
+  => Total parameter prop_binFailBin2_bin5[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+6          3580.552219     148.519984      total sum                     
+6          581.000000      24.103942       Unweighted events, alpha=6.162740
+  => Total parameter prop_binFailBin2_bin6[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+7          3339.002357     152.381841      total sum                     
+7          480.000000      21.908902       Unweighted events, alpha=6.956255
+  => Total parameter prop_binFailBin2_bin7[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel PassBin0m will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+PassBin0m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin PassBin0m by N_PassBin0m
+============================================================
+Analysing bin errors for: prop_binPassBin0m
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          31251.000000    63.198982       total sum                     
+0          244516.000000   494.485591      Unweighted events, alpha=0.127808
+  => Total parameter prop_binPassBin0m_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel PassBin1m will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+PassBin1m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin PassBin1m by N_PassBin1m
+============================================================
+Analysing bin errors for: prop_binPassBin1m
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          8787.000000     34.349127       total sum                     
+0          65441.000000    255.814386      Unweighted events, alpha=0.134274
+  => Total parameter prop_binPassBin1m_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel PassBin2m will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+PassBin2m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin PassBin2m by N_PassBin2m
+============================================================
+Analysing bin errors for: prop_binPassBin2m
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          2491.000000     19.210043       total sum                     
+0          16815.000000    129.672665      Unweighted events, alpha=0.148142
+  => Total parameter prop_binPassBin2m_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel FailBin0m will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+FailBin0m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin FailBin0m by N_FailBin0m
+============================================================
+Analysing bin errors for: prop_binFailBin0m
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          125683.000000   125.637957      total sum                     
+0          1000717.000000  1000.358436     Unweighted events, alpha=0.125593
+  => Total parameter prop_binFailBin0m_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel FailBin1m will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+FailBin1m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin FailBin1m by N_FailBin1m
+============================================================
+Analysing bin errors for: prop_binFailBin1m
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          39370.000000    72.143383       total sum                     
+0          297809.000000   545.718792      Unweighted events, alpha=0.132199
+  => Total parameter prop_binFailBin1m_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel FailBin2m will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
+<getYieldScale>
+FailBin2m
+ALLPROCNORMNOM
+Will scale ALLPROCNORMNOM in bin FailBin2m by N_FailBin2m
+============================================================
+Analysing bin errors for: prop_binFailBin2m
+Poisson cut-off: 10
+============================================================
+Bin        Contents        Error           Notes                         
+0          12930.000000    44.370493       total sum                     
+0          84920.000000    291.410364      Unweighted events, alpha=0.152261
+  => Total parameter prop_binFailBin2m_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------

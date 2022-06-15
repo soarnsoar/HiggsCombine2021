@@ -1,125 +1,15 @@
  <<< Combine >>> 
 >>> method used is MultiDimFit
 >>> random number generator seed is 123456
-Channel Bin0 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
-============================================================
-Analysing bin errors for: prop_binBin0
-Poisson cut-off: 10
-============================================================
-Bin        Contents        Error           Notes                         
-0          3682.335737     80.428417       total sum                     
-0          2096.000000     45.782093       Unweighted events, alpha=1.756840
-  => Total parameter prop_binBin0_bin0[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-1          4583.409004     76.555969       total sum                     
-1          3584.000000     59.866518       Unweighted events, alpha=1.278853
-  => Total parameter prop_binBin0_bin1[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-2          5139.621299     82.376778       total sum                     
-2          3893.000000     62.393910       Unweighted events, alpha=1.320221
-  => Total parameter prop_binBin0_bin2[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-3          5294.987979     72.255595       total sum                     
-3          5370.000000     73.280284       Unweighted events, alpha=0.986031
-  => Total parameter prop_binBin0_bin3[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-4          5070.375607     67.346822       total sum                     
-4          5668.000000     75.286121       Unweighted events, alpha=0.894562
-  => Total parameter prop_binBin0_bin4[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-5          4333.222714     60.357406       total sum                     
-5          5154.000000     71.791364       Unweighted events, alpha=0.840749
-  => Total parameter prop_binBin0_bin5[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-6          3128.823202     44.686729       total sum                     
-6          4902.000000     70.014284       Unweighted events, alpha=0.638275
-  => Total parameter prop_binBin0_bin6[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-7          2030.583673     36.696257       total sum                     
-7          3062.000000     55.335341       Unweighted events, alpha=0.663156
-  => Total parameter prop_binBin0_bin7[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-Channel Bin1 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
-============================================================
-Analysing bin errors for: prop_binBin1
-Poisson cut-off: 10
-============================================================
-Bin        Contents        Error           Notes                         
-0          587.224363      33.981086       total sum                     
-0          299.000000      17.291616       Unweighted events, alpha=1.963961
-  => Total parameter prop_binBin1_bin0[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-1          763.376049      35.381852       total sum                     
-1          465.000000      21.563859       Unweighted events, alpha=1.641669
-  => Total parameter prop_binBin1_bin1[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-2          1025.306262     39.175838       total sum                     
-2          685.000000      26.172505       Unweighted events, alpha=1.496797
-  => Total parameter prop_binBin1_bin2[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-3          1327.465743     38.389070       total sum                     
-3          1196.000000     34.583233       Unweighted events, alpha=1.109921
-  => Total parameter prop_binBin1_bin3[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-4          1410.637629     38.590670       total sum                     
-4          1336.000000     36.551334       Unweighted events, alpha=1.055866
-  => Total parameter prop_binBin1_bin4[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-5          1472.848724     35.370124       total sum                     
-5          1734.000000     41.641326       Unweighted events, alpha=0.849394
-  => Total parameter prop_binBin1_bin5[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-6          1299.066308     36.981129       total sum                     
-6          1234.000000     35.128336       Unweighted events, alpha=1.052728
-  => Total parameter prop_binBin1_bin6[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-7          1055.815733     39.845909       total sum                     
-7          702.000000      26.495283       Unweighted events, alpha=1.504011
-  => Total parameter prop_binBin1_bin7[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-Channel Bin2 will use autoMCStats with settings: event-threshold=10, include-signal=1, hist-mode=1
-============================================================
-Analysing bin errors for: prop_binBin2
-Poisson cut-off: 10
-============================================================
-Bin        Contents        Error           Notes                         
-0          220.098208      24.191411       total sum                     
-0          83.000000       9.110434        Unweighted events, alpha=2.651786
-  => Total parameter prop_binBin2_bin0[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-1          306.872174      25.171123       total sum                     
-1          149.000000      12.206556       Unweighted events, alpha=2.059545
-  => Total parameter prop_binBin2_bin1[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-2          384.886427      25.272664       total sum                     
-2          232.000000      15.231546       Unweighted events, alpha=1.658993
-  => Total parameter prop_binBin2_bin2[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-3          432.699021      27.748224       total sum                     
-3          243.000000      15.588457       Unweighted events, alpha=1.780654
-  => Total parameter prop_binBin2_bin3[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-4          423.423986      25.323972       total sum                     
-4          280.000000      16.733201       Unweighted events, alpha=1.512229
-  => Total parameter prop_binBin2_bin4[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-5          430.093928      22.492221       total sum                     
-5          366.000000      19.131126       Unweighted events, alpha=1.175120
-  => Total parameter prop_binBin2_bin5[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-6          367.662586      20.936124       total sum                     
-6          308.000000      17.549929       Unweighted events, alpha=1.193710
-  => Total parameter prop_binBin2_bin6[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-7          261.884925      17.771310       total sum                     
-7          217.000000      14.730920       Unweighted events, alpha=1.206843
-  => Total parameter prop_binBin2_bin7[0.00,-7.00,7.00] to be gaussian constrained
-------------------------------------------------------------
-Set Default Value of Parameter r To : 1
+ModelConfig 'ModelConfig' defines more than one parameter of interest. This is not supported in some statistical methods.
+  [WARNING] Found [r_PassBin2] at boundary. 
 
  --- MultiDimFit ---
 best fit parameter values and profile-likelihood uncertainties: 
-   SF_bin2 :    +1.415   -0.160/+0.185 (68%)
-   SF_bin1 :    +1.314   -0.130/+0.152 (68%)
-   SF_bin0 :    +1.423   -0.152/+0.180 (68%)
-Done in 0.02 min (cpu), 0.02 min (real)
+ Warning - No valid low-error found, will report difference to minimum of range for : SF_Bin2
+   SF_Bin2 :    +1.389   -1.389/+0.076 (68%)
+ Warning - No valid low-error found, will report difference to minimum of range for : SF_Bin1
+   SF_Bin1 :    +1.207   -1.207/+0.033 (68%)
+ Warning - No valid low-error found, will report difference to minimum of range for : SF_Bin0
+   SF_Bin0 :    +1.235   -1.235/+0.028 (68%)
+Done in 0.03 min (cpu), 0.08 min (real)

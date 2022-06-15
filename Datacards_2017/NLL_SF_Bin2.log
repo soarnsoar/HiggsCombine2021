@@ -1,0 +1,1352 @@
+ <<< Combine >>> 
+>>> method used is MultiDimFit
+>>> random number generator seed is 123456
+ModelConfig 'ModelConfig' defines more than one parameter of interest. This is not supported in some statistical methods.
+Set Range of Parameter SF_Bin2 To : (0,1.97304)
+Set Default Value of Parameter SF_Bin2 To : 1
+Set Default Value of Parameter SF_Bin1 To : 1
+Set Default Value of Parameter SF_Bin0 To : 1
+ POI: SF_Bin2= 1.68017 -> [0,1.97304]
+Point 0/1200 SF_Bin2 = 0.0008221
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 1/1200 SF_Bin2 = 0.0024663
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 2/1200 SF_Bin2 = 0.0041105
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 3/1200 SF_Bin2 = 0.0057547
+Point 4/1200 SF_Bin2 = 0.0073989
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 5/1200 SF_Bin2 = 0.0090431
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 6/1200 SF_Bin2 = 0.0106873
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 7/1200 SF_Bin2 = 0.0123315
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 8/1200 SF_Bin2 = 0.0139757
+WARNING: underflow to inf in pdf_binPassBin1_obsOnly for bin 0, weight 808
+FASTEXIT from pdf_binPassBin1_obsOnly
+WARNING: underflow to inf in pdf_binPassBin1_obsOnly for bin 2, weight 1528
+FASTEXIT from pdf_binPassBin1_obsOnly
+WARNING: underflow to inf in pdf_binPassBin1_obsOnly for bin 6, weight 1838
+FASTEXIT from pdf_binPassBin1_obsOnly
+WARNING: underflow to inf in pdf_binFailBin0_obsOnly for bin 0, weight 25165
+FASTEXIT from pdf_binFailBin0_obsOnly
+WARNING: underflow to inf in pdf_binFailBin0_obsOnly for bin 1, weight 24173
+FASTEXIT from pdf_binFailBin0_obsOnly
+WARNING: underflow to inf in pdf_binFailBin1_obsOnly for bin 0, weight 4846
+FASTEXIT from pdf_binFailBin1_obsOnly
+WARNING: underflow to inf in pdf_binFailBin1_obsOnly for bin 1, weight 4938
+FASTEXIT from pdf_binFailBin1_obsOnly
+WARNING: underflow to inf in pdf_binFailBin1_obsOnly for bin 5, weight 7288
+FASTEXIT from pdf_binFailBin1_obsOnly
+WARNING: underflow to inf in pdf_binFailBin2_obsOnly for bin 0, weight 1787
+FASTEXIT from pdf_binFailBin2_obsOnly
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (3.91461e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: CMS_PU_2017=-5932.27, CMS_ak8jet_res_j_2017=-1014.66, CMS_ak8jet_scale_JESTotal=-994.771, CMS_btag_cferr1=1285.76, CMS_btag_cferr2=1671.3, CMS_btag_hf=3004.31, CMS_btag_hfstats1_2017=-4852.36, CMS_btag_hfstats2_2017=-762.029, CMS_btag_lf=17309.1, CMS_btag_lfstats1_2017=6006.67, CMS_btag_lfstats2_2017=16098.7, CMS_eff_e_2017=-3419.27, CMS_eff_hwwtrigger_2017=-1285.77, CMS_eff_m_2017=-3758.37, CMS_eff_prefiring_2017=4448.84, CMS_res_j_2017=-1061.15, CMS_scale_JESTotal=-669.834, CMS_scale_e_2017=15299.4, CMS_scale_m_2017=1080.17, CMS_scale_met_2017=-1677.46, PS_FSR=-4541.25, PS_ISR=12863.7, QCDscale_WW_ACCEPT=25364.3, QCDscale_WmH_ACCEPT=55.5003, QCDscale_WpH_ACCEPT=22.0653, QCDscale_ZH_ACCEPT=-37.2392, QCDscale_ggH_ACCEPT=-199.707, QCDscale_qqH_ACCEPT=13.2408, QCDscale_ttbar_ACCEPT=-269.686, QCDscale_wjets_ACCEPT=2495.98, SF_Bin0=2.14638, SF_Bin1=3.12008, ggWWnorm=4612.82, lumi_13TeV_2017=3182, lumi_13TeV_BBD=14813.4, lumi_13TeV_BCC=18685.1, lumi_13TeV_DB=12150, lumi_13TeV_GS=17781.6, lumi_13TeV_LS=18685.1, lumi_13TeV_XY=7802.44, pdf_Higgs_gg_ACCEPT=-22.188, pdf_Higgs_qqbar_ACCEPT=12.5443, pdf_WW_ACCEPT=-188.996, pdf_WmH_ACCEPT=16.2387, pdf_WpH_ACCEPT=43.4527, pdf_ZH_ACCEPT=-25.2866, pdf_ttbar_ACCEPT=-462.281, pdf_wjets_ACCEPT=3643.53, prop_binFailBin0_bin0=3983.69, prop_binFailBin0_bin1=1821.65, prop_binFailBin0_bin2=-3331.3, prop_binFailBin0_bin3=-5350.72, prop_binFailBin0_bin4=-1233.54, prop_binFailBin0_bin5=-2194.01, prop_binFailBin0_bin6=-2964.84, prop_binFailBin0_bin7=-4441.1, prop_binFailBin0m_bin0=2902.24, prop_binFailBin1_bin0=6341.19, prop_binFailBin1_bin1=1287.64, prop_binFailBin1_bin2=-4775.83, prop_binFailBin1_bin3=-1083.11, prop_binFailBin1_bin4=-8360.91, prop_binFailBin1_bin5=5718.81, prop_binFailBin1_bin6=-1934.4, prop_binFailBin1_bin7=-4944.1, prop_binFailBin1m_bin0=7349.11, prop_binFailBin2_bin0=10396.6, prop_binFailBin2_bin1=-22420.2, prop_binFailBin2_bin2=-45643, prop_binFailBin2_bin3=-133332, prop_binFailBin2_bin4=-148348, prop_binFailBin2_bin5=-120263, prop_binFailBin2_bin6=-89518.5, prop_binFailBin2_bin7=-76096.7, prop_binFailBin2m_bin0=6572.67, prop_binPassBin0_bin0=-6459.5, prop_binPassBin0_bin1=-4951.65, prop_binPassBin0_bin2=-9467.24, prop_binPassBin0_bin3=-1894.24, prop_binPassBin0_bin4=-13223.7, prop_binPassBin0_bin5=-11782.6, prop_binPassBin0_bin6=-8679.25, prop_binPassBin0_bin7=-15155.8, prop_binPassBin0m_bin0=8960.73, prop_binPassBin1_bin0=2543.38, prop_binPassBin1_bin1=-2693.47, prop_binPassBin1_bin2=996.257, prop_binPassBin1_bin3=-2865.66, prop_binPassBin1_bin4=-6243.91, prop_binPassBin1_bin5=-9599.59, prop_binPassBin1_bin6=298.692, prop_binPassBin1_bin7=-11363.6, prop_binPassBin1m_bin0=4724.54, prop_binPassBin2_bin0=-1240.7, prop_binPassBin2_bin1=-3930.06, prop_binPassBin2_bin2=-5656.75, prop_binPassBin2_bin3=-4638.41, prop_binPassBin2_bin4=-3324.33, prop_binPassBin2_bin5=-1503.74, prop_binPassBin2_bin6=-9307.68, prop_binPassBin2_bin7=-10335.3, prop_binPassBin2m_bin0=-8642.82, qqWWqqnorm=8176.11, r_FailBin0m=1.82682, r_FailBin1m=4.88008, r_FailBin2m=3.5628, r_PassBin0=0.0605063, r_PassBin0m=4.37612, r_PassBin1=0.0639003, r_PassBin1m=4.23771, r_PassBin2=3.24775, r_PassBin2m=0.597772
+RooAbsReal::[ params=(CMS_PU_2017,CMS_PU_2017_In,CMS_ak8jet_res_j_2017,CMS_ak8jet_res_j_2017_In,CMS_ak8jet_scale_JESTotal,CMS_ak8jet_scale_JESTotal_In,CMS_btag_cferr1,CMS_btag_cferr1_In,CMS_btag_cferr2,CMS_btag_cferr2_In,CMS_btag_hf,CMS_btag_hf_In,CMS_btag_hfstats1_2017,CMS_btag_hfstats1_2017_In,CMS_btag_hfstats2_2017,CMS_btag_hfstats2_2017_In,CMS_btag_lf,CMS_btag_lf_In,CMS_btag_lfstats1_2017,CMS_btag_lfstats1_2017_In,CMS_btag_lfstats2_2017,CMS_btag_lfstats2_2017_In,CMS_eff_e_2017,CMS_eff_e_2017_In,CMS_eff_hwwtrigger_2017,CMS_eff_hwwtrigger_2017_In,CMS_eff_m_2017,CMS_eff_m_2017_In,CMS_eff_prefiring_2017,CMS_eff_prefiring_2017_In,CMS_res_j_2017,CMS_res_j_2017_In,CMS_scale_JESTotal,CMS_scale_JESTotal_In,CMS_scale_e_2017,CMS_scale_e_2017_In,CMS_scale_m_2017,CMS_scale_m_2017_In,CMS_scale_met_2017,CMS_scale_met_2017_In,PS_FSR,PS_FSR_In,PS_ISR,PS_ISR_In,QCDscale_WW_ACCEPT,QCDscale_WW_ACCEPT_In,QCDscale_WmH_ACCEPT,QCDscale_WmH_ACCEPT_In,QCDscale_WpH_ACCEPT,QCDscale_WpH_ACCEPT_In,QCDscale_ZH_ACCEPT,QCDscale_ZH_ACCEPT_In,QCDscale_ggH_ACCEPT,QCDscale_ggH_ACCEPT_In,QCDscale_qqH_ACCEPT,QCDscale_qqH_ACCEPT_In,QCDscale_ttbar_ACCEPT,QCDscale_ttbar_ACCEPT_In,QCDscale_wjets_ACCEPT,QCDscale_wjets_ACCEPT_In,ggWWnorm,ggWWnorm_In,lumi_13TeV_2017,lumi_13TeV_2017_In,lumi_13TeV_BBD,lumi_13TeV_BBD_In,lumi_13TeV_BCC,lumi_13TeV_BCC_In,lumi_13TeV_DB,lumi_13TeV_DB_In,lumi_13TeV_GS,lumi_13TeV_GS_In,lumi_13TeV_LS,lumi_13TeV_LS_In,lumi_13TeV_XY,lumi_13TeV_XY_In,pdf_Higgs_gg_ACCEPT,pdf_Higgs_gg_ACCEPT_In,pdf_Higgs_qqbar_ACCEPT,pdf_Higgs_qqbar_ACCEPT_In,pdf_WW_ACCEPT,pdf_WW_ACCEPT_In,pdf_WmH_ACCEPT,pdf_WmH_ACCEPT_In,pdf_WpH_ACCEPT,pdf_WpH_ACCEPT_In,pdf_ZH_ACCEPT,pdf_ZH_ACCEPT_In,pdf_ttbar_ACCEPT,pdf_ttbar_ACCEPT_In,pdf_wjets_ACCEPT,pdf_wjets_ACCEPT_In,qqWWqqnorm,qqWWqqnorm_In,prop_binPassBin0_bin0,prop_binPassBin0_bin0_In,prop_binPassBin0_bin1,prop_binPassBin0_bin1_In,prop_binPassBin0_bin2,prop_binPassBin0_bin2_In,prop_binPassBin0_bin3,prop_binPassBin0_bin3_In,prop_binPassBin0_bin4,prop_binPassBin0_bin4_In,prop_binPassBin0_bin5,prop_binPassBin0_bin5_In,prop_binPassBin0_bin6,prop_binPassBin0_bin6_In,prop_binPassBin0_bin7,prop_binPassBin0_bin7_In,prop_binPassBin1_bin0,prop_binPassBin1_bin0_In,prop_binPassBin1_bin1,prop_binPassBin1_bin1_In,prop_binPassBin1_bin2,prop_binPassBin1_bin2_In,prop_binPassBin1_bin3,prop_binPassBin1_bin3_In,prop_binPassBin1_bin4,prop_binPassBin1_bin4_In,prop_binPassBin1_bin5,prop_binPassBin1_bin5_In,prop_binPassBin1_bin6,prop_binPassBin1_bin6_In,prop_binPassBin1_bin7,prop_binPassBin1_bin7_In,prop_binPassBin2_bin0,prop_binPassBin2_bin0_In,prop_binPassBin2_bin1,prop_binPassBin2_bin1_In,prop_binPassBin2_bin2,prop_binPassBin2_bin2_In,prop_binPassBin2_bin3,prop_binPassBin2_bin3_In,prop_binPassBin2_bin4,prop_binPassBin2_bin4_In,prop_binPassBin2_bin5,prop_binPassBin2_bin5_In,prop_binPassBin2_bin6,prop_binPassBin2_bin6_In,prop_binPassBin2_bin7,prop_binPassBin2_bin7_In,prop_binFailBin0_bin0,prop_binFailBin0_bin0_In,prop_binFailBin0_bin1,prop_binFailBin0_bin1_In,prop_binFailBin0_bin2,prop_binFailBin0_bin2_In,prop_binFailBin0_bin3,prop_binFailBin0_bin3_In,prop_binFailBin0_bin4,prop_binFailBin0_bin4_In,prop_binFailBin0_bin5,prop_binFailBin0_bin5_In,prop_binFailBin0_bin6,prop_binFailBin0_bin6_In,prop_binFailBin0_bin7,prop_binFailBin0_bin7_In,prop_binFailBin1_bin0,prop_binFailBin1_bin0_In,prop_binFailBin1_bin1,prop_binFailBin1_bin1_In,prop_binFailBin1_bin2,prop_binFailBin1_bin2_In,prop_binFailBin1_bin3,prop_binFailBin1_bin3_In,prop_binFailBin1_bin4,prop_binFailBin1_bin4_In,prop_binFailBin1_bin5,prop_binFailBin1_bin5_In,prop_binFailBin1_bin6,prop_binFailBin1_bin6_In,prop_binFailBin1_bin7,prop_binFailBin1_bin7_In,prop_binFailBin2_bin0,prop_binFailBin2_bin0_In,prop_binFailBin2_bin1,prop_binFailBin2_bin1_In,prop_binFailBin2_bin2,prop_binFailBin2_bin2_In,prop_binFailBin2_bin3,prop_binFailBin2_bin3_In,prop_binFailBin2_bin4,prop_binFailBin2_bin4_In,prop_binFailBin2_bin5,prop_binFailBin2_bin5_In,prop_binFailBin2_bin6,prop_binFailBin2_bin6_In,prop_binFailBin2_bin7,prop_binFailBin2_bin7_In,prop_binPassBin0m_bin0,prop_binPassBin0m_bin0_In,prop_binPassBin1m_bin0,prop_binPassBin1m_bin0_In,prop_binPassBin2m_bin0,prop_binPassBin2m_bin0_In,prop_binFailBin0m_bin0,prop_binFailBin0m_bin0_In,prop_binFailBin1m_bin0,prop_binFailBin1m_bin0_In,prop_binFailBin2m_bin0,prop_binFailBin2m_bin0_In,ONE,r_PassBin0,r_PassBin1,r_PassBin2,SF_Bin0,r_FailBin0m,r_PassBin0m,SF_Bin1,r_FailBin1m,r_PassBin1m,SF_Bin2,r_FailBin2m,r_PassBin2m) ]
+     function value is NAN @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_PU_2017_In = 0,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_res_j_2017_In = 0,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_ak8jet_scale_JESTotal_In = 0,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr1_In = 0,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_cferr2_In = 0,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hf_In = 0,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats1_2017_In = 0,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_hfstats2_2017_In = 0,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lf_In = 0,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats1_2017_In = 0,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_btag_lfstats2_2017_In = 0,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_e_2017_In = 0,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_hwwtrigger_2017_In = 0,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_m_2017_In = 0,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_eff_prefiring_2017_In = 0,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_res_j_2017_In = 0,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_JESTotal_In = 0,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_e_2017_In = 0,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_m_2017_In = 0,CMS_scale_met_2017 = -1677.46 +/- 0.466154,CMS_scale_met_2017_In = 0,PS_FSR = -4541.25 +/- 0.521773,PS_FSR_In = 0,PS_ISR = 12863.7 +/- 0.98554,PS_ISR_In = 0,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WW_ACCEPT_In = 0,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WmH_ACCEPT_In = 0,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_WpH_ACCEPT_In = 0,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ZH_ACCEPT_In = 0,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_ggH_ACCEPT_In = 0,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_qqH_ACCEPT_In = 0,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_ttbar_ACCEPT_In = 0,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,QCDscale_wjets_ACCEPT_In = 0,ggWWnorm = 4612.82 +/- 0.994455,ggWWnorm_In = 0,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_2017_In = 0,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BBD_In = 0,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_BCC_In = 0,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_DB_In = 0,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_GS_In = 0,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_LS_In = 0,lumi_13TeV_XY = 7802.44 +/- 0.992518,lumi_13TeV_XY_In = 0,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_gg_ACCEPT_In = 0,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_Higgs_qqbar_ACCEPT_In = 0,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WW_ACCEPT_In = 0,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WmH_ACCEPT_In = 0,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_WpH_ACCEPT_In = 0,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ZH_ACCEPT_In = 0,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_ttbar_ACCEPT_In = 0,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,pdf_wjets_ACCEPT_In = 0,qqWWqqnorm = 8176.11 +/- 0.994425,qqWWqqnorm_In = 0,prop_binPassBin0_bin0 = -6459.5 +/- 0.786239,prop_binPassBin0_bin0_In = 0,prop_binPassBin0_bin1 = -4951.65 +/- 0.708736,prop_binPassBin0_bin1_In = 0,prop_binPassBin0_bin2 = -9467.24 +/- 0.581288,prop_binPassBin0_bin2_In = 0,prop_binPassBin0_bin3 = -1894.24 +/- 0.737494,prop_binPassBin0_bin3_In = 0,prop_binPassBin0_bin4 = -13223.7 +/- 0.742141,prop_binPassBin0_bin4_In = 0,prop_binPassBin0_bin5 = -11782.6 +/- 0.644433,prop_binPassBin0_bin5_In = 0,prop_binPassBin0_bin6 = -8679.25 +/- 0.694044,prop_binPassBin0_bin6_In = 0,prop_binPassBin0_bin7 = -15155.8 +/- 0.762596,prop_binPassBin0_bin7_In = 0,prop_binPassBin1_bin0 = 2543.38 +/- 0.486129,prop_binPassBin1_bin0_In = 0,prop_binPassBin1_bin1 = -2693.47 +/- 0.611246,prop_binPassBin1_bin1_In = 0,prop_binPassBin1_bin2 = 996.257 +/- 0.514278,prop_binPassBin1_bin2_In = 0,prop_binPassBin1_bin3 = -2865.66 +/- 0.5715,prop_binPassBin1_bin3_In = 0,prop_binPassBin1_bin4 = -6243.91 +/- 0.69155,prop_binPassBin1_bin4_In = 0,prop_binPassBin1_bin5 = -9599.59 +/- 0.644846,prop_binPassBin1_bin5_In = 0,prop_binPassBin1_bin6 = 298.692 +/- 0.615523,prop_binPassBin1_bin6_In = 0,prop_binPassBin1_bin7 = -11363.6 +/- 0.752335,prop_binPassBin1_bin7_In = 0,prop_binPassBin2_bin0 = -1240.7 +/- 0.438592,prop_binPassBin2_bin0_In = 0,prop_binPassBin2_bin1 = -3930.06 +/- 0.439448,prop_binPassBin2_bin1_In = 0,prop_binPassBin2_bin2 = -5656.75 +/- 0.493245,prop_binPassBin2_bin2_In = 0,prop_binPassBin2_bin3 = -4638.41 +/- 0.481648,prop_binPassBin2_bin3_In = 0,prop_binPassBin2_bin4 = -3324.33 +/- 0.575871,prop_binPassBin2_bin4_In = 0,prop_binPassBin2_bin5 = -1503.74 +/- 0.585941,prop_binPassBin2_bin5_In = 0,prop_binPassBin2_bin6 = -9307.68 +/- 0.56588,prop_binPassBin2_bin6_In = 0,prop_binPassBin2_bin7 = -10335.3 +/- 0.700594,prop_binPassBin2_bin7_In = 0,prop_binFailBin0_bin0 = 3983.69 +/- 0.754671,prop_binFailBin0_bin0_In = 0,prop_binFailBin0_bin1 = 1821.65 +/- 0.696945,prop_binFailBin0_bin1_In = 0,prop_binFailBin0_bin2 = -3331.3 +/- 0.6347,prop_binFailBin0_bin2_In = 0,prop_binFailBin0_bin3 = -5350.72 +/- 0.659749,prop_binFailBin0_bin3_In = 0,prop_binFailBin0_bin4 = -1233.54 +/- 0.364322,prop_binFailBin0_bin4_In = 0,prop_binFailBin0_bin5 = -2194.01 +/- 0.704912,prop_binFailBin0_bin5_In = 0,prop_binFailBin0_bin6 = -2964.84 +/- 0.646778,prop_binFailBin0_bin6_In = 0,prop_binFailBin0_bin7 = -4441.1 +/- 0.603113,prop_binFailBin0_bin7_In = 0,prop_binFailBin1_bin0 = 6341.19 +/- 0.522977,prop_binFailBin1_bin0_In = 0,prop_binFailBin1_bin1 = 1287.64 +/- 0.571552,prop_binFailBin1_bin1_In = 0,prop_binFailBin1_bin2 = -4775.83 +/- 0.545428,prop_binFailBin1_bin2_In = 0,prop_binFailBin1_bin3 = -1083.11 +/- 0.601314,prop_binFailBin1_bin3_In = 0,prop_binFailBin1_bin4 = -8360.91 +/- 0.690312,prop_binFailBin1_bin4_In = 0,prop_binFailBin1_bin5 = 5718.81 +/- 0.780797,prop_binFailBin1_bin5_In = 0,prop_binFailBin1_bin6 = -1934.4 +/- 0.625854,prop_binFailBin1_bin6_In = 0,prop_binFailBin1_bin7 = -4944.1 +/- 0.681192,prop_binFailBin1_bin7_In = 0,prop_binFailBin2_bin0 = 10396.6 +/- 0.499659,prop_binFailBin2_bin0_In = 0,prop_binFailBin2_bin1 = -22420.2 +/- 0.478613,prop_binFailBin2_bin1_In = 0,prop_binFailBin2_bin2 = -45643 +/- 0.497728,prop_binFailBin2_bin2_In = 0,prop_binFailBin2_bin3 = -133332 +/- 0.575808,prop_binFailBin2_bin3_In = 0,prop_binFailBin2_bin4 = -148348 +/- 0.685276,prop_binFailBin2_bin4_In = 0,prop_binFailBin2_bin5 = -120263 +/- 0.590802,prop_binFailBin2_bin5_In = 0,prop_binFailBin2_bin6 = -89518.5 +/- 0.474291,prop_binFailBin2_bin6_In = 0,prop_binFailBin2_bin7 = -76096.7 +/- 0.554457,prop_binFailBin2_bin7_In = 0,prop_binPassBin0m_bin0 = 8960.73 +/- 0.994439,prop_binPassBin0m_bin0_In = 0,prop_binPassBin1m_bin0 = 4724.54 +/- 0.994413,prop_binPassBin1m_bin0_In = 0,prop_binPassBin2m_bin0 = -8642.82 +/- 0.994214,prop_binPassBin2m_bin0_In = 0,prop_binFailBin0m_bin0 = 2902.24 +/- 0.994445,prop_binFailBin0m_bin0_In = 0,prop_binFailBin1m_bin0 = 7349.11 +/- 0.99443,prop_binFailBin1m_bin0_In = 0,prop_binFailBin2m_bin0 = 6572.67 +/- 0.994388,prop_binFailBin2m_bin0_In = 0,ONE = 1,r_PassBin0 = 0.0605063 +/- 0.056187,r_PassBin1 = 0.0639003 +/- 0.0644994,r_PassBin2 = 3.24775 +/- 0.116183,SF_Bin0 = 2.14638 +/- 0.0415674,r_FailBin0m = 1.82682 +/- 0.0333993,r_PassBin0m = 4.37612 +/- 0.0343817,SF_Bin1 = 3.12008 +/- 0.0511469,r_FailBin1m = 4.88008 +/- 0.0353034,r_PassBin1m = 4.23771 +/- 0.0345051,SF_Bin2 = 0.0139757 +/- 0.151379,r_FailBin2m = 3.5628 +/- 0.0367425,r_PassBin2m = 0.597772 +/- 0.0431193)
+RooAbsReal::PassBin1[ params=(CMS_PU_2017,CMS_ak8jet_res_j_2017,CMS_ak8jet_scale_JESTotal,CMS_btag_cferr1,CMS_btag_cferr2,CMS_btag_hf,CMS_btag_hfstats1_2017,CMS_btag_hfstats2_2017,CMS_btag_lf,CMS_btag_lfstats1_2017,CMS_btag_lfstats2_2017,CMS_eff_e_2017,CMS_eff_hwwtrigger_2017,CMS_eff_m_2017,CMS_eff_prefiring_2017,CMS_res_j_2017,CMS_scale_JESTotal,CMS_scale_e_2017,CMS_scale_m_2017,CMS_scale_met_2017,ONE,PS_FSR,PS_ISR,QCDscale_WW_ACCEPT,QCDscale_WmH_ACCEPT,QCDscale_WpH_ACCEPT,QCDscale_ZH_ACCEPT,QCDscale_ggH_ACCEPT,QCDscale_qqH_ACCEPT,QCDscale_ttbar_ACCEPT,QCDscale_wjets_ACCEPT,ggWWnorm,lumi_13TeV_2017,lumi_13TeV_BBD,lumi_13TeV_BCC,lumi_13TeV_DB,lumi_13TeV_GS,lumi_13TeV_LS,lumi_13TeV_XY,pdf_Higgs_gg_ACCEPT,pdf_Higgs_qqbar_ACCEPT,pdf_WW_ACCEPT,pdf_WmH_ACCEPT,pdf_WpH_ACCEPT,pdf_ZH_ACCEPT,pdf_ttbar_ACCEPT,pdf_wjets_ACCEPT,prop_binPassBin1_bin0,prop_binPassBin1_bin1,prop_binPassBin1_bin2,prop_binPassBin1_bin3,prop_binPassBin1_bin4,prop_binPassBin1_bin5,prop_binPassBin1_bin6,prop_binPassBin1_bin7,qqWWqqnorm,r_PassBin1) ]
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binPassBin1_bin0 = 2543.38 +/- 0.486129,prop_binPassBin1_bin1 = -2693.47 +/- 0.611246,prop_binPassBin1_bin2 = 996.257 +/- 0.514278,prop_binPassBin1_bin3 = -2865.66 +/- 0.5715,prop_binPassBin1_bin4 = -6243.91 +/- 0.69155,prop_binPassBin1_bin5 = -9599.59 +/- 0.644846,prop_binPassBin1_bin6 = 298.692 +/- 0.615523,prop_binPassBin1_bin7 = -11363.6 +/- 0.752335,qqWWqqnorm = 8176.11 +/- 0.994425,r_PassBin1 = 0.0639003 +/- 0.0644994)
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binPassBin1_bin0 = 2543.38 +/- 0.486129,prop_binPassBin1_bin1 = -2693.47 +/- 0.611246,prop_binPassBin1_bin2 = 996.257 +/- 0.514278,prop_binPassBin1_bin3 = -2865.66 +/- 0.5715,prop_binPassBin1_bin4 = -6243.91 +/- 0.69155,prop_binPassBin1_bin5 = -9599.59 +/- 0.644846,prop_binPassBin1_bin6 = 298.692 +/- 0.615523,prop_binPassBin1_bin7 = -11363.6 +/- 0.752335,qqWWqqnorm = 8176.11 +/- 0.994425,r_PassBin1 = 0.0639003 +/- 0.0644994)
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binPassBin1_bin0 = 2543.38 +/- 0.486129,prop_binPassBin1_bin1 = -2693.47 +/- 0.611246,prop_binPassBin1_bin2 = 996.257 +/- 0.514278,prop_binPassBin1_bin3 = -2865.66 +/- 0.5715,prop_binPassBin1_bin4 = -6243.91 +/- 0.69155,prop_binPassBin1_bin5 = -9599.59 +/- 0.644846,prop_binPassBin1_bin6 = 298.692 +/- 0.615523,prop_binPassBin1_bin7 = -11363.6 +/- 0.752335,qqWWqqnorm = 8176.11 +/- 0.994425,r_PassBin1 = 0.0639003 +/- 0.0644994)
+     function value is NAN @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binPassBin1_bin0 = 2543.38 +/- 0.486129,prop_binPassBin1_bin1 = -2693.47 +/- 0.611246,prop_binPassBin1_bin2 = 996.257 +/- 0.514278,prop_binPassBin1_bin3 = -2865.66 +/- 0.5715,prop_binPassBin1_bin4 = -6243.91 +/- 0.69155,prop_binPassBin1_bin5 = -9599.59 +/- 0.644846,prop_binPassBin1_bin6 = 298.692 +/- 0.615523,prop_binPassBin1_bin7 = -11363.6 +/- 0.752335,qqWWqqnorm = 8176.11 +/- 0.994425,r_PassBin1 = 0.0639003 +/- 0.0644994)
+RooAbsReal::FailBin0[ params=(CMS_PU_2017,CMS_ak8jet_res_j_2017,CMS_ak8jet_scale_JESTotal,CMS_btag_cferr1,CMS_btag_cferr2,CMS_btag_hf,CMS_btag_hfstats1_2017,CMS_btag_hfstats2_2017,CMS_btag_lf,CMS_btag_lfstats1_2017,CMS_btag_lfstats2_2017,CMS_eff_e_2017,CMS_eff_hwwtrigger_2017,CMS_eff_m_2017,CMS_eff_prefiring_2017,CMS_res_j_2017,CMS_scale_JESTotal,CMS_scale_e_2017,CMS_scale_m_2017,CMS_scale_met_2017,ONE,PS_FSR,PS_ISR,QCDscale_WW_ACCEPT,QCDscale_WmH_ACCEPT,QCDscale_WpH_ACCEPT,QCDscale_ZH_ACCEPT,QCDscale_ggH_ACCEPT,QCDscale_qqH_ACCEPT,QCDscale_ttbar_ACCEPT,QCDscale_wjets_ACCEPT,SF_Bin0,ggWWnorm,lumi_13TeV_2017,lumi_13TeV_BBD,lumi_13TeV_BCC,lumi_13TeV_DB,lumi_13TeV_GS,lumi_13TeV_LS,lumi_13TeV_XY,pdf_Higgs_gg_ACCEPT,pdf_Higgs_qqbar_ACCEPT,pdf_WW_ACCEPT,pdf_WmH_ACCEPT,pdf_WpH_ACCEPT,pdf_ZH_ACCEPT,pdf_ttbar_ACCEPT,pdf_wjets_ACCEPT,prop_binFailBin0_bin0,prop_binFailBin0_bin1,prop_binFailBin0_bin2,prop_binFailBin0_bin3,prop_binFailBin0_bin4,prop_binFailBin0_bin5,prop_binFailBin0_bin6,prop_binFailBin0_bin7,qqWWqqnorm,r_FailBin0m,r_PassBin0,r_PassBin0m) ]
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin0 = 2.14638 +/- 0.0415674,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin0_bin0 = 3983.69 +/- 0.754671,prop_binFailBin0_bin1 = 1821.65 +/- 0.696945,prop_binFailBin0_bin2 = -3331.3 +/- 0.6347,prop_binFailBin0_bin3 = -5350.72 +/- 0.659749,prop_binFailBin0_bin4 = -1233.54 +/- 0.364322,prop_binFailBin0_bin5 = -2194.01 +/- 0.704912,prop_binFailBin0_bin6 = -2964.84 +/- 0.646778,prop_binFailBin0_bin7 = -4441.1 +/- 0.603113,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin0m = 1.82682 +/- 0.0333993,r_PassBin0 = 0.0605063 +/- 0.056187,r_PassBin0m = 4.37612 +/- 0.0343817)
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin0 = 2.14638 +/- 0.0415674,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin0_bin0 = 3983.69 +/- 0.754671,prop_binFailBin0_bin1 = 1821.65 +/- 0.696945,prop_binFailBin0_bin2 = -3331.3 +/- 0.6347,prop_binFailBin0_bin3 = -5350.72 +/- 0.659749,prop_binFailBin0_bin4 = -1233.54 +/- 0.364322,prop_binFailBin0_bin5 = -2194.01 +/- 0.704912,prop_binFailBin0_bin6 = -2964.84 +/- 0.646778,prop_binFailBin0_bin7 = -4441.1 +/- 0.603113,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin0m = 1.82682 +/- 0.0333993,r_PassBin0 = 0.0605063 +/- 0.056187,r_PassBin0m = 4.37612 +/- 0.0343817)
+     function value is NAN @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin0 = 2.14638 +/- 0.0415674,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin0_bin0 = 3983.69 +/- 0.754671,prop_binFailBin0_bin1 = 1821.65 +/- 0.696945,prop_binFailBin0_bin2 = -3331.3 +/- 0.6347,prop_binFailBin0_bin3 = -5350.72 +/- 0.659749,prop_binFailBin0_bin4 = -1233.54 +/- 0.364322,prop_binFailBin0_bin5 = -2194.01 +/- 0.704912,prop_binFailBin0_bin6 = -2964.84 +/- 0.646778,prop_binFailBin0_bin7 = -4441.1 +/- 0.603113,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin0m = 1.82682 +/- 0.0333993,r_PassBin0 = 0.0605063 +/- 0.056187,r_PassBin0m = 4.37612 +/- 0.0343817)
+RooAbsReal::FailBin1[ params=(CMS_PU_2017,CMS_ak8jet_res_j_2017,CMS_ak8jet_scale_JESTotal,CMS_btag_cferr1,CMS_btag_cferr2,CMS_btag_hf,CMS_btag_hfstats1_2017,CMS_btag_hfstats2_2017,CMS_btag_lf,CMS_btag_lfstats1_2017,CMS_btag_lfstats2_2017,CMS_eff_e_2017,CMS_eff_hwwtrigger_2017,CMS_eff_m_2017,CMS_eff_prefiring_2017,CMS_res_j_2017,CMS_scale_JESTotal,CMS_scale_e_2017,CMS_scale_m_2017,CMS_scale_met_2017,ONE,PS_FSR,PS_ISR,QCDscale_WW_ACCEPT,QCDscale_WmH_ACCEPT,QCDscale_WpH_ACCEPT,QCDscale_ZH_ACCEPT,QCDscale_ggH_ACCEPT,QCDscale_qqH_ACCEPT,QCDscale_ttbar_ACCEPT,QCDscale_wjets_ACCEPT,SF_Bin1,ggWWnorm,lumi_13TeV_2017,lumi_13TeV_BBD,lumi_13TeV_BCC,lumi_13TeV_DB,lumi_13TeV_GS,lumi_13TeV_LS,lumi_13TeV_XY,pdf_Higgs_gg_ACCEPT,pdf_Higgs_qqbar_ACCEPT,pdf_WW_ACCEPT,pdf_WmH_ACCEPT,pdf_WpH_ACCEPT,pdf_ZH_ACCEPT,pdf_ttbar_ACCEPT,pdf_wjets_ACCEPT,prop_binFailBin1_bin0,prop_binFailBin1_bin1,prop_binFailBin1_bin2,prop_binFailBin1_bin3,prop_binFailBin1_bin4,prop_binFailBin1_bin5,prop_binFailBin1_bin6,prop_binFailBin1_bin7,qqWWqqnorm,r_FailBin1m,r_PassBin1,r_PassBin1m) ]
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin1 = 3.12008 +/- 0.0511469,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin1_bin0 = 6341.19 +/- 0.522977,prop_binFailBin1_bin1 = 1287.64 +/- 0.571552,prop_binFailBin1_bin2 = -4775.83 +/- 0.545428,prop_binFailBin1_bin3 = -1083.11 +/- 0.601314,prop_binFailBin1_bin4 = -8360.91 +/- 0.690312,prop_binFailBin1_bin5 = 5718.81 +/- 0.780797,prop_binFailBin1_bin6 = -1934.4 +/- 0.625854,prop_binFailBin1_bin7 = -4944.1 +/- 0.681192,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin1m = 4.88008 +/- 0.0353034,r_PassBin1 = 0.0639003 +/- 0.0644994,r_PassBin1m = 4.23771 +/- 0.0345051)
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin1 = 3.12008 +/- 0.0511469,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin1_bin0 = 6341.19 +/- 0.522977,prop_binFailBin1_bin1 = 1287.64 +/- 0.571552,prop_binFailBin1_bin2 = -4775.83 +/- 0.545428,prop_binFailBin1_bin3 = -1083.11 +/- 0.601314,prop_binFailBin1_bin4 = -8360.91 +/- 0.690312,prop_binFailBin1_bin5 = 5718.81 +/- 0.780797,prop_binFailBin1_bin6 = -1934.4 +/- 0.625854,prop_binFailBin1_bin7 = -4944.1 +/- 0.681192,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin1m = 4.88008 +/- 0.0353034,r_PassBin1 = 0.0639003 +/- 0.0644994,r_PassBin1m = 4.23771 +/- 0.0345051)
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin1 = 3.12008 +/- 0.0511469,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin1_bin0 = 6341.19 +/- 0.522977,prop_binFailBin1_bin1 = 1287.64 +/- 0.571552,prop_binFailBin1_bin2 = -4775.83 +/- 0.545428,prop_binFailBin1_bin3 = -1083.11 +/- 0.601314,prop_binFailBin1_bin4 = -8360.91 +/- 0.690312,prop_binFailBin1_bin5 = 5718.81 +/- 0.780797,prop_binFailBin1_bin6 = -1934.4 +/- 0.625854,prop_binFailBin1_bin7 = -4944.1 +/- 0.681192,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin1m = 4.88008 +/- 0.0353034,r_PassBin1 = 0.0639003 +/- 0.0644994,r_PassBin1m = 4.23771 +/- 0.0345051)
+     function value is NAN @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin1 = 3.12008 +/- 0.0511469,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin1_bin0 = 6341.19 +/- 0.522977,prop_binFailBin1_bin1 = 1287.64 +/- 0.571552,prop_binFailBin1_bin2 = -4775.83 +/- 0.545428,prop_binFailBin1_bin3 = -1083.11 +/- 0.601314,prop_binFailBin1_bin4 = -8360.91 +/- 0.690312,prop_binFailBin1_bin5 = 5718.81 +/- 0.780797,prop_binFailBin1_bin6 = -1934.4 +/- 0.625854,prop_binFailBin1_bin7 = -4944.1 +/- 0.681192,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin1m = 4.88008 +/- 0.0353034,r_PassBin1 = 0.0639003 +/- 0.0644994,r_PassBin1m = 4.23771 +/- 0.0345051)
+RooAbsReal::FailBin2[ params=(CMS_PU_2017,CMS_ak8jet_res_j_2017,CMS_ak8jet_scale_JESTotal,CMS_btag_cferr1,CMS_btag_cferr2,CMS_btag_hf,CMS_btag_hfstats1_2017,CMS_btag_hfstats2_2017,CMS_btag_lf,CMS_btag_lfstats1_2017,CMS_btag_lfstats2_2017,CMS_eff_e_2017,CMS_eff_hwwtrigger_2017,CMS_eff_m_2017,CMS_eff_prefiring_2017,CMS_res_j_2017,CMS_scale_JESTotal,CMS_scale_e_2017,CMS_scale_m_2017,CMS_scale_met_2017,ONE,PS_FSR,PS_ISR,QCDscale_WW_ACCEPT,QCDscale_WmH_ACCEPT,QCDscale_WpH_ACCEPT,QCDscale_ZH_ACCEPT,QCDscale_ggH_ACCEPT,QCDscale_qqH_ACCEPT,QCDscale_ttbar_ACCEPT,QCDscale_wjets_ACCEPT,SF_Bin2,ggWWnorm,lumi_13TeV_2017,lumi_13TeV_BBD,lumi_13TeV_BCC,lumi_13TeV_DB,lumi_13TeV_GS,lumi_13TeV_LS,lumi_13TeV_XY,pdf_Higgs_gg_ACCEPT,pdf_Higgs_qqbar_ACCEPT,pdf_WW_ACCEPT,pdf_WmH_ACCEPT,pdf_WpH_ACCEPT,pdf_ZH_ACCEPT,pdf_ttbar_ACCEPT,pdf_wjets_ACCEPT,prop_binFailBin2_bin0,prop_binFailBin2_bin1,prop_binFailBin2_bin2,prop_binFailBin2_bin3,prop_binFailBin2_bin4,prop_binFailBin2_bin5,prop_binFailBin2_bin6,prop_binFailBin2_bin7,qqWWqqnorm,r_FailBin2m,r_PassBin2,r_PassBin2m) ]
+     Number of events is negative or error @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin2 = 0.0139757 +/- 0.151379,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin2_bin0 = 10396.6 +/- 0.499659,prop_binFailBin2_bin1 = -22420.2 +/- 0.478613,prop_binFailBin2_bin2 = -45643 +/- 0.497728,prop_binFailBin2_bin3 = -133332 +/- 0.575808,prop_binFailBin2_bin4 = -148348 +/- 0.685276,prop_binFailBin2_bin5 = -120263 +/- 0.590802,prop_binFailBin2_bin6 = -89518.5 +/- 0.474291,prop_binFailBin2_bin7 = -76096.7 +/- 0.554457,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin2m = 3.5628 +/- 0.0367425,r_PassBin2 = 3.24775 +/- 0.116183,r_PassBin2m = 0.597772 +/- 0.0431193)
+     function value is NAN @ params=(CMS_PU_2017 = -5932.27 +/- 0.549196,CMS_ak8jet_res_j_2017 = -1014.66 +/- 0.313643,CMS_ak8jet_scale_JESTotal = -994.771 +/- 0.176278,CMS_btag_cferr1 = 1285.76 +/- 0.74472,CMS_btag_cferr2 = 1671.3 +/- 1.0075,CMS_btag_hf = 3004.31 +/- 0.886311,CMS_btag_hfstats1_2017 = -4852.36 +/- 0.990421,CMS_btag_hfstats2_2017 = -762.029 +/- 0.991752,CMS_btag_lf = 17309.1 +/- 0.889767,CMS_btag_lfstats1_2017 = 6006.67 +/- 0.994788,CMS_btag_lfstats2_2017 = 16098.7 +/- 0.992251,CMS_eff_e_2017 = -3419.27 +/- 0.983461,CMS_eff_hwwtrigger_2017 = -1285.77 +/- 0.939201,CMS_eff_m_2017 = -3758.37 +/- 0.987682,CMS_eff_prefiring_2017 = 4448.84 +/- 0.975469,CMS_res_j_2017 = -1061.15 +/- 0.593639,CMS_scale_JESTotal = -669.834 +/- 0.480931,CMS_scale_e_2017 = 15299.4 +/- 0.856101,CMS_scale_m_2017 = 1080.17 +/- 1.03565,CMS_scale_met_2017 = -1677.46 +/- 0.466154,ONE = 1,PS_FSR = -4541.25 +/- 0.521773,PS_ISR = 12863.7 +/- 0.98554,QCDscale_WW_ACCEPT = 25364.3 +/- 0.991875,QCDscale_WmH_ACCEPT = 55.5003 +/- 0.995093,QCDscale_WpH_ACCEPT = 22.0653 +/- 0.995533,QCDscale_ZH_ACCEPT = -37.2392 +/- 0.994046,QCDscale_ggH_ACCEPT = -199.707 +/- 0.99321,QCDscale_qqH_ACCEPT = 13.2408 +/- 0.994419,QCDscale_ttbar_ACCEPT = -269.686 +/- 0.546743,QCDscale_wjets_ACCEPT = 2495.98 +/- 0.968891,SF_Bin2 = 0.0139757 +/- 0.151379,ggWWnorm = 4612.82 +/- 0.994455,lumi_13TeV_2017 = 3182 +/- 0.982343,lumi_13TeV_BBD = 14813.4 +/- 0.993967,lumi_13TeV_BCC = 18685.1 +/- 0.994179,lumi_13TeV_DB = 12150 +/- 0.993696,lumi_13TeV_GS = 17781.6 +/- 0.994424,lumi_13TeV_LS = 18685.1 +/- 0.994179,lumi_13TeV_XY = 7802.44 +/- 0.992518,pdf_Higgs_gg_ACCEPT = -22.188 +/- 0.994453,pdf_Higgs_qqbar_ACCEPT = 12.5443 +/- 0.994441,pdf_WW_ACCEPT = -188.996 +/- 0.993978,pdf_WmH_ACCEPT = 16.2387 +/- 0.994447,pdf_WpH_ACCEPT = 43.4527 +/- 0.994423,pdf_ZH_ACCEPT = -25.2866 +/- 0.994448,pdf_ttbar_ACCEPT = -462.281 +/- 0.990421,pdf_wjets_ACCEPT = 3643.53 +/- 0.993401,prop_binFailBin2_bin0 = 10396.6 +/- 0.499659,prop_binFailBin2_bin1 = -22420.2 +/- 0.478613,prop_binFailBin2_bin2 = -45643 +/- 0.497728,prop_binFailBin2_bin3 = -133332 +/- 0.575808,prop_binFailBin2_bin4 = -148348 +/- 0.685276,prop_binFailBin2_bin5 = -120263 +/- 0.590802,prop_binFailBin2_bin6 = -89518.5 +/- 0.474291,prop_binFailBin2_bin7 = -76096.7 +/- 0.554457,qqWWqqnorm = 8176.11 +/- 0.994425,r_FailBin2m = 3.5628 +/- 0.0367425,r_PassBin2 = 3.24775 +/- 0.116183,r_PassBin2m = 0.597772 +/- 0.0431193)
+
+[#0] WARNING:Minization -- RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (3.91461e+07) to force MIGRAD to back out of this region. Error log follows
+Parameter values: CMS_PU_2017=-1993.27, CMS_ak8jet_res_j_2017=-341.192, CMS_ak8jet_scale_JESTotal=-334.297, CMS_btag_cferr1=431.246, CMS_btag_cferr2=561.096, CMS_btag_hf=1010.37, CMS_btag_hfstats1_2017=-1635.87, CMS_btag_hfstats2_2017=-260.106, CMS_btag_lf=5822.64, CMS_btag_lfstats1_2017=2013.99, CMS_btag_lfstats2_2017=5407.08, CMS_eff_e_2017=-1145.56, CMS_eff_hwwtrigger_2017=-430.991, CMS_eff_m_2017=-1259.42, CMS_eff_prefiring_2017=1491.57, CMS_res_j_2017=-356.658, CMS_scale_JESTotal=-225.165, CMS_scale_e_2017=5137.94, CMS_scale_m_2017=363.061, CMS_scale_met_2017=-564.569, PS_FSR=-1526.62, PS_ISR=4325.86, QCDscale_WW_ACCEPT=8526.54, QCDscale_WmH_ACCEPT=18.6974, QCDscale_WpH_ACCEPT=7.42356, QCDscale_ZH_ACCEPT=-12.5297, QCDscale_ggH_ACCEPT=-67.1197, QCDscale_qqH_ACCEPT=4.45562, QCDscale_ttbar_ACCEPT=-88.826, QCDscale_wjets_ACCEPT=838.234, SF_Bin0=1.68309, SF_Bin1=4.88846, ggWWnorm=1550.24, lumi_13TeV_2017=1066.83, lumi_13TeV_BBD=4966.78, lumi_13TeV_BCC=6265.55, lumi_13TeV_DB=4073.57, lumi_13TeV_GS=5964.14, lumi_13TeV_LS=6265.55, lumi_13TeV_XY=2615.8, pdf_Higgs_gg_ACCEPT=-7.45714, pdf_Higgs_qqbar_ACCEPT=4.2179, pdf_WW_ACCEPT=-62.7426, pdf_WmH_ACCEPT=5.47303, pdf_WpH_ACCEPT=14.5919, pdf_ZH_ACCEPT=-8.50186, pdf_ttbar_ACCEPT=-153.435, pdf_wjets_ACCEPT=1224.69, prop_binFailBin0_bin0=1340.96, prop_binFailBin0_bin1=612.036, prop_binFailBin0_bin2=-1117.76, prop_binFailBin0_bin3=-1797.44, prop_binFailBin0_bin4=-414.067, prop_binFailBin0_bin5=-735.887, prop_binFailBin0_bin6=-993.76, prop_binFailBin0_bin7=-1492.46, prop_binFailBin0m_bin0=979.457, prop_binFailBin1_bin0=2129.67, prop_binFailBin1_bin1=433.87, prop_binFailBin1_bin2=-1604.67, prop_binFailBin1_bin3=-363.411, prop_binFailBin1_bin4=-2808.72, prop_binFailBin1_bin5=1921.69, prop_binFailBin1_bin6=-649.983, prop_binFailBin1_bin7=-1661.96, prop_binFailBin1m_bin0=2471.22, prop_binFailBin2_bin0=3474.48, prop_binFailBin2_bin1=-7555.37, prop_binFailBin2_bin2=-15375.2, prop_binFailBin2_bin3=-44864, prop_binFailBin2_bin4=-49912.1, prop_binFailBin2_bin5=-40468.3, prop_binFailBin2_bin6=-30128.5, prop_binFailBin2_bin7=-25613.3, prop_binFailBin2m_bin0=2207.25, prop_binPassBin0_bin0=-2171.03, prop_binPassBin0_bin1=-1663.69, prop_binPassBin0_bin2=-3179.96, prop_binPassBin0_bin3=-637.559, prop_binPassBin0_bin4=-4441.14, prop_binPassBin0_bin5=-3957.11, prop_binPassBin0_bin6=-2915.03, prop_binPassBin0_bin7=-5091.98, prop_binPassBin0m_bin0=3012.09, prop_binPassBin1_bin0=854.835, prop_binPassBin1_bin1=-905.278, prop_binPassBin1_bin2=335.941, prop_binPassBin1_bin3=-962.696, prop_binPassBin1_bin4=-2097.76, prop_binPassBin1_bin5=-3225.08, prop_binPassBin1_bin6=99.7073, prop_binPassBin1_bin7=-3817.68, prop_binPassBin1m_bin0=1587.53, prop_binPassBin2_bin0=-416.471, prop_binPassBin2_bin1=-1320.64, prop_binPassBin2_bin2=-1899.41, prop_binPassBin2_bin3=-1557.73, prop_binPassBin2_bin4=-1117.03, prop_binPassBin2_bin5=-504.69, prop_binPassBin2_bin6=-3126.27, prop_binPassBin2_bin7=-3471.66, prop_binPassBin2m_bin0=-2901.38, qqWWqqnorm=2748.61, r_FailBin0m=1.2866, r_FailBin1m=4.65378, r_FailBin2m=1.498, r_PassBin0=4.76258, r_PassBin0m=0.0757739, r_PassBin1=2.48198, r_PassBin1m=0.67946, r_PassBin2=0.0662718, r_PassBin2m=0.319577
+
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Reached call limit
+Point 9/1200 SF_Bin2 = 0.0156199
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 10/1200 SF_Bin2 = 0.0172641
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Reached call limit
+Point 11/1200 SF_Bin2 = 0.0189083
+Point 12/1200 SF_Bin2 = 0.0205525
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 13/1200 SF_Bin2 = 0.0221967
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Reached call limit
+Point 14/1200 SF_Bin2 = 0.0238409
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Reached call limit
+Point 15/1200 SF_Bin2 = 0.0254851
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Reached call limit
+Point 16/1200 SF_Bin2 = 0.0271293
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Reached call limit
+Point 17/1200 SF_Bin2 = 0.0287735
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 18/1200 SF_Bin2 = 0.0304177
+Point 19/1200 SF_Bin2 = 0.0320619
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Reached call limit
+Point 20/1200 SF_Bin2 = 0.0337061
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 21/1200 SF_Bin2 = 0.0353503
+Point 22/1200 SF_Bin2 = 0.0369945
+Point 23/1200 SF_Bin2 = 0.0386387
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 24/1200 SF_Bin2 = 0.0402829
+Point 25/1200 SF_Bin2 = 0.0419271
+Point 26/1200 SF_Bin2 = 0.0435713
+Point 27/1200 SF_Bin2 = 0.0452155
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 28/1200 SF_Bin2 = 0.0468597
+Point 29/1200 SF_Bin2 = 0.0485039
+Point 30/1200 SF_Bin2 = 0.0501481
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 31/1200 SF_Bin2 = 0.0517923
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 32/1200 SF_Bin2 = 0.0534365
+Point 33/1200 SF_Bin2 = 0.0550807
+Point 34/1200 SF_Bin2 = 0.0567249
+Point 35/1200 SF_Bin2 = 0.0583691
+Point 36/1200 SF_Bin2 = 0.0600133
+Point 37/1200 SF_Bin2 = 0.0616575
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 38/1200 SF_Bin2 = 0.0633017
+Point 39/1200 SF_Bin2 = 0.0649459
+Point 40/1200 SF_Bin2 = 0.0665901
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 41/1200 SF_Bin2 = 0.0682343
+Point 42/1200 SF_Bin2 = 0.0698785
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 43/1200 SF_Bin2 = 0.0715227
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 44/1200 SF_Bin2 = 0.0731669
+Point 45/1200 SF_Bin2 = 0.0748111
+Point 46/1200 SF_Bin2 = 0.0764553
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 47/1200 SF_Bin2 = 0.0780995
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 48/1200 SF_Bin2 = 0.0797437
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 49/1200 SF_Bin2 = 0.0813879
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 50/1200 SF_Bin2 = 0.0830321
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 51/1200 SF_Bin2 = 0.0846763
+Point 52/1200 SF_Bin2 = 0.0863205
+Point 53/1200 SF_Bin2 = 0.0879647
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 54/1200 SF_Bin2 = 0.0896089
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 55/1200 SF_Bin2 = 0.0912531
+Point 56/1200 SF_Bin2 = 0.0928973
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 57/1200 SF_Bin2 = 0.0945415
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 58/1200 SF_Bin2 = 0.0961857
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 59/1200 SF_Bin2 = 0.0978299
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 60/1200 SF_Bin2 = 0.0994741
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 61/1200 SF_Bin2 = 0.101118
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 62/1200 SF_Bin2 = 0.102763
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 63/1200 SF_Bin2 = 0.104407
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 64/1200 SF_Bin2 = 0.106051
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 65/1200 SF_Bin2 = 0.107695
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 66/1200 SF_Bin2 = 0.109339
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 67/1200 SF_Bin2 = 0.110984
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 68/1200 SF_Bin2 = 0.112628
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 69/1200 SF_Bin2 = 0.114272
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 70/1200 SF_Bin2 = 0.115916
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 71/1200 SF_Bin2 = 0.11756
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 72/1200 SF_Bin2 = 0.119205
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 73/1200 SF_Bin2 = 0.120849
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 74/1200 SF_Bin2 = 0.122493
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 75/1200 SF_Bin2 = 0.124137
+Point 76/1200 SF_Bin2 = 0.125781
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 77/1200 SF_Bin2 = 0.127426
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 78/1200 SF_Bin2 = 0.12907
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 79/1200 SF_Bin2 = 0.130714
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 80/1200 SF_Bin2 = 0.132358
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 81/1200 SF_Bin2 = 0.134002
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 82/1200 SF_Bin2 = 0.135647
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 83/1200 SF_Bin2 = 0.137291
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 84/1200 SF_Bin2 = 0.138935
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 85/1200 SF_Bin2 = 0.140579
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 86/1200 SF_Bin2 = 0.142223
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 87/1200 SF_Bin2 = 0.143868
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 88/1200 SF_Bin2 = 0.145512
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 89/1200 SF_Bin2 = 0.147156
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 90/1200 SF_Bin2 = 0.1488
+Point 91/1200 SF_Bin2 = 0.150444
+Point 92/1200 SF_Bin2 = 0.152089
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 93/1200 SF_Bin2 = 0.153733
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 94/1200 SF_Bin2 = 0.155377
+Point 95/1200 SF_Bin2 = 0.157021
+Point 96/1200 SF_Bin2 = 0.158665
+Point 97/1200 SF_Bin2 = 0.16031
+Point 98/1200 SF_Bin2 = 0.161954
+Point 99/1200 SF_Bin2 = 0.163598
+Point 100/1200 SF_Bin2 = 0.165242
+Point 101/1200 SF_Bin2 = 0.166886
+Point 102/1200 SF_Bin2 = 0.168531
+Point 103/1200 SF_Bin2 = 0.170175
+Point 104/1200 SF_Bin2 = 0.171819
+Point 105/1200 SF_Bin2 = 0.173463
+Point 106/1200 SF_Bin2 = 0.175107
+Point 107/1200 SF_Bin2 = 0.176752
+Point 108/1200 SF_Bin2 = 0.178396
+Point 109/1200 SF_Bin2 = 0.18004
+Point 110/1200 SF_Bin2 = 0.181684
+Point 111/1200 SF_Bin2 = 0.183328
+Point 112/1200 SF_Bin2 = 0.184973
+Point 113/1200 SF_Bin2 = 0.186617
+Point 114/1200 SF_Bin2 = 0.188261
+Point 115/1200 SF_Bin2 = 0.189905
+Point 116/1200 SF_Bin2 = 0.191549
+Point 117/1200 SF_Bin2 = 0.193194
+Point 118/1200 SF_Bin2 = 0.194838
+Point 119/1200 SF_Bin2 = 0.196482
+Point 120/1200 SF_Bin2 = 0.198126
+Point 121/1200 SF_Bin2 = 0.19977
+Point 122/1200 SF_Bin2 = 0.201415
+Point 123/1200 SF_Bin2 = 0.203059
+Point 124/1200 SF_Bin2 = 0.204703
+Point 125/1200 SF_Bin2 = 0.206347
+Point 126/1200 SF_Bin2 = 0.207991
+Point 127/1200 SF_Bin2 = 0.209636
+Point 128/1200 SF_Bin2 = 0.21128
+Point 129/1200 SF_Bin2 = 0.212924
+Point 130/1200 SF_Bin2 = 0.214568
+Point 131/1200 SF_Bin2 = 0.216212
+Info in <Minuit2>: Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Point 132/1200 SF_Bin2 = 0.217857
+Point 133/1200 SF_Bin2 = 0.219501
+Point 134/1200 SF_Bin2 = 0.221145
+Point 135/1200 SF_Bin2 = 0.222789
+Point 136/1200 SF_Bin2 = 0.224433
+Point 137/1200 SF_Bin2 = 0.226078
+Point 138/1200 SF_Bin2 = 0.227722
+Point 139/1200 SF_Bin2 = 0.229366
+Point 140/1200 SF_Bin2 = 0.23101
+Point 141/1200 SF_Bin2 = 0.232654
+Point 142/1200 SF_Bin2 = 0.234299
+Point 143/1200 SF_Bin2 = 0.235943
+Point 144/1200 SF_Bin2 = 0.237587
+Point 145/1200 SF_Bin2 = 0.239231
+Point 146/1200 SF_Bin2 = 0.240875
+Point 147/1200 SF_Bin2 = 0.24252
+Point 148/1200 SF_Bin2 = 0.244164
+Point 149/1200 SF_Bin2 = 0.245808
+Point 150/1200 SF_Bin2 = 0.247452
+Point 151/1200 SF_Bin2 = 0.249096
+Point 152/1200 SF_Bin2 = 0.250741
+Point 153/1200 SF_Bin2 = 0.252385
+Point 154/1200 SF_Bin2 = 0.254029
+Point 155/1200 SF_Bin2 = 0.255673
+Point 156/1200 SF_Bin2 = 0.257317
+Point 157/1200 SF_Bin2 = 0.258962
+Point 158/1200 SF_Bin2 = 0.260606
+Point 159/1200 SF_Bin2 = 0.26225
+Point 160/1200 SF_Bin2 = 0.263894
+Point 161/1200 SF_Bin2 = 0.265538
+Point 162/1200 SF_Bin2 = 0.267183
+Point 163/1200 SF_Bin2 = 0.268827
+Point 164/1200 SF_Bin2 = 0.270471
+Point 165/1200 SF_Bin2 = 0.272115
+Point 166/1200 SF_Bin2 = 0.273759
+Point 167/1200 SF_Bin2 = 0.275404
+Point 168/1200 SF_Bin2 = 0.277048
+Point 169/1200 SF_Bin2 = 0.278692
+Point 170/1200 SF_Bin2 = 0.280336
+Point 171/1200 SF_Bin2 = 0.28198
+Point 172/1200 SF_Bin2 = 0.283625
+Point 173/1200 SF_Bin2 = 0.285269
+Point 174/1200 SF_Bin2 = 0.286913
+Point 175/1200 SF_Bin2 = 0.288557
+Point 176/1200 SF_Bin2 = 0.290201
+Point 177/1200 SF_Bin2 = 0.291846
+Point 178/1200 SF_Bin2 = 0.29349
+Point 179/1200 SF_Bin2 = 0.295134
+Point 180/1200 SF_Bin2 = 0.296778
+Point 181/1200 SF_Bin2 = 0.298422
+Point 182/1200 SF_Bin2 = 0.300067
+Point 183/1200 SF_Bin2 = 0.301711
+Point 184/1200 SF_Bin2 = 0.303355
+Point 185/1200 SF_Bin2 = 0.304999
+Point 186/1200 SF_Bin2 = 0.306643
+Point 187/1200 SF_Bin2 = 0.308288
+Point 188/1200 SF_Bin2 = 0.309932
+Point 189/1200 SF_Bin2 = 0.311576
+Point 190/1200 SF_Bin2 = 0.31322
+Point 191/1200 SF_Bin2 = 0.314864
+Point 192/1200 SF_Bin2 = 0.316509
+Point 193/1200 SF_Bin2 = 0.318153
+Point 194/1200 SF_Bin2 = 0.319797
+Point 195/1200 SF_Bin2 = 0.321441
+Point 196/1200 SF_Bin2 = 0.323085
+Point 197/1200 SF_Bin2 = 0.32473
+Point 198/1200 SF_Bin2 = 0.326374
+Point 199/1200 SF_Bin2 = 0.328018
+Point 200/1200 SF_Bin2 = 0.329662
+Point 201/1200 SF_Bin2 = 0.331306
+Point 202/1200 SF_Bin2 = 0.332951
+Point 203/1200 SF_Bin2 = 0.334595
+Point 204/1200 SF_Bin2 = 0.336239
+Point 205/1200 SF_Bin2 = 0.337883
+Point 206/1200 SF_Bin2 = 0.339527
+Point 207/1200 SF_Bin2 = 0.341172
+Point 208/1200 SF_Bin2 = 0.342816
+Point 209/1200 SF_Bin2 = 0.34446
+Point 210/1200 SF_Bin2 = 0.346104
+Point 211/1200 SF_Bin2 = 0.347748
+Point 212/1200 SF_Bin2 = 0.349393
+Point 213/1200 SF_Bin2 = 0.351037
+Point 214/1200 SF_Bin2 = 0.352681
+Point 215/1200 SF_Bin2 = 0.354325
+Point 216/1200 SF_Bin2 = 0.355969
+Point 217/1200 SF_Bin2 = 0.357614
+Point 218/1200 SF_Bin2 = 0.359258
+Point 219/1200 SF_Bin2 = 0.360902
+Point 220/1200 SF_Bin2 = 0.362546
+Point 221/1200 SF_Bin2 = 0.36419
+Point 222/1200 SF_Bin2 = 0.365835
+Point 223/1200 SF_Bin2 = 0.367479
+Point 224/1200 SF_Bin2 = 0.369123
+Point 225/1200 SF_Bin2 = 0.370767
+Point 226/1200 SF_Bin2 = 0.372411
+Point 227/1200 SF_Bin2 = 0.374056
+Point 228/1200 SF_Bin2 = 0.3757
+Point 229/1200 SF_Bin2 = 0.377344
+Point 230/1200 SF_Bin2 = 0.378988
+Point 231/1200 SF_Bin2 = 0.380632
+Point 232/1200 SF_Bin2 = 0.382277
+Point 233/1200 SF_Bin2 = 0.383921
+Point 234/1200 SF_Bin2 = 0.385565
+Point 235/1200 SF_Bin2 = 0.387209
+Point 236/1200 SF_Bin2 = 0.388853
+Point 237/1200 SF_Bin2 = 0.390498
+Point 238/1200 SF_Bin2 = 0.392142
+Point 239/1200 SF_Bin2 = 0.393786
+Point 240/1200 SF_Bin2 = 0.39543
+Point 241/1200 SF_Bin2 = 0.397074
+Point 242/1200 SF_Bin2 = 0.398719
+Point 243/1200 SF_Bin2 = 0.400363
+Point 244/1200 SF_Bin2 = 0.402007
+Point 245/1200 SF_Bin2 = 0.403651
+Point 246/1200 SF_Bin2 = 0.405295
+Point 247/1200 SF_Bin2 = 0.40694
+Point 248/1200 SF_Bin2 = 0.408584
+Point 249/1200 SF_Bin2 = 0.410228
+Point 250/1200 SF_Bin2 = 0.411872
+Point 251/1200 SF_Bin2 = 0.413516
+Point 252/1200 SF_Bin2 = 0.415161
+Point 253/1200 SF_Bin2 = 0.416805
+Point 254/1200 SF_Bin2 = 0.418449
+Point 255/1200 SF_Bin2 = 0.420093
+Point 256/1200 SF_Bin2 = 0.421737
+Point 257/1200 SF_Bin2 = 0.423382
+Point 258/1200 SF_Bin2 = 0.425026
+Point 259/1200 SF_Bin2 = 0.42667
+Point 260/1200 SF_Bin2 = 0.428314
+Point 261/1200 SF_Bin2 = 0.429958
+Point 262/1200 SF_Bin2 = 0.431603
+Point 263/1200 SF_Bin2 = 0.433247
+Point 264/1200 SF_Bin2 = 0.434891
+Point 265/1200 SF_Bin2 = 0.436535
+Point 266/1200 SF_Bin2 = 0.438179
+Point 267/1200 SF_Bin2 = 0.439824
+Point 268/1200 SF_Bin2 = 0.441468
+Point 269/1200 SF_Bin2 = 0.443112
+Point 270/1200 SF_Bin2 = 0.444756
+Point 271/1200 SF_Bin2 = 0.4464
+Point 272/1200 SF_Bin2 = 0.448045
+Point 273/1200 SF_Bin2 = 0.449689
+Point 274/1200 SF_Bin2 = 0.451333
+Point 275/1200 SF_Bin2 = 0.452977
+Point 276/1200 SF_Bin2 = 0.454621
+Point 277/1200 SF_Bin2 = 0.456266
+Point 278/1200 SF_Bin2 = 0.45791
+Point 279/1200 SF_Bin2 = 0.459554
+Point 280/1200 SF_Bin2 = 0.461198
+Point 281/1200 SF_Bin2 = 0.462842
+Point 282/1200 SF_Bin2 = 0.464487
+Point 283/1200 SF_Bin2 = 0.466131
+Point 284/1200 SF_Bin2 = 0.467775
+Point 285/1200 SF_Bin2 = 0.469419
+Point 286/1200 SF_Bin2 = 0.471063
+Point 287/1200 SF_Bin2 = 0.472708
+Point 288/1200 SF_Bin2 = 0.474352
+Point 289/1200 SF_Bin2 = 0.475996
+Point 290/1200 SF_Bin2 = 0.47764
+Point 291/1200 SF_Bin2 = 0.479284
+Point 292/1200 SF_Bin2 = 0.480929
+Point 293/1200 SF_Bin2 = 0.482573
+Point 294/1200 SF_Bin2 = 0.484217
+Point 295/1200 SF_Bin2 = 0.485861
+Point 296/1200 SF_Bin2 = 0.487505
+Point 297/1200 SF_Bin2 = 0.48915
+Point 298/1200 SF_Bin2 = 0.490794
+Point 299/1200 SF_Bin2 = 0.492438
+Point 300/1200 SF_Bin2 = 0.494082
+Point 301/1200 SF_Bin2 = 0.495726
+Point 302/1200 SF_Bin2 = 0.497371
+Point 303/1200 SF_Bin2 = 0.499015
+Point 304/1200 SF_Bin2 = 0.500659
+Point 305/1200 SF_Bin2 = 0.502303
+Point 306/1200 SF_Bin2 = 0.503947
+Point 307/1200 SF_Bin2 = 0.505592
+Point 308/1200 SF_Bin2 = 0.507236
+Point 309/1200 SF_Bin2 = 0.50888
+Point 310/1200 SF_Bin2 = 0.510524
+Point 311/1200 SF_Bin2 = 0.512168
+Point 312/1200 SF_Bin2 = 0.513813
+Point 313/1200 SF_Bin2 = 0.515457
+Point 314/1200 SF_Bin2 = 0.517101
+Point 315/1200 SF_Bin2 = 0.518745
+Point 316/1200 SF_Bin2 = 0.520389
+Point 317/1200 SF_Bin2 = 0.522034
+Point 318/1200 SF_Bin2 = 0.523678
+Point 319/1200 SF_Bin2 = 0.525322
+Point 320/1200 SF_Bin2 = 0.526966
+Point 321/1200 SF_Bin2 = 0.52861
+Point 322/1200 SF_Bin2 = 0.530255
+Point 323/1200 SF_Bin2 = 0.531899
+Point 324/1200 SF_Bin2 = 0.533543
+Point 325/1200 SF_Bin2 = 0.535187
+Point 326/1200 SF_Bin2 = 0.536831
+Point 327/1200 SF_Bin2 = 0.538476
+Point 328/1200 SF_Bin2 = 0.54012
+Point 329/1200 SF_Bin2 = 0.541764
+Point 330/1200 SF_Bin2 = 0.543408
+Point 331/1200 SF_Bin2 = 0.545052
+Point 332/1200 SF_Bin2 = 0.546697
+Point 333/1200 SF_Bin2 = 0.548341
+Point 334/1200 SF_Bin2 = 0.549985
+Point 335/1200 SF_Bin2 = 0.551629
+Point 336/1200 SF_Bin2 = 0.553273
+Point 337/1200 SF_Bin2 = 0.554918
+Point 338/1200 SF_Bin2 = 0.556562
+Point 339/1200 SF_Bin2 = 0.558206
+Point 340/1200 SF_Bin2 = 0.55985
+Point 341/1200 SF_Bin2 = 0.561494
+Point 342/1200 SF_Bin2 = 0.563139
+Point 343/1200 SF_Bin2 = 0.564783
+Point 344/1200 SF_Bin2 = 0.566427
+Point 345/1200 SF_Bin2 = 0.568071
+Point 346/1200 SF_Bin2 = 0.569715
+Point 347/1200 SF_Bin2 = 0.57136
+Point 348/1200 SF_Bin2 = 0.573004
+Point 349/1200 SF_Bin2 = 0.574648
+Point 350/1200 SF_Bin2 = 0.576292
+Point 351/1200 SF_Bin2 = 0.577936
+Point 352/1200 SF_Bin2 = 0.579581
+Point 353/1200 SF_Bin2 = 0.581225
+Point 354/1200 SF_Bin2 = 0.582869
+Point 355/1200 SF_Bin2 = 0.584513
+Point 356/1200 SF_Bin2 = 0.586157
+Point 357/1200 SF_Bin2 = 0.587802
+Point 358/1200 SF_Bin2 = 0.589446
+Point 359/1200 SF_Bin2 = 0.59109
+Point 360/1200 SF_Bin2 = 0.592734
+Point 361/1200 SF_Bin2 = 0.594378
+Point 362/1200 SF_Bin2 = 0.596023
+Point 363/1200 SF_Bin2 = 0.597667
+Point 364/1200 SF_Bin2 = 0.599311
+Point 365/1200 SF_Bin2 = 0.600955
+Point 366/1200 SF_Bin2 = 0.602599
+Point 367/1200 SF_Bin2 = 0.604244
+Point 368/1200 SF_Bin2 = 0.605888
+Point 369/1200 SF_Bin2 = 0.607532
+Point 370/1200 SF_Bin2 = 0.609176
+Point 371/1200 SF_Bin2 = 0.61082
+Point 372/1200 SF_Bin2 = 0.612465
+Point 373/1200 SF_Bin2 = 0.614109
+Point 374/1200 SF_Bin2 = 0.615753
+Point 375/1200 SF_Bin2 = 0.617397
+Point 376/1200 SF_Bin2 = 0.619041
+Point 377/1200 SF_Bin2 = 0.620686
+Point 378/1200 SF_Bin2 = 0.62233
+Point 379/1200 SF_Bin2 = 0.623974
+Point 380/1200 SF_Bin2 = 0.625618
+Point 381/1200 SF_Bin2 = 0.627262
+Point 382/1200 SF_Bin2 = 0.628907
+Point 383/1200 SF_Bin2 = 0.630551
+Point 384/1200 SF_Bin2 = 0.632195
+Point 385/1200 SF_Bin2 = 0.633839
+Point 386/1200 SF_Bin2 = 0.635483
+Point 387/1200 SF_Bin2 = 0.637128
+Point 388/1200 SF_Bin2 = 0.638772
+Point 389/1200 SF_Bin2 = 0.640416
+Point 390/1200 SF_Bin2 = 0.64206
+Point 391/1200 SF_Bin2 = 0.643704
+Point 392/1200 SF_Bin2 = 0.645349
+Point 393/1200 SF_Bin2 = 0.646993
+Point 394/1200 SF_Bin2 = 0.648637
+Point 395/1200 SF_Bin2 = 0.650281
+Point 396/1200 SF_Bin2 = 0.651925
+Point 397/1200 SF_Bin2 = 0.65357
+Point 398/1200 SF_Bin2 = 0.655214
+Point 399/1200 SF_Bin2 = 0.656858
+Point 400/1200 SF_Bin2 = 0.658502
+Point 401/1200 SF_Bin2 = 0.660146
+Point 402/1200 SF_Bin2 = 0.661791
+Point 403/1200 SF_Bin2 = 0.663435
+Point 404/1200 SF_Bin2 = 0.665079
+Point 405/1200 SF_Bin2 = 0.666723
+Point 406/1200 SF_Bin2 = 0.668367
+Point 407/1200 SF_Bin2 = 0.670012
+Point 408/1200 SF_Bin2 = 0.671656
+Point 409/1200 SF_Bin2 = 0.6733
+Point 410/1200 SF_Bin2 = 0.674944
+Point 411/1200 SF_Bin2 = 0.676588
+Point 412/1200 SF_Bin2 = 0.678233
+Point 413/1200 SF_Bin2 = 0.679877
+Point 414/1200 SF_Bin2 = 0.681521
+Point 415/1200 SF_Bin2 = 0.683165
+Point 416/1200 SF_Bin2 = 0.68481
+Point 417/1200 SF_Bin2 = 0.686454
+Point 418/1200 SF_Bin2 = 0.688098
+Point 419/1200 SF_Bin2 = 0.689742
+Point 420/1200 SF_Bin2 = 0.691386
+Point 421/1200 SF_Bin2 = 0.693031
+Point 422/1200 SF_Bin2 = 0.694675
+Point 423/1200 SF_Bin2 = 0.696319
+Point 424/1200 SF_Bin2 = 0.697963
+Point 425/1200 SF_Bin2 = 0.699607
+Point 426/1200 SF_Bin2 = 0.701252
+Point 427/1200 SF_Bin2 = 0.702896
+Point 428/1200 SF_Bin2 = 0.70454
+Point 429/1200 SF_Bin2 = 0.706184
+Point 430/1200 SF_Bin2 = 0.707828
+Point 431/1200 SF_Bin2 = 0.709473
+Point 432/1200 SF_Bin2 = 0.711117
+Point 433/1200 SF_Bin2 = 0.712761
+Point 434/1200 SF_Bin2 = 0.714405
+Point 435/1200 SF_Bin2 = 0.716049
+Point 436/1200 SF_Bin2 = 0.717694
+Point 437/1200 SF_Bin2 = 0.719338
+Point 438/1200 SF_Bin2 = 0.720982
+Point 439/1200 SF_Bin2 = 0.722626
+Point 440/1200 SF_Bin2 = 0.72427
+Point 441/1200 SF_Bin2 = 0.725915
+Point 442/1200 SF_Bin2 = 0.727559
+Point 443/1200 SF_Bin2 = 0.729203
+Point 444/1200 SF_Bin2 = 0.730847
+Point 445/1200 SF_Bin2 = 0.732491
+Point 446/1200 SF_Bin2 = 0.734136
+Point 447/1200 SF_Bin2 = 0.73578
+Point 448/1200 SF_Bin2 = 0.737424
+Point 449/1200 SF_Bin2 = 0.739068
+Point 450/1200 SF_Bin2 = 0.740712
+Point 451/1200 SF_Bin2 = 0.742357
+Point 452/1200 SF_Bin2 = 0.744001
+Point 453/1200 SF_Bin2 = 0.745645
+Point 454/1200 SF_Bin2 = 0.747289
+Point 455/1200 SF_Bin2 = 0.748933
+Point 456/1200 SF_Bin2 = 0.750578
+Point 457/1200 SF_Bin2 = 0.752222
+Point 458/1200 SF_Bin2 = 0.753866
+Point 459/1200 SF_Bin2 = 0.75551
+Point 460/1200 SF_Bin2 = 0.757154
+Point 461/1200 SF_Bin2 = 0.758799
+Point 462/1200 SF_Bin2 = 0.760443
+Point 463/1200 SF_Bin2 = 0.762087
+Point 464/1200 SF_Bin2 = 0.763731
+Point 465/1200 SF_Bin2 = 0.765375
+Point 466/1200 SF_Bin2 = 0.76702
+Point 467/1200 SF_Bin2 = 0.768664
+Point 468/1200 SF_Bin2 = 0.770308
+Point 469/1200 SF_Bin2 = 0.771952
+Point 470/1200 SF_Bin2 = 0.773596
+Point 471/1200 SF_Bin2 = 0.775241
+Point 472/1200 SF_Bin2 = 0.776885
+Point 473/1200 SF_Bin2 = 0.778529
+Point 474/1200 SF_Bin2 = 0.780173
+Point 475/1200 SF_Bin2 = 0.781817
+Point 476/1200 SF_Bin2 = 0.783462
+Point 477/1200 SF_Bin2 = 0.785106
+Point 478/1200 SF_Bin2 = 0.78675
+Point 479/1200 SF_Bin2 = 0.788394
+Point 480/1200 SF_Bin2 = 0.790038
+Point 481/1200 SF_Bin2 = 0.791683
+Point 482/1200 SF_Bin2 = 0.793327
+Point 483/1200 SF_Bin2 = 0.794971
+Point 484/1200 SF_Bin2 = 0.796615
+Point 485/1200 SF_Bin2 = 0.798259
+Point 486/1200 SF_Bin2 = 0.799904
+Point 487/1200 SF_Bin2 = 0.801548
+Point 488/1200 SF_Bin2 = 0.803192
+Point 489/1200 SF_Bin2 = 0.804836
+Point 490/1200 SF_Bin2 = 0.80648
+Point 491/1200 SF_Bin2 = 0.808125
+Point 492/1200 SF_Bin2 = 0.809769
+Point 493/1200 SF_Bin2 = 0.811413
+Point 494/1200 SF_Bin2 = 0.813057
+Point 495/1200 SF_Bin2 = 0.814701
+Point 496/1200 SF_Bin2 = 0.816346
+Point 497/1200 SF_Bin2 = 0.81799
+Point 498/1200 SF_Bin2 = 0.819634
+Point 499/1200 SF_Bin2 = 0.821278
+Point 500/1200 SF_Bin2 = 0.822922
+Point 501/1200 SF_Bin2 = 0.824567
+Point 502/1200 SF_Bin2 = 0.826211
+Point 503/1200 SF_Bin2 = 0.827855
+Point 504/1200 SF_Bin2 = 0.829499
+Point 505/1200 SF_Bin2 = 0.831143
+Point 506/1200 SF_Bin2 = 0.832788
+Point 507/1200 SF_Bin2 = 0.834432
+Point 508/1200 SF_Bin2 = 0.836076
+Point 509/1200 SF_Bin2 = 0.83772
+Point 510/1200 SF_Bin2 = 0.839364
+Point 511/1200 SF_Bin2 = 0.841009
+Point 512/1200 SF_Bin2 = 0.842653
+Point 513/1200 SF_Bin2 = 0.844297
+Point 514/1200 SF_Bin2 = 0.845941
+Point 515/1200 SF_Bin2 = 0.847585
+Point 516/1200 SF_Bin2 = 0.84923
+Point 517/1200 SF_Bin2 = 0.850874
+Point 518/1200 SF_Bin2 = 0.852518
+Point 519/1200 SF_Bin2 = 0.854162
+Point 520/1200 SF_Bin2 = 0.855806
+Point 521/1200 SF_Bin2 = 0.857451
+Point 522/1200 SF_Bin2 = 0.859095
+Point 523/1200 SF_Bin2 = 0.860739
+Point 524/1200 SF_Bin2 = 0.862383
+Point 525/1200 SF_Bin2 = 0.864027
+Point 526/1200 SF_Bin2 = 0.865672
+Point 527/1200 SF_Bin2 = 0.867316
+Point 528/1200 SF_Bin2 = 0.86896
+Point 529/1200 SF_Bin2 = 0.870604
+Point 530/1200 SF_Bin2 = 0.872248
+Point 531/1200 SF_Bin2 = 0.873893
+Point 532/1200 SF_Bin2 = 0.875537
+Point 533/1200 SF_Bin2 = 0.877181
+Point 534/1200 SF_Bin2 = 0.878825
+Point 535/1200 SF_Bin2 = 0.880469
+Point 536/1200 SF_Bin2 = 0.882114
+Point 537/1200 SF_Bin2 = 0.883758
+Point 538/1200 SF_Bin2 = 0.885402
+Point 539/1200 SF_Bin2 = 0.887046
+Point 540/1200 SF_Bin2 = 0.88869
+Point 541/1200 SF_Bin2 = 0.890335
+Point 542/1200 SF_Bin2 = 0.891979
+Point 543/1200 SF_Bin2 = 0.893623
+Point 544/1200 SF_Bin2 = 0.895267
+Point 545/1200 SF_Bin2 = 0.896911
+Point 546/1200 SF_Bin2 = 0.898556
+Point 547/1200 SF_Bin2 = 0.9002
+Point 548/1200 SF_Bin2 = 0.901844
+Point 549/1200 SF_Bin2 = 0.903488
+Point 550/1200 SF_Bin2 = 0.905132
+Point 551/1200 SF_Bin2 = 0.906777
+Point 552/1200 SF_Bin2 = 0.908421
+Point 553/1200 SF_Bin2 = 0.910065
+Point 554/1200 SF_Bin2 = 0.911709
+Point 555/1200 SF_Bin2 = 0.913353
+Point 556/1200 SF_Bin2 = 0.914998
+Point 557/1200 SF_Bin2 = 0.916642
+Point 558/1200 SF_Bin2 = 0.918286
+Point 559/1200 SF_Bin2 = 0.91993
+Point 560/1200 SF_Bin2 = 0.921574
+Point 561/1200 SF_Bin2 = 0.923219
+Point 562/1200 SF_Bin2 = 0.924863
+Point 563/1200 SF_Bin2 = 0.926507
+Point 564/1200 SF_Bin2 = 0.928151
+Point 565/1200 SF_Bin2 = 0.929795
+Point 566/1200 SF_Bin2 = 0.93144
+Point 567/1200 SF_Bin2 = 0.933084
+Point 568/1200 SF_Bin2 = 0.934728
+Point 569/1200 SF_Bin2 = 0.936372
+Point 570/1200 SF_Bin2 = 0.938016
+Point 571/1200 SF_Bin2 = 0.939661
+Point 572/1200 SF_Bin2 = 0.941305
+Point 573/1200 SF_Bin2 = 0.942949
+Point 574/1200 SF_Bin2 = 0.944593
+Point 575/1200 SF_Bin2 = 0.946237
+Point 576/1200 SF_Bin2 = 0.947882
+Point 577/1200 SF_Bin2 = 0.949526
+Point 578/1200 SF_Bin2 = 0.95117
+Point 579/1200 SF_Bin2 = 0.952814
+Point 580/1200 SF_Bin2 = 0.954458
+Point 581/1200 SF_Bin2 = 0.956103
+Point 582/1200 SF_Bin2 = 0.957747
+Point 583/1200 SF_Bin2 = 0.959391
+Point 584/1200 SF_Bin2 = 0.961035
+Point 585/1200 SF_Bin2 = 0.962679
+Point 586/1200 SF_Bin2 = 0.964324
+Point 587/1200 SF_Bin2 = 0.965968
+Point 588/1200 SF_Bin2 = 0.967612
+Point 589/1200 SF_Bin2 = 0.969256
+Point 590/1200 SF_Bin2 = 0.9709
+Point 591/1200 SF_Bin2 = 0.972545
+Point 592/1200 SF_Bin2 = 0.974189
+Point 593/1200 SF_Bin2 = 0.975833
+Point 594/1200 SF_Bin2 = 0.977477
+Point 595/1200 SF_Bin2 = 0.979121
+Point 596/1200 SF_Bin2 = 0.980766
+Point 597/1200 SF_Bin2 = 0.98241
+Point 598/1200 SF_Bin2 = 0.984054
+Point 599/1200 SF_Bin2 = 0.985698
+Point 600/1200 SF_Bin2 = 0.987342
+Point 601/1200 SF_Bin2 = 0.988987
+Point 602/1200 SF_Bin2 = 0.990631
+Point 603/1200 SF_Bin2 = 0.992275
+Point 604/1200 SF_Bin2 = 0.993919
+Point 605/1200 SF_Bin2 = 0.995563
+Point 606/1200 SF_Bin2 = 0.997208
+Point 607/1200 SF_Bin2 = 0.998852
+Point 608/1200 SF_Bin2 = 1.0005
+Point 609/1200 SF_Bin2 = 1.00214
+Point 610/1200 SF_Bin2 = 1.00378
+Point 611/1200 SF_Bin2 = 1.00543
+Point 612/1200 SF_Bin2 = 1.00707
+Point 613/1200 SF_Bin2 = 1.00872
+Point 614/1200 SF_Bin2 = 1.01036
+Point 615/1200 SF_Bin2 = 1.01201
+Point 616/1200 SF_Bin2 = 1.01365
+Point 617/1200 SF_Bin2 = 1.01529
+Point 618/1200 SF_Bin2 = 1.01694
+Point 619/1200 SF_Bin2 = 1.01858
+Point 620/1200 SF_Bin2 = 1.02023
+Point 621/1200 SF_Bin2 = 1.02187
+Point 622/1200 SF_Bin2 = 1.02351
+Point 623/1200 SF_Bin2 = 1.02516
+Point 624/1200 SF_Bin2 = 1.0268
+Point 625/1200 SF_Bin2 = 1.02845
+Point 626/1200 SF_Bin2 = 1.03009
+Point 627/1200 SF_Bin2 = 1.03174
+Point 628/1200 SF_Bin2 = 1.03338
+Point 629/1200 SF_Bin2 = 1.03502
+Point 630/1200 SF_Bin2 = 1.03667
+Point 631/1200 SF_Bin2 = 1.03831
+Point 632/1200 SF_Bin2 = 1.03996
+Point 633/1200 SF_Bin2 = 1.0416
+Point 634/1200 SF_Bin2 = 1.04325
+Point 635/1200 SF_Bin2 = 1.04489
+Point 636/1200 SF_Bin2 = 1.04653
+Point 637/1200 SF_Bin2 = 1.04818
+Point 638/1200 SF_Bin2 = 1.04982
+Point 639/1200 SF_Bin2 = 1.05147
+Point 640/1200 SF_Bin2 = 1.05311
+Point 641/1200 SF_Bin2 = 1.05475
+Point 642/1200 SF_Bin2 = 1.0564
+Point 643/1200 SF_Bin2 = 1.05804
+Point 644/1200 SF_Bin2 = 1.05969
+Point 645/1200 SF_Bin2 = 1.06133
+Point 646/1200 SF_Bin2 = 1.06298
+Point 647/1200 SF_Bin2 = 1.06462
+Point 648/1200 SF_Bin2 = 1.06626
+Point 649/1200 SF_Bin2 = 1.06791
+Point 650/1200 SF_Bin2 = 1.06955
+Point 651/1200 SF_Bin2 = 1.0712
+Point 652/1200 SF_Bin2 = 1.07284
+Point 653/1200 SF_Bin2 = 1.07449
+Point 654/1200 SF_Bin2 = 1.07613
+Point 655/1200 SF_Bin2 = 1.07777
+Point 656/1200 SF_Bin2 = 1.07942
+Point 657/1200 SF_Bin2 = 1.08106
+Point 658/1200 SF_Bin2 = 1.08271
+Point 659/1200 SF_Bin2 = 1.08435
+Point 660/1200 SF_Bin2 = 1.08599
+Point 661/1200 SF_Bin2 = 1.08764
+Point 662/1200 SF_Bin2 = 1.08928
+Point 663/1200 SF_Bin2 = 1.09093
+Point 664/1200 SF_Bin2 = 1.09257
+Point 665/1200 SF_Bin2 = 1.09422
+Point 666/1200 SF_Bin2 = 1.09586
+Point 667/1200 SF_Bin2 = 1.0975
+Point 668/1200 SF_Bin2 = 1.09915
+Point 669/1200 SF_Bin2 = 1.10079
+Point 670/1200 SF_Bin2 = 1.10244
+Point 671/1200 SF_Bin2 = 1.10408
+Point 672/1200 SF_Bin2 = 1.10572
+Point 673/1200 SF_Bin2 = 1.10737
+Point 674/1200 SF_Bin2 = 1.10901
+Point 675/1200 SF_Bin2 = 1.11066
+Point 676/1200 SF_Bin2 = 1.1123
+Point 677/1200 SF_Bin2 = 1.11395
+Point 678/1200 SF_Bin2 = 1.11559
+Point 679/1200 SF_Bin2 = 1.11723
+Point 680/1200 SF_Bin2 = 1.11888
+Point 681/1200 SF_Bin2 = 1.12052
+Point 682/1200 SF_Bin2 = 1.12217
+Point 683/1200 SF_Bin2 = 1.12381
+Point 684/1200 SF_Bin2 = 1.12546
+Point 685/1200 SF_Bin2 = 1.1271
+Point 686/1200 SF_Bin2 = 1.12874
+Point 687/1200 SF_Bin2 = 1.13039
+Point 688/1200 SF_Bin2 = 1.13203
+Point 689/1200 SF_Bin2 = 1.13368
+Point 690/1200 SF_Bin2 = 1.13532
+Point 691/1200 SF_Bin2 = 1.13696
+Point 692/1200 SF_Bin2 = 1.13861
+Point 693/1200 SF_Bin2 = 1.14025
+Point 694/1200 SF_Bin2 = 1.1419
+Point 695/1200 SF_Bin2 = 1.14354
+Point 696/1200 SF_Bin2 = 1.14519
+Point 697/1200 SF_Bin2 = 1.14683
+Point 698/1200 SF_Bin2 = 1.14847
+Point 699/1200 SF_Bin2 = 1.15012
+Point 700/1200 SF_Bin2 = 1.15176
+Point 701/1200 SF_Bin2 = 1.15341
+Point 702/1200 SF_Bin2 = 1.15505
+Point 703/1200 SF_Bin2 = 1.1567
+Point 704/1200 SF_Bin2 = 1.15834
+Point 705/1200 SF_Bin2 = 1.15998
+Point 706/1200 SF_Bin2 = 1.16163
+Point 707/1200 SF_Bin2 = 1.16327
+Point 708/1200 SF_Bin2 = 1.16492
+Point 709/1200 SF_Bin2 = 1.16656
+Point 710/1200 SF_Bin2 = 1.1682
+Point 711/1200 SF_Bin2 = 1.16985
+Point 712/1200 SF_Bin2 = 1.17149
+Point 713/1200 SF_Bin2 = 1.17314
+Point 714/1200 SF_Bin2 = 1.17478
+Point 715/1200 SF_Bin2 = 1.17643
+Point 716/1200 SF_Bin2 = 1.17807
+Point 717/1200 SF_Bin2 = 1.17971
+Point 718/1200 SF_Bin2 = 1.18136
+Point 719/1200 SF_Bin2 = 1.183
+Point 720/1200 SF_Bin2 = 1.18465
+Point 721/1200 SF_Bin2 = 1.18629
+Point 722/1200 SF_Bin2 = 1.18793
+Point 723/1200 SF_Bin2 = 1.18958
+Point 724/1200 SF_Bin2 = 1.19122
+Point 725/1200 SF_Bin2 = 1.19287
+Point 726/1200 SF_Bin2 = 1.19451
+Point 727/1200 SF_Bin2 = 1.19616
+Point 728/1200 SF_Bin2 = 1.1978
+Point 729/1200 SF_Bin2 = 1.19944
+Point 730/1200 SF_Bin2 = 1.20109
+Point 731/1200 SF_Bin2 = 1.20273
+Point 732/1200 SF_Bin2 = 1.20438
+Point 733/1200 SF_Bin2 = 1.20602
+Point 734/1200 SF_Bin2 = 1.20767
+Point 735/1200 SF_Bin2 = 1.20931
+Point 736/1200 SF_Bin2 = 1.21095
+Point 737/1200 SF_Bin2 = 1.2126
+Point 738/1200 SF_Bin2 = 1.21424
+Point 739/1200 SF_Bin2 = 1.21589
+Point 740/1200 SF_Bin2 = 1.21753
+Point 741/1200 SF_Bin2 = 1.21917
+Point 742/1200 SF_Bin2 = 1.22082
+Point 743/1200 SF_Bin2 = 1.22246
+Point 744/1200 SF_Bin2 = 1.22411
+Point 745/1200 SF_Bin2 = 1.22575
+Point 746/1200 SF_Bin2 = 1.2274
+Point 747/1200 SF_Bin2 = 1.22904
+Point 748/1200 SF_Bin2 = 1.23068
+Point 749/1200 SF_Bin2 = 1.23233
+Point 750/1200 SF_Bin2 = 1.23397
+Point 751/1200 SF_Bin2 = 1.23562
+Point 752/1200 SF_Bin2 = 1.23726
+Point 753/1200 SF_Bin2 = 1.23891
+Point 754/1200 SF_Bin2 = 1.24055
+Point 755/1200 SF_Bin2 = 1.24219
+Point 756/1200 SF_Bin2 = 1.24384
+Point 757/1200 SF_Bin2 = 1.24548
+Point 758/1200 SF_Bin2 = 1.24713
+Point 759/1200 SF_Bin2 = 1.24877
+Point 760/1200 SF_Bin2 = 1.25041
+Point 761/1200 SF_Bin2 = 1.25206
+Point 762/1200 SF_Bin2 = 1.2537
+Point 763/1200 SF_Bin2 = 1.25535
+Point 764/1200 SF_Bin2 = 1.25699
+Point 765/1200 SF_Bin2 = 1.25864
+Point 766/1200 SF_Bin2 = 1.26028
+Point 767/1200 SF_Bin2 = 1.26192
+Point 768/1200 SF_Bin2 = 1.26357
+Point 769/1200 SF_Bin2 = 1.26521
+Point 770/1200 SF_Bin2 = 1.26686
+Point 771/1200 SF_Bin2 = 1.2685
+Point 772/1200 SF_Bin2 = 1.27014
+Point 773/1200 SF_Bin2 = 1.27179
+Point 774/1200 SF_Bin2 = 1.27343
+Point 775/1200 SF_Bin2 = 1.27508
+Point 776/1200 SF_Bin2 = 1.27672
+Point 777/1200 SF_Bin2 = 1.27837
+Point 778/1200 SF_Bin2 = 1.28001
+Point 779/1200 SF_Bin2 = 1.28165
+Point 780/1200 SF_Bin2 = 1.2833
+Point 781/1200 SF_Bin2 = 1.28494
+Point 782/1200 SF_Bin2 = 1.28659
+Point 783/1200 SF_Bin2 = 1.28823
+Point 784/1200 SF_Bin2 = 1.28988
+Point 785/1200 SF_Bin2 = 1.29152
+Point 786/1200 SF_Bin2 = 1.29316
+Point 787/1200 SF_Bin2 = 1.29481
+Point 788/1200 SF_Bin2 = 1.29645
+Point 789/1200 SF_Bin2 = 1.2981
+Point 790/1200 SF_Bin2 = 1.29974
+Point 791/1200 SF_Bin2 = 1.30138
+Point 792/1200 SF_Bin2 = 1.30303
+Point 793/1200 SF_Bin2 = 1.30467
+Point 794/1200 SF_Bin2 = 1.30632
+Point 795/1200 SF_Bin2 = 1.30796
+Point 796/1200 SF_Bin2 = 1.30961
+Point 797/1200 SF_Bin2 = 1.31125
+Point 798/1200 SF_Bin2 = 1.31289
+Point 799/1200 SF_Bin2 = 1.31454
+Point 800/1200 SF_Bin2 = 1.31618
+Point 801/1200 SF_Bin2 = 1.31783
+Point 802/1200 SF_Bin2 = 1.31947
+Point 803/1200 SF_Bin2 = 1.32112
+Point 804/1200 SF_Bin2 = 1.32276
+Point 805/1200 SF_Bin2 = 1.3244
+Point 806/1200 SF_Bin2 = 1.32605
+Point 807/1200 SF_Bin2 = 1.32769
+Point 808/1200 SF_Bin2 = 1.32934
+Point 809/1200 SF_Bin2 = 1.33098
+Point 810/1200 SF_Bin2 = 1.33262
+Point 811/1200 SF_Bin2 = 1.33427
+Point 812/1200 SF_Bin2 = 1.33591
+Point 813/1200 SF_Bin2 = 1.33756
+Point 814/1200 SF_Bin2 = 1.3392
+Point 815/1200 SF_Bin2 = 1.34085
+Point 816/1200 SF_Bin2 = 1.34249
+Point 817/1200 SF_Bin2 = 1.34413
+Point 818/1200 SF_Bin2 = 1.34578
+Point 819/1200 SF_Bin2 = 1.34742
+Point 820/1200 SF_Bin2 = 1.34907
+Point 821/1200 SF_Bin2 = 1.35071
+Point 822/1200 SF_Bin2 = 1.35235
+Point 823/1200 SF_Bin2 = 1.354
+Point 824/1200 SF_Bin2 = 1.35564
+Point 825/1200 SF_Bin2 = 1.35729
+Point 826/1200 SF_Bin2 = 1.35893
+Point 827/1200 SF_Bin2 = 1.36058
+Point 828/1200 SF_Bin2 = 1.36222
+Point 829/1200 SF_Bin2 = 1.36386
+Point 830/1200 SF_Bin2 = 1.36551
+Point 831/1200 SF_Bin2 = 1.36715
+Point 832/1200 SF_Bin2 = 1.3688
+Point 833/1200 SF_Bin2 = 1.37044
+Point 834/1200 SF_Bin2 = 1.37209
+Point 835/1200 SF_Bin2 = 1.37373
+Point 836/1200 SF_Bin2 = 1.37537
+Point 837/1200 SF_Bin2 = 1.37702
+Point 838/1200 SF_Bin2 = 1.37866
+Point 839/1200 SF_Bin2 = 1.38031
+Point 840/1200 SF_Bin2 = 1.38195
+Point 841/1200 SF_Bin2 = 1.38359
+Point 842/1200 SF_Bin2 = 1.38524
+Point 843/1200 SF_Bin2 = 1.38688
+Point 844/1200 SF_Bin2 = 1.38853
+Point 845/1200 SF_Bin2 = 1.39017
+Point 846/1200 SF_Bin2 = 1.39182
+Point 847/1200 SF_Bin2 = 1.39346
+Point 848/1200 SF_Bin2 = 1.3951
+Point 849/1200 SF_Bin2 = 1.39675
+Point 850/1200 SF_Bin2 = 1.39839
+Point 851/1200 SF_Bin2 = 1.40004
+Point 852/1200 SF_Bin2 = 1.40168
+Point 853/1200 SF_Bin2 = 1.40333
+Point 854/1200 SF_Bin2 = 1.40497
+Point 855/1200 SF_Bin2 = 1.40661
+Point 856/1200 SF_Bin2 = 1.40826
+Point 857/1200 SF_Bin2 = 1.4099
+Point 858/1200 SF_Bin2 = 1.41155
+Point 859/1200 SF_Bin2 = 1.41319
+Point 860/1200 SF_Bin2 = 1.41483
+Point 861/1200 SF_Bin2 = 1.41648
+Point 862/1200 SF_Bin2 = 1.41812
+Point 863/1200 SF_Bin2 = 1.41977
+Point 864/1200 SF_Bin2 = 1.42141
+Point 865/1200 SF_Bin2 = 1.42306
+Point 866/1200 SF_Bin2 = 1.4247
+Point 867/1200 SF_Bin2 = 1.42634
+Point 868/1200 SF_Bin2 = 1.42799
+Point 869/1200 SF_Bin2 = 1.42963
+Point 870/1200 SF_Bin2 = 1.43128
+Point 871/1200 SF_Bin2 = 1.43292
+Point 872/1200 SF_Bin2 = 1.43456
+Point 873/1200 SF_Bin2 = 1.43621
+Point 874/1200 SF_Bin2 = 1.43785
+Point 875/1200 SF_Bin2 = 1.4395
+Point 876/1200 SF_Bin2 = 1.44114
+Point 877/1200 SF_Bin2 = 1.44279
+Point 878/1200 SF_Bin2 = 1.44443
+Point 879/1200 SF_Bin2 = 1.44607
+Point 880/1200 SF_Bin2 = 1.44772
+Point 881/1200 SF_Bin2 = 1.44936
+Point 882/1200 SF_Bin2 = 1.45101
+Point 883/1200 SF_Bin2 = 1.45265
+Point 884/1200 SF_Bin2 = 1.4543
+Point 885/1200 SF_Bin2 = 1.45594
+Point 886/1200 SF_Bin2 = 1.45758
+Point 887/1200 SF_Bin2 = 1.45923
+Point 888/1200 SF_Bin2 = 1.46087
+Point 889/1200 SF_Bin2 = 1.46252
+Point 890/1200 SF_Bin2 = 1.46416
+Point 891/1200 SF_Bin2 = 1.4658
+Point 892/1200 SF_Bin2 = 1.46745
+Point 893/1200 SF_Bin2 = 1.46909
+Point 894/1200 SF_Bin2 = 1.47074
+Point 895/1200 SF_Bin2 = 1.47238
+Point 896/1200 SF_Bin2 = 1.47403
+Point 897/1200 SF_Bin2 = 1.47567
+Point 898/1200 SF_Bin2 = 1.47731
+Point 899/1200 SF_Bin2 = 1.47896
+Point 900/1200 SF_Bin2 = 1.4806
+Point 901/1200 SF_Bin2 = 1.48225
+Point 902/1200 SF_Bin2 = 1.48389
+Point 903/1200 SF_Bin2 = 1.48554
+Point 904/1200 SF_Bin2 = 1.48718
+Point 905/1200 SF_Bin2 = 1.48882
+Point 906/1200 SF_Bin2 = 1.49047
+Point 907/1200 SF_Bin2 = 1.49211
+Point 908/1200 SF_Bin2 = 1.49376
+Point 909/1200 SF_Bin2 = 1.4954
+Point 910/1200 SF_Bin2 = 1.49704
+Point 911/1200 SF_Bin2 = 1.49869
+Point 912/1200 SF_Bin2 = 1.50033
+Point 913/1200 SF_Bin2 = 1.50198
+Point 914/1200 SF_Bin2 = 1.50362
+Point 915/1200 SF_Bin2 = 1.50527
+Point 916/1200 SF_Bin2 = 1.50691
+Point 917/1200 SF_Bin2 = 1.50855
+Point 918/1200 SF_Bin2 = 1.5102
+Point 919/1200 SF_Bin2 = 1.51184
+Point 920/1200 SF_Bin2 = 1.51349
+Point 921/1200 SF_Bin2 = 1.51513
+Point 922/1200 SF_Bin2 = 1.51677
+Point 923/1200 SF_Bin2 = 1.51842
+Point 924/1200 SF_Bin2 = 1.52006
+Point 925/1200 SF_Bin2 = 1.52171
+Point 926/1200 SF_Bin2 = 1.52335
+Point 927/1200 SF_Bin2 = 1.525
+Point 928/1200 SF_Bin2 = 1.52664
+Point 929/1200 SF_Bin2 = 1.52828
+Point 930/1200 SF_Bin2 = 1.52993
+Point 931/1200 SF_Bin2 = 1.53157
+Point 932/1200 SF_Bin2 = 1.53322
+Point 933/1200 SF_Bin2 = 1.53486
+Point 934/1200 SF_Bin2 = 1.53651
+Point 935/1200 SF_Bin2 = 1.53815
+Point 936/1200 SF_Bin2 = 1.53979
+Point 937/1200 SF_Bin2 = 1.54144
+Point 938/1200 SF_Bin2 = 1.54308
+Point 939/1200 SF_Bin2 = 1.54473
+Point 940/1200 SF_Bin2 = 1.54637
+Point 941/1200 SF_Bin2 = 1.54801
+Point 942/1200 SF_Bin2 = 1.54966
+Point 943/1200 SF_Bin2 = 1.5513
+Point 944/1200 SF_Bin2 = 1.55295
+Point 945/1200 SF_Bin2 = 1.55459
+Point 946/1200 SF_Bin2 = 1.55624
+Point 947/1200 SF_Bin2 = 1.55788
+Point 948/1200 SF_Bin2 = 1.55952
+Point 949/1200 SF_Bin2 = 1.56117
+Point 950/1200 SF_Bin2 = 1.56281
+Point 951/1200 SF_Bin2 = 1.56446
+Point 952/1200 SF_Bin2 = 1.5661
+Point 953/1200 SF_Bin2 = 1.56775
+Point 954/1200 SF_Bin2 = 1.56939
+Point 955/1200 SF_Bin2 = 1.57103
+Point 956/1200 SF_Bin2 = 1.57268
+Point 957/1200 SF_Bin2 = 1.57432
+Point 958/1200 SF_Bin2 = 1.57597
+Point 959/1200 SF_Bin2 = 1.57761
+Point 960/1200 SF_Bin2 = 1.57925
+Point 961/1200 SF_Bin2 = 1.5809
+Point 962/1200 SF_Bin2 = 1.58254
+Point 963/1200 SF_Bin2 = 1.58419
+Point 964/1200 SF_Bin2 = 1.58583
+Point 965/1200 SF_Bin2 = 1.58748
+Point 966/1200 SF_Bin2 = 1.58912
+Point 967/1200 SF_Bin2 = 1.59076
+Point 968/1200 SF_Bin2 = 1.59241
+Point 969/1200 SF_Bin2 = 1.59405
+Point 970/1200 SF_Bin2 = 1.5957
+Point 971/1200 SF_Bin2 = 1.59734
+Point 972/1200 SF_Bin2 = 1.59898
+Point 973/1200 SF_Bin2 = 1.60063
+Point 974/1200 SF_Bin2 = 1.60227
+Point 975/1200 SF_Bin2 = 1.60392
+Point 976/1200 SF_Bin2 = 1.60556
+Point 977/1200 SF_Bin2 = 1.60721
+Point 978/1200 SF_Bin2 = 1.60885
+Point 979/1200 SF_Bin2 = 1.61049
+Point 980/1200 SF_Bin2 = 1.61214
+Point 981/1200 SF_Bin2 = 1.61378
+Point 982/1200 SF_Bin2 = 1.61543
+Point 983/1200 SF_Bin2 = 1.61707
+Point 984/1200 SF_Bin2 = 1.61872
+Point 985/1200 SF_Bin2 = 1.62036
+Point 986/1200 SF_Bin2 = 1.622
+Point 987/1200 SF_Bin2 = 1.62365
+Point 988/1200 SF_Bin2 = 1.62529
+Point 989/1200 SF_Bin2 = 1.62694
+Point 990/1200 SF_Bin2 = 1.62858
+Point 991/1200 SF_Bin2 = 1.63022
+Point 992/1200 SF_Bin2 = 1.63187
+Point 993/1200 SF_Bin2 = 1.63351
+Point 994/1200 SF_Bin2 = 1.63516
+Point 995/1200 SF_Bin2 = 1.6368
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 996/1200 SF_Bin2 = 1.63845
+Point 997/1200 SF_Bin2 = 1.64009
+Point 998/1200 SF_Bin2 = 1.64173
+Point 999/1200 SF_Bin2 = 1.64338
+Point 1000/1200 SF_Bin2 = 1.64502
+Point 1001/1200 SF_Bin2 = 1.64667
+Point 1002/1200 SF_Bin2 = 1.64831
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1003/1200 SF_Bin2 = 1.64996
+Point 1004/1200 SF_Bin2 = 1.6516
+Point 1005/1200 SF_Bin2 = 1.65324
+Point 1006/1200 SF_Bin2 = 1.65489
+Point 1007/1200 SF_Bin2 = 1.65653
+Point 1008/1200 SF_Bin2 = 1.65818
+Point 1009/1200 SF_Bin2 = 1.65982
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1010/1200 SF_Bin2 = 1.66146
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1011/1200 SF_Bin2 = 1.66311
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1012/1200 SF_Bin2 = 1.66475
+Point 1013/1200 SF_Bin2 = 1.6664
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1014/1200 SF_Bin2 = 1.66804
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1015/1200 SF_Bin2 = 1.66969
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1016/1200 SF_Bin2 = 1.67133
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1017/1200 SF_Bin2 = 1.67297
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1018/1200 SF_Bin2 = 1.67462
+Point 1019/1200 SF_Bin2 = 1.67626
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1020/1200 SF_Bin2 = 1.67791
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1021/1200 SF_Bin2 = 1.67955
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1022/1200 SF_Bin2 = 1.68119
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1023/1200 SF_Bin2 = 1.68284
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1024/1200 SF_Bin2 = 1.68448
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1025/1200 SF_Bin2 = 1.68613
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1026/1200 SF_Bin2 = 1.68777
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1027/1200 SF_Bin2 = 1.68942
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1028/1200 SF_Bin2 = 1.69106
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1029/1200 SF_Bin2 = 1.6927
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1030/1200 SF_Bin2 = 1.69435
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1031/1200 SF_Bin2 = 1.69599
+Point 1032/1200 SF_Bin2 = 1.69764
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1033/1200 SF_Bin2 = 1.69928
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1034/1200 SF_Bin2 = 1.70093
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1035/1200 SF_Bin2 = 1.70257
+Point 1036/1200 SF_Bin2 = 1.70421
+Point 1037/1200 SF_Bin2 = 1.70586
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1038/1200 SF_Bin2 = 1.7075
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1039/1200 SF_Bin2 = 1.70915
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Point 1040/1200 SF_Bin2 = 1.71079
+Point 1041/1200 SF_Bin2 = 1.71243
+Point 1042/1200 SF_Bin2 = 1.71408
+Point 1043/1200 SF_Bin2 = 1.71572
+Point 1044/1200 SF_Bin2 = 1.71737
+Point 1045/1200 SF_Bin2 = 1.71901
+Point 1046/1200 SF_Bin2 = 1.72066
+Point 1047/1200 SF_Bin2 = 1.7223
+Point 1048/1200 SF_Bin2 = 1.72394
+Point 1049/1200 SF_Bin2 = 1.72559
+Point 1050/1200 SF_Bin2 = 1.72723
+Point 1051/1200 SF_Bin2 = 1.72888
+Point 1052/1200 SF_Bin2 = 1.73052
+Point 1053/1200 SF_Bin2 = 1.73217
+Point 1054/1200 SF_Bin2 = 1.73381
+Point 1055/1200 SF_Bin2 = 1.73545
+Point 1056/1200 SF_Bin2 = 1.7371
+Point 1057/1200 SF_Bin2 = 1.73874
+Point 1058/1200 SF_Bin2 = 1.74039
+Point 1059/1200 SF_Bin2 = 1.74203
+Point 1060/1200 SF_Bin2 = 1.74367
+Point 1061/1200 SF_Bin2 = 1.74532
+Point 1062/1200 SF_Bin2 = 1.74696
+Point 1063/1200 SF_Bin2 = 1.74861
+Point 1064/1200 SF_Bin2 = 1.75025
+Point 1065/1200 SF_Bin2 = 1.7519
+Point 1066/1200 SF_Bin2 = 1.75354
+Point 1067/1200 SF_Bin2 = 1.75518
+Point 1068/1200 SF_Bin2 = 1.75683
+Point 1069/1200 SF_Bin2 = 1.75847
+Point 1070/1200 SF_Bin2 = 1.76012
+Point 1071/1200 SF_Bin2 = 1.76176
+Point 1072/1200 SF_Bin2 = 1.76341
+Point 1073/1200 SF_Bin2 = 1.76505
+Point 1074/1200 SF_Bin2 = 1.76669
+Point 1075/1200 SF_Bin2 = 1.76834
+Point 1076/1200 SF_Bin2 = 1.76998
+Point 1077/1200 SF_Bin2 = 1.77163
+Point 1078/1200 SF_Bin2 = 1.77327
+Point 1079/1200 SF_Bin2 = 1.77491
+Point 1080/1200 SF_Bin2 = 1.77656
+Point 1081/1200 SF_Bin2 = 1.7782
+Point 1082/1200 SF_Bin2 = 1.77985
+Point 1083/1200 SF_Bin2 = 1.78149
+Point 1084/1200 SF_Bin2 = 1.78314
+Point 1085/1200 SF_Bin2 = 1.78478
+Point 1086/1200 SF_Bin2 = 1.78642
+Point 1087/1200 SF_Bin2 = 1.78807
+Point 1088/1200 SF_Bin2 = 1.78971
+Point 1089/1200 SF_Bin2 = 1.79136
+Point 1090/1200 SF_Bin2 = 1.793
+Point 1091/1200 SF_Bin2 = 1.79464
+Point 1092/1200 SF_Bin2 = 1.79629
+Point 1093/1200 SF_Bin2 = 1.79793
+Point 1094/1200 SF_Bin2 = 1.79958
+Point 1095/1200 SF_Bin2 = 1.80122
+Point 1096/1200 SF_Bin2 = 1.80287
+Point 1097/1200 SF_Bin2 = 1.80451
+Point 1098/1200 SF_Bin2 = 1.80615
+Point 1099/1200 SF_Bin2 = 1.8078
+Point 1100/1200 SF_Bin2 = 1.80944
+Point 1101/1200 SF_Bin2 = 1.81109
+Point 1102/1200 SF_Bin2 = 1.81273
+Point 1103/1200 SF_Bin2 = 1.81438
+Point 1104/1200 SF_Bin2 = 1.81602
+Point 1105/1200 SF_Bin2 = 1.81766
+Point 1106/1200 SF_Bin2 = 1.81931
+Point 1107/1200 SF_Bin2 = 1.82095
+Point 1108/1200 SF_Bin2 = 1.8226
+Point 1109/1200 SF_Bin2 = 1.82424
+Point 1110/1200 SF_Bin2 = 1.82588
+Point 1111/1200 SF_Bin2 = 1.82753
+Point 1112/1200 SF_Bin2 = 1.82917
+Point 1113/1200 SF_Bin2 = 1.83082
+Point 1114/1200 SF_Bin2 = 1.83246
+Point 1115/1200 SF_Bin2 = 1.83411
+Point 1116/1200 SF_Bin2 = 1.83575
+Point 1117/1200 SF_Bin2 = 1.83739
+Point 1118/1200 SF_Bin2 = 1.83904
+Point 1119/1200 SF_Bin2 = 1.84068
+Point 1120/1200 SF_Bin2 = 1.84233
+Point 1121/1200 SF_Bin2 = 1.84397
+Point 1122/1200 SF_Bin2 = 1.84562
+Point 1123/1200 SF_Bin2 = 1.84726
+Point 1124/1200 SF_Bin2 = 1.8489
+Point 1125/1200 SF_Bin2 = 1.85055
+Point 1126/1200 SF_Bin2 = 1.85219
+Point 1127/1200 SF_Bin2 = 1.85384
+Point 1128/1200 SF_Bin2 = 1.85548
+Point 1129/1200 SF_Bin2 = 1.85712
+Point 1130/1200 SF_Bin2 = 1.85877
+Point 1131/1200 SF_Bin2 = 1.86041
+Point 1132/1200 SF_Bin2 = 1.86206
+Point 1133/1200 SF_Bin2 = 1.8637
+Point 1134/1200 SF_Bin2 = 1.86535
+Point 1135/1200 SF_Bin2 = 1.86699
+Point 1136/1200 SF_Bin2 = 1.86863
+Point 1137/1200 SF_Bin2 = 1.87028
+Point 1138/1200 SF_Bin2 = 1.87192
+Point 1139/1200 SF_Bin2 = 1.87357
+Point 1140/1200 SF_Bin2 = 1.87521
+Point 1141/1200 SF_Bin2 = 1.87685
+Point 1142/1200 SF_Bin2 = 1.8785
+Point 1143/1200 SF_Bin2 = 1.88014
+Point 1144/1200 SF_Bin2 = 1.88179
+Point 1145/1200 SF_Bin2 = 1.88343
+Point 1146/1200 SF_Bin2 = 1.88508
+Point 1147/1200 SF_Bin2 = 1.88672
+Point 1148/1200 SF_Bin2 = 1.88836
+Point 1149/1200 SF_Bin2 = 1.89001
+Point 1150/1200 SF_Bin2 = 1.89165
+Point 1151/1200 SF_Bin2 = 1.8933
+Point 1152/1200 SF_Bin2 = 1.89494
+Point 1153/1200 SF_Bin2 = 1.89659
+Point 1154/1200 SF_Bin2 = 1.89823
+Point 1155/1200 SF_Bin2 = 1.89987
+Point 1156/1200 SF_Bin2 = 1.90152
+Point 1157/1200 SF_Bin2 = 1.90316
+Point 1158/1200 SF_Bin2 = 1.90481
+Point 1159/1200 SF_Bin2 = 1.90645
+Point 1160/1200 SF_Bin2 = 1.90809
+Point 1161/1200 SF_Bin2 = 1.90974
+Point 1162/1200 SF_Bin2 = 1.91138
+Point 1163/1200 SF_Bin2 = 1.91303
+Point 1164/1200 SF_Bin2 = 1.91467
+Point 1165/1200 SF_Bin2 = 1.91632
+Point 1166/1200 SF_Bin2 = 1.91796
+Point 1167/1200 SF_Bin2 = 1.9196
+Point 1168/1200 SF_Bin2 = 1.92125
+Point 1169/1200 SF_Bin2 = 1.92289
+Point 1170/1200 SF_Bin2 = 1.92454
+Point 1171/1200 SF_Bin2 = 1.92618
+Point 1172/1200 SF_Bin2 = 1.92783
+Point 1173/1200 SF_Bin2 = 1.92947
+Point 1174/1200 SF_Bin2 = 1.93111
+Point 1175/1200 SF_Bin2 = 1.93276
+Point 1176/1200 SF_Bin2 = 1.9344
+Point 1177/1200 SF_Bin2 = 1.93605
+Point 1178/1200 SF_Bin2 = 1.93769
+Point 1179/1200 SF_Bin2 = 1.93933
+Point 1180/1200 SF_Bin2 = 1.94098
+Point 1181/1200 SF_Bin2 = 1.94262
+Point 1182/1200 SF_Bin2 = 1.94427
+Point 1183/1200 SF_Bin2 = 1.94591
+Point 1184/1200 SF_Bin2 = 1.94756
+Point 1185/1200 SF_Bin2 = 1.9492
+Point 1186/1200 SF_Bin2 = 1.95084
+Point 1187/1200 SF_Bin2 = 1.95249
+Point 1188/1200 SF_Bin2 = 1.95413
+Point 1189/1200 SF_Bin2 = 1.95578
+Point 1190/1200 SF_Bin2 = 1.95742
+Point 1191/1200 SF_Bin2 = 1.95906
+Point 1192/1200 SF_Bin2 = 1.96071
+Point 1193/1200 SF_Bin2 = 1.96235
+Point 1194/1200 SF_Bin2 = 1.964
+Point 1195/1200 SF_Bin2 = 1.96564
+Point 1196/1200 SF_Bin2 = 1.96729
+Point 1197/1200 SF_Bin2 = 1.96893
+Point 1198/1200 SF_Bin2 = 1.97057
+Point 1199/1200 SF_Bin2 = 1.97222
+Done in 18.02 min (cpu), 18.12 min (real)

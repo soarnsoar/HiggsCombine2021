@@ -1,0 +1,70 @@
+## Shape input card
+imax 1 number of channels
+jmax * number of background
+kmax * number of nuisance parameters
+----------------------------------------------------------------------------------------------------
+bin         NoWtagger__300
+observation 61082
+shapes  *           * shapes/histos_NoWtagger__300.root     histo_$PROCESS histo_$PROCESS_$SYSTEMATIC
+shapes  data_obs           * shapes/histos_NoWtagger__300.root     histo_Data
+bin                                                                             NoWtagger__300                NoWtagger__300                
+process                                                                         ALLPROCNORMONE                ALLPROC__NOTMATCH             
+process                                                                         0                             1                             
+rate                                                                            1.0000                        26640.3808                    
+----------------------------------------------------------------------------------------------------
+lumi_13TeV_2017                                             lnN                 1.02                          1.02                          
+lumi_13TeV_XY                                               lnN                 1.008                         1.008                         
+lumi_13TeV_LS                                               lnN                 1.003                         1.003                         
+lumi_13TeV_BBD                                              lnN                 1.004                         1.004                         
+lumi_13TeV_DB                                               lnN                 1.005                         1.005                         
+lumi_13TeV_BCC                                              lnN                 1.003                         1.003                         
+lumi_13TeV_GS                                               lnN                 1.001                         1.001                         
+CMS_btag_lf                                                 shape               1.000                         1.000                         
+CMS_btag_hf                                                 shape               1.000                         1.000                         
+CMS_btag_hfstats1_2017                                      shape               1.000                         1.000                         
+CMS_btag_hfstats2_2017                                      shape               1.000                         1.000                         
+CMS_btag_lfstats1_2017                                      shape               1.000                         1.000                         
+CMS_btag_lfstats2_2017                                      shape               1.000                         1.000                         
+CMS_btag_cferr1                                             shape               1.000                         1.000                         
+CMS_btag_cferr2                                             shape               1.000                         1.000                         
+CMS_eff_hwwtrigger_2017                                     shape               1.000                         1.000                         
+CMS_eff_prefiring_2017                                      shape               1.000                         1.000                         
+CMS_eff_e_2017                                              shape               1.000                         1.000                         
+CMS_eff_m_2017                                              shape               1.000                         1.000                         
+CMS_PU_2017                                                 shape               1.000                         1.000                         
+QCDscale_ggH_ACCEPT                                         shape               1.000                         1.000                         
+QCDscale_qqH_ACCEPT                                         shape               1.000                         1.000                         
+QCDscale_ttbar_ACCEPT                                       shape               1.000                         1.000                         
+QCDscale_wjets_ACCEPT                                       shape               1.000                         1.000                         
+QCDscale_gg_ACCEPT                                          shape               -                             -                             
+QCDscale_qq_ACCEPT                                          shape               -                             -                             
+QCDscale_ZH_ACCEPT                                          shape               1.000                         1.000                         
+QCDscale_WpH_ACCEPT                                         shape               1.000                         1.000                         
+QCDscale_WmH_ACCEPT                                         shape               1.000                         1.000                         
+QCDscale_WW_ACCEPT                                          shape               1.000                         1.000                         
+pdf_Higgs_gg_ACCEPT                                         shape               1.000                         1.000                         
+pdf_Higgs_qqbar_ACCEPT                                      shape               1.000                         1.000                         
+pdf_gg_ACCEPT                                               shape               -                             -                             
+pdf_qqbar_ACCEPT                                            shape               -                             -                             
+pdf_ttbar_ACCEPT                                            shape               1.000                         1.000                         
+pdf_wjets_ACCEPT                                            shape               1.000                         1.000                         
+pdf_ZH_ACCEPT                                               shape               1.000                         1.000                         
+pdf_WpH_ACCEPT                                              shape               1.000                         1.000                         
+pdf_WmH_ACCEPT                                              shape               1.000                         1.000                         
+pdf_WW_ACCEPT                                               shape               1.000                         1.000                         
+PS_ISR                                                      shape               1.000                         1.000                         
+PS_FSR                                                      shape               1.000                         1.000                         
+PS_ISR                                                      shape               1.000                         1.000                         
+PS_FSR                                                      shape               1.000                         1.000                         
+ggWWnorm                                                    shape               1.000                         1.000                         
+qqWWqqnorm                                                  shape               1.000                         1.000                         
+CMS_scale_m_2017                                            shape               1.000                         1.000                         
+CMS_scale_e_2017                                            shape               1.000                         1.000                         
+CMS_scale_met_2017                                          shape               1.000                         1.000                         
+CMS_scale_JESTotal                                          shape               1.000                         1.000                         
+CMS_res_j_2017                                              shape               1.000                         1.000                         
+CMS_ak8jet_scale_JESTotal                                   shape               1.000                         1.000                         
+CMS_ak8jet_res_j_2017                                       shape               1.000                         1.000                         
+* autoMCStats 10  1
+----------------------------------------------------------------------------------------------------
+
