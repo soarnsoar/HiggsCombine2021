@@ -3,7 +3,7 @@ mkdir -p Datacards_2017
 mkdir -p Datacards_2018
 
 #/cms_scratch/jhchoi/ANv10/FinCut/FinCut__15Job__BtagModuleSplit
-MAINDIR=/cms_scratch/jhchoi/ANv10/FinCut/FinCut__15Job__BtagModuleSplit
+MAINDIR=/cms_scratch/jhchoi/ANv11/FinalCut/
 
 BST=Resolved
 cp -r ${MAINDIR}/2016/Datacards_${BST} Datacards_2016/Datacards_${BST}_2016&
