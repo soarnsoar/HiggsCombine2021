@@ -11,7 +11,7 @@ BST=$2
 #ARR_CUT=()
 
 for MASS in ${ARR_MASS[@]};do
-    python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -i
+    #python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST} -i
     python CondorSubmit_CombineCard.py -y ${YEAR} -m ${MASS} -b ${BST}
 done
 

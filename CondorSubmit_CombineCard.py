@@ -11,33 +11,33 @@ def GetCardPath(mass,year):
 
 
     #Boosted
-    cats["hww_lqq_bst_vbf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__VBF/"+CRVAR+"/datacard.txt"
-    cats["hww_lqq_bst_vbf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR__VBF/"+ CRVAR+"/datacard.txt"
-    cats["hww_lqq_bst_vbf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR__VBF/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_vbf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/Boosted__WJETCR__VBF/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_vbf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/Boosted__TOPCR__VBF/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_vbf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/Boosted__SR__VBF/"+ CRVAR+"/datacard.txt"
 
-    cats["hww_lqq_bst_ggf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__GGF/"+CRVAR+"/datacard.txt"
-    cats["hww_lqq_bst_ggf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR__GGF/"+ CRVAR+"/datacard.txt"
-    cats["hww_lqq_bst_ggf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR__GGF/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_ggf_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/Boosted__WJETCR__GGF/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_ggf_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/Boosted__TOPCR__GGF/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_ggf_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/Boosted__SR__GGF/"+ CRVAR+"/datacard.txt"
 
-    cats["hww_lqq_bst_untag_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/WJETCR__UNTAG/"+CRVAR+"/datacard.txt"
-    cats["hww_lqq_bst_untag_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/TOPCR__UNTAG/"+ CRVAR+"/datacard.txt"
-    cats["hww_lqq_bst_untag_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/SR__UNTAG/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_untag_sb_"+year]="Datacards_Boosted_"+year +"_SB/Datacard_M"+mass+"/Boosted__WJETCR__UNTAG/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_untag_top_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/Boosted__TOPCR__UNTAG/"+ CRVAR+"/datacard.txt"
+    cats["hww_lqq_bst_untag_"+year]="Datacards_Boosted_"+year+   "/Datacard_M"+mass+"/Boosted__SR__UNTAG/"+ CRVAR+"/datacard.txt"
 
 
     
 
     #Resolved
-    cats["hww_lqq_res_vbf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__VBF/"+CRVAR+"/datacard.txt"
-    cats["hww_lqq_res_vbf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__VBF/" +CRVAR+"/datacard.txt"
-    cats["hww_lqq_res_vbf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__VBF/"    +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_vbf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__WJETCR__VBF/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_vbf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__TOPCR__VBF/" +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_vbf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__SR__VBF/"    +CRVAR+"/datacard.txt"
 
-    cats["hww_lqq_res_ggf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__GGF/"+CRVAR+"/datacard.txt"
-    cats["hww_lqq_res_ggf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__GGF/" +CRVAR+"/datacard.txt"
-    cats["hww_lqq_res_ggf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__GGF/"    +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_ggf_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__WJETCR__GGF/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_ggf_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__TOPCR__GGF/" +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_ggf_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__SR__GGF/"    +CRVAR+"/datacard.txt"
 
-    cats["hww_lqq_res_untag_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/WJETCR__UNTAG/"+CRVAR+"/datacard.txt"
-    cats["hww_lqq_res_untag_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/TOPCR__UNTAG/" +CRVAR+"/datacard.txt"
-    cats["hww_lqq_res_untag_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/SR__UNTAG/"    +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_untag_sb_"+year]= "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__WJETCR__UNTAG/"+CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_untag_top_"+year]="Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__TOPCR__UNTAG/" +CRVAR+"/datacard.txt"
+    cats["hww_lqq_res_untag_"+year]=    "Datacards_Resolved_"+year+"/Datacard_M"+mass+"/Resolved__SR__UNTAG/"    +CRVAR+"/datacard.txt"
 
 
 
