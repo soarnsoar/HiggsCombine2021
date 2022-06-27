@@ -1,16 +1,16 @@
 #####
 #ARR_Year=(2016 2017 2018)
 #ARR_Year=(3yrs)
-ARR_Year=(2016 2017 2018 3yrs)
+ARR_Year=(2016 2017 2018)
 #ARR_Year=(2016)
 #ARR_Year=(3yrs)
 #ARR_Region=(Boosted)
-ARR_Region=(all)
+ARR_Region=(Boosted Resolved all)
 #ARR_Mass=(115 120 124 125 126 130 135 140 145 150 155 160 165 170 175 180 190 200 210 230 250 270 300 350 400 450 500 550 600 650 700 750 800 900 1000 1500 2000 2500 3000 4000 5000)
 ARR_Mass=(400 900 1000 3000)
 #ARR_Mass=(1000)
 #ARR_model=(smlike smlike_NoI model_indep model_indep_NoI) 
-ARR_model=(smlike)
+ARR_model=(smlike smlike_NoI)
 #####
 ARR_expectedSig=(0 0.1 0.3 1)
 
