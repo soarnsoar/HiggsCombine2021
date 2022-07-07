@@ -22,11 +22,11 @@ for Year in ${ARR_Year[@]};do
 	    for model in ${ARR_model[@]};do
 		for sig in ${ARR_expectedSig[@]};do
 		    #freeze bbb
-		    WORKDIR=FitDiagnosticsDir_Sig${sig}_${Region}_${Mass}_${Year}_${model}_OnlyMCStat
+		    WORKDIR=FitDiagnosticsDir_Sig${sig}_${Region}_${Mass}_${Year}_${model}_OnlyMCStat_cmin0
 		    mkdir -p ${WORKDIR}
 		    cd ${WORKDIR}
 		    Workspace=../../../Workspaces_${Year}/${model}/hwwlnuqq_${Region}_${Mass}_${Year}.root
-		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*},rgx{deltaTheory.*xsec},rgx{CMS_HEM1516.*},rgx{CMS_PU_.*},rgx{CMS_ak8jet.*},rgx{CMS_ak4jet.*},rgx{CMS_btag.*},rgx{CMS_eff.*},rgx{CMS_res.*},rgx{CMS_scale.*},rgx{.*norm.*},rgx{PS.*},rgx{QCDscale.*},rgx{lumi.*},rgx{mjjshape.*},rgx{pdf.*} --setParameterRanges r=0,100&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
+		    python ../../python_tool/ExportShellCondorSetup.py -c "combineTool.py -d ${Workspace} -M FitDiagnostics --plots -m ${Mass} -t -1 --expectSignal=${sig} --freezeParameters rgx{prop_.*},rgx{deltaTheory.*xsec},rgx{CMS_HEM1516.*},rgx{CMS_PU_.*},rgx{CMS_ak8jet.*},rgx{CMS_ak4jet.*},rgx{CMS_btag.*},rgx{CMS_eff.*},rgx{CMS_res.*},rgx{CMS_scale.*},rgx{.*norm.*},rgx{PS.*},rgx{QCDscale.*},rgx{lumi.*},rgx{mjjshape.*},rgx{pdf.*} --setParameterRanges r=0,100 --cminDefaultMinimizerStrategy 0&&python ../../diffNuisances.py fitDiagnostics.Test.root -g outputfile.root" -d WORDIR_CONDOR_TEST3 -n ${WORKDIR} -m 1 -s 
 		    cd -
 
 		done
